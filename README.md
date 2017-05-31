@@ -11,7 +11,7 @@ First you have to downlaod "GF-1.js" and then copy this code to your HTML
 ```
 <script src="JS/GF-1.js"></script>
 ```
-or you use the CDN of "GF-1.js", copy this code to your HTML 
+or if you using internet you can use this code 
 ```
 <script src="https://rawgit.com/lamhotsimamora/GF-Javascript/master/JS/GF-1.js"></script>
 ```
