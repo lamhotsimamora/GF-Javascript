@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+</head>
+<body>
+
+<script src="JS/GF-1.js"></script>
+
+<div id="#alert"> </div>
+
+<h3> 1 </h3> <div id="_page1"> </div> </br></br>
+<h3> 2 </h3> <div id="_page2"> </div> </br></br>
+
+<h3> Encrypt </h3> <div id="content_page1"> </div> </br></br>
+<h3> Decrypt </h3> <div id="content_page2"> </div> </br></br>
+
+<div id="" name="name_div">
+	<h3> Name 	: <div id="t_name"></div>  </h3>
+	<h3> Email 	: <div id="t_email"></div>  </h3>
+	<h3> Phone 	: <div id="t_phone"></div> </h3>
+	<h3> Address : <div id="t_address"></div> </h3>
+	<h3> URL : <div id="t_URL"></div> </h3>
+</div>
+
+
+<input type="text" id="txt_name"  name="t_name" placeholder="Name" value="" onkeyup="enterName(this.value);">
+<input type="text" id="txt_email"  name="t_name" placeholder="Email" value="" onkeyup="enterEmail(this.value);">
+<input type="number" id="txt_phone"  name="" placeholder="Phone" value="" onkeyup="enterPhone(this.value);">
+<input type="text" id="txt_address"  name="" placeholder="Address" value="" onkeyup="enterAddress(this.value);">
+<input type="text" id="txt_url"  name="" placeholder="URL" value="" onkeyup="enterURl(this.value);">
+
+<button id="btn_save" name="23" onclick="Save()">Save</button></br></br>
+<button id="btn_profile" name="23" onclick="getProfile()">Load Profile</button> </br></br>
+<button id="btn_about" name="23" onclick="getAbout()">Load About</button></br></br>
+<button id="btn_location" name="23" onclick="getLocation()">Location</button></br></br>
+
+<button id="btn_open" name="" onclick="_openUrl('https://www.w3schools.com');">Google</button>
+
+<button id="btn_exit" onclick="exit();">Exit</button>
+
+<div id="_test_response_ajax_1"> </div>
+<div id="_test_response_ajax_2"> </div>
+<div id="_test_response_ajax_3"></div>
+
+<div id="_function_test6"></div>
+
+<div id="_function_test1"></div>
+<div id="_function_test2"></div>
+<div id="_function_test3"></div>
+<div id="_function_test4"></div>
+<div id="_function_test5"></div>
+
+
+
+
+
+<script type="text/javascript">
+
+
+function enterName(str){
+	_printTo("t_name",_colorFont(_replaceMaster(str),"blue"));
+}
+function enterEmail(str){
+	_printTo("t_email",_colorFont(str,"green"));
+}
+function enterPhone(str){
+	_printTo("t_phone",_colorFont(str,"red"));
+}
+function enterAddress(str){
+	_printTo("t_address",_colorFont(str,"black"));
+}
+function enterURl(str){
+
+}
+
+
+function Save(){
+	if (_getValById("txt_name")==='')
+	{
+		_printTo("#alert",_colorFont("Name is empty")); return;
+	}
+	if (_getValById("txt_email")==='')
+	{
+		_printTo("#alert",_colorFont("Email is empty")); return;
+	}
+	if (_getValById("txt_phone")==='')
+	{
+		_printTo("#alert",_colorFont("Phone is empty")); return;
+	}
+	if (_getValById("txt_address")==='')
+	{
+		_printTo("#alert",_colorFont("Address is empty")); return;
+	}
+}
+
+var encrypt_id = _encryptInt("5790");
+
+_printTo("content_page1",encrypt_id);
+
+
+var decypt_id = _decryptInt(encrypt_id);
+
+_printTo("content_page2",decypt_id);
+
+
+function getProfile(){
+	 _requestPOST("http://localhost/js/profile.php","name="+encrypt_id+"","_page1");
+}
+
+function getAbout(){
+	var parameter = "GF.Js";
+	_requestGET("http://localhost/js/about.php?p="+parameter+"","_page2");
+}
+
+
+
+_requestGET("http://localhost/js/about.php?p=simamora",function(response){
+	if (response==='T')
+	{
+		_printTo("_test_response_ajax_1",response);
+	}
+	else if (response==="F")
+	{
+		_printTo("_test_response_ajax_1",response);
+	}
+	else
+	{
+		_printTo("_test_response_ajax_1",response);
+	}
+});
+
+
+
+_requestPOST("http://localhost/js/profile.php","name=lamhot",function(response){
+	if (response==='T')
+	{
+		_printTo("_test_response_ajax_2",response);
+	}
+	else if (response==="F")
+	{
+		_printTo("_test_response_ajax_2",response);
+	}
+	else
+	{
+		_printTo("_test_response_ajax_2",response);
+	}
+});
+
+_requestPOST("http://localhost/js/test.php","id="+encrypt_id+"","_function_test6");
+
+
+_loadDoc("http://localhost/js/page.php",function(response){
+	_printTo("_test_response_ajax_3",response);
+});
+
+
+_printTo("_function_test5",_getHost());
+_printTo("_function_test1",_randomStr());
+_printTo("_function_test2",_randomInt());
+_docWrite("Document Write Example");
+//_newForm(false,"https://www.lamhotsimamora.com/");
+_printTo("_function_test4",_detectBrowser());
+
+//_setCookie("ccc","Lamhot");
+//_getCookie("UserApp");
+//_deleteCookie("ccc");
+function getLocation(){
+	_getLocation(function(result){
+		var latlong = result.coords.latitude + "," + result.coords.longitude;
+		_printTo("_function_test4",latlong);
+	});
+}
+_getLocation();
+
+_focus("txt_name");
+
+
+var txt_name = _getById("txt_name");
+
+txt_name.focus();
+
+_setValue("txt_name","Test");
+_setValue("txt_email");
+
+
+_getById("_page1",function(obj){
+	obj.innerHTML = "Test";
+});	
+
+
+function exit(){
+	_confirm("Do you want to exit ?",function(){
+		alert("Yes");
+	},function(){
+		alert("No");
+	});
+}
+
+_loadDoc("http://localhost/js/json.php",function(obj){
+	var myJson = JSON.parse(obj);
+	var status =  myJson.status_login;
+	if (status)
+	{
+	   _printTo("_div_1",myJson.status);
+	}
+	else
+	{
+		_printTo("_div_2","Login Failed");
+	}
+	
+});
+
+
+//alert(myObj.age);
+//_newForm(false,"google.com");
+</script>
+
+
+</body>
+</html>
