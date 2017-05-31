@@ -1,7 +1,7 @@
 # GarudaFramework Javascript
 
 I was created simple short code based on javascript. You can easy write code of Javascript. 
-If you familiar with JQuery 'GF-.js' framework can be used/colaboration on/with JQuery. 
+If you familiar with JQuery 'GF-1.js' framework can be used/colaboration on/with JQuery. 
 You can add more function too to those code. 
 Before you testing this framework , you can drink a cup of cofee ! Keep code and Thank you !
 
