@@ -7,10 +7,15 @@ Before you testing this framework , you can drink a cup of cofee ! Keep code and
 
 ## Getting Started
 
-First you have to downlaod "GF-1.js" and then  then Copy this code to your HTML
+First you have to downlaod "GF-1.js" and then copy this code to your HTML
 ```
 <script src="JS/GF-1.js"></script>
 ```
+or you use the CDN of "GF-1.js", copy this code to your HTML 
+```
+<script src="https://rawgit.com/lamhotsimamora/GF-Javascript/master/JS/GF-1.js"></script>
+```
+
 ## Enable / Disable Console
 You will be see log on console, and you can disable the console with change the value of variabel ```run_console```
 
