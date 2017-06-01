@@ -64,6 +64,24 @@ For write to Inner HTML of object you just write code like this
 For open new url you just write code like this
 ### ``` _openUrl('https://www.w3schools.com'); ```
 
+For create confirm alert box with only action YES you just write code like this
+### 
+```
+_confirm("are you sure want to exit ?",function(){
+    alert("Do Something");
+}); 
+```
+or with action NO 
+### 
+```
+_confirm("are you sure want to exit ?",function(){
+			alert("Do Something");
+},function(){
+   alert("Do Nothing");
+});
+```
+was it awesome right ?
+
 For document write you just write code like this
 ### ``` _docWrite("id_of_object"); ```
 
