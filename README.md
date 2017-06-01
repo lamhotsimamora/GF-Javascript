@@ -38,6 +38,11 @@ For get name of object like DIV or Input Text or TextArea  you just write code l
 For get name of object like DIV or Input Text or TextArea  you just write code like this
 ### ``` var id_obj = _getNameById("id_of_object"); ```
 
+For only get id of DIV you just write code like this
+### ``` var get_div = _getById("div_1"); ```
+and you can do with this 
+### ``` get.innerHTML="test"; ```
+
 For set focus of input text you just write code like this
 ### ``` _focus("input_text_id"); ```
 
