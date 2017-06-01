@@ -165,6 +165,11 @@ _getLocation(function(result){
 	}); 
 
 ```
+You can write to console with color RED with this code
+### ```_writeLog("test"); ``` -> 
+or
+You can write to console with color GREEN with this code
+### ```_writeLog("test",false); ``` -> 
 
 
 
