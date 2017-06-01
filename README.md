@@ -49,6 +49,9 @@ For set focus of input text you just write code like this
 For clear input text you just write code like this
 ### ``` _clear("input_text_id"); ```
 
+For set value of input text you just write code like this
+### ``` _setValue("id_of_input_text","Hello World"); ```
+
 For create new tab/form with URL you just write code like this
 ### ``` _newForm(false,"https://www.facebook.com"); ```
 
@@ -140,19 +143,19 @@ For replace string like <script> </script> or  tag php <?php, you can use this c
 For return the value of _replaceMaster, you can use this code 
 ### ```_returnMaster("hastag script"); ```
 
-For ecape the html code, you can use this code
+For ecape the HTML code, you can use this code
 ### ```_escapeHtml("value");```
 
 Check email will be return true if email is valid
 ### ```_checkEmail("email@check.com");```
 
-You can create cookie with this code
+You can easy create cookie with this code
 ### ```_setCookie("name_cookie","value_cookie");``` -> 
 
-You can get cookie with this code
+You can easy get cookie with this code
 ### ```_getCookie("name_of_cookie");``` 
 
-You can delete cookie with this code
+You can easy delete cookie with this code
 ### ```_deleteCookie("name_cookie");``` 
 
 You can easy detect browser user with this code
