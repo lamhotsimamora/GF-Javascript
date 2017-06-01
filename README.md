@@ -80,10 +80,13 @@ _confirm("are you sure want to exit ?",function(){
    alert("Do Nothing");
 });
 ```
-was it awesome right ?
-
 For document write you just write code like this
 ### ``` _docWrite("id_of_object"); ```
+
+For write alert using Bootstrap like this page * [Bootstrap Alert](https://www.w3schools.com/bootstrap/bootstrap_alerts.asp) 
+
+You can easy use that just write code like this
+### ``` _writeAlert("id_of_object","testtt","danger"); ```
 
 For load document from another page you just write code like this
 ### ``` _loadDoc("http://URL.com","id_of_object"); ```
@@ -150,7 +153,7 @@ For create random string or random integer you just write code like this
 For generate encrpyt of integer you just write code like this
 ### ``` var id_user = _encryptInt(12312323); ```
 
-That function i was created with my algorithm. So no one know that key except "GF-1.js"
+That function i was created with my simple algorithm. So no one know that key except "GF-1.js"
 
 And for decrypt it you can use this code 
 ### ``` var id_user = _decryptInt(id_user); ```
