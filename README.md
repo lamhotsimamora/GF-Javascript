@@ -32,8 +32,12 @@ For get value of input text you just write code like this
 For get value of input text you just write code like this 
 ### ``` var name_text = _getValByName("name_of_input"); ```
 
-For get name of object like DIV or Input Text or TextArea  you just write code like this
-### ``` var id_obj = _getIdByName("name_of_object"); ```
+For get count length of Input with type TEXT you just write code like this
+### 
+``` 
+var get = _getIdByName("t_name");
+_writeLog(get[0].type == "text"); 
+```
 
 For get name of object like DIV or Input Text or TextArea  you just write code like this
 ### ``` var id_obj = _getNameById("id_of_object"); ```
