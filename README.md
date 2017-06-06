@@ -5,6 +5,44 @@ If you familiar with JQuery 'GF-1.js' framework can be used/colaboration on/with
 You can add more function too to those code. 
 Before you testing this framework , you can drink a cup of cofee ! Keep code and Thank you !
 
+## Change LOG 
+
+# NEW SYNTAX OF CODE _UPDATE_ 
+
+For remove object
+### ``` _removeMe("id_of_object"); ```
+
+For display object
+### ``` _showMe("id_of_object");```
+For hidden object
+### ``` _hideMe("id_of_object"); ```
+For check style hidden object
+### ``` _isHidden("id_of_object");```
+For give event onclick to button
+###
+```
+_onClick("id_of_object",function(){
+
+});
+
+```
+For get base URL of document
+### ``` _baseUrl(); ```
+For get domain of server
+### ```_getDomain(); ```
+For get all cookie client
+### ```_getAllCookie(); ```
+For get title of HTML
+### ```_getTitle(); ```
+For get count of image on HTML 
+### ```_countImage(); ```
+For get count of link on HTML 
+### ```_countLink(); ```
+For get count of Form on HTML
+### ```_countForm(); ```
+
+_### ```setImage("id_of_object","image path"); ```
+
 ## Getting Started
 
 First you have to downlaod "GF-1.js" and then copy this code to your HTML
