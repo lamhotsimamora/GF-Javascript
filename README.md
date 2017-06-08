@@ -9,6 +9,9 @@ Before you testing this framework , you can drink a cup of cofee ! Keep code and
 
 # NEW SYNTAX OF CODE _UPDATE_ 
 
+For check valid URL
+### ``` _isUrl("value"); ```
+
 For remove object
 ### ``` _removeMe("id_of_object"); ```
 
