@@ -44,7 +44,7 @@ For get count of link on HTML
 For get count of Form on HTML
 ### ```_countForm(); ```
 For set an image to image of object
-### ```setImage("id_of_object","image path"); ```
+### ```_setImage("id_of_object","image path"); ```
 
 ## Getting Started
 
