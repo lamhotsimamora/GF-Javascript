@@ -9,6 +9,9 @@ Before you testing this framework , you can drink a cup of cofee ! Keep code and
 
 # NEW SYNTAX OF CODE _UPDATE_ 
 
+For refresh the page 
+### ``` _refresh(); ```
+
 For check valid URL
 ### ``` _isUrl("value"); ```
 
