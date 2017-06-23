@@ -53,16 +53,15 @@ You will be see log on console, and you can disable the console with change the 
 * carrot        =  "#e67e22" 
 * pumpkin       =  "#d35400" 
 * sun_flower    =  "#f1c40f" 
-* orange		=  "#f39c12" 
+* orange	=  "#f39c12" 
 * emerald       =  "#2ecc71" 
-* nephritis	  	=  "#27ae60"
+* nephritis	=  "#27ae60"
 
 Example code to write console log with color alizarian, Don't remember to write *flat_ui_color* before the name of color
 ###  
 ```go
 _writeLog("Test",flat_ui_color.alizarian); 
 ```
-
 
 For give event onkeyup input text 
 ### 
@@ -136,24 +135,15 @@ For give event onclick to button
 ###
 ```go
 _onClick("id_of_object",function(){
-
+	// do something
 });
-
 ```
 For get base URL of document
 ### 
-```go 
+```go
 _baseUrl(); 
 ```
-For get domain of server
-### ```go 
-_getDomain(); 
-```
-For get all cookie client
-### 
-```go
-_getAllCookie(); 
-```
+
 For get title of HTML
 ### 
 ```go
@@ -197,8 +187,6 @@ var get = _getIdByName("t_name");
 _writeLog(get[0].type == "text"); 
 ```
 
-## 
-
 For get name of object like DIV or Input Text or TextArea  you just write code like this
 ### ``` var id_obj = _getNameById("id_of_object"); ```
 
@@ -230,14 +218,14 @@ For open new url you just write code like this
 
 For create confirm alert box with only action YES you just write code like this
 ### 
-```
+```go
 _confirm("are you sure want to exit ?",function(){
     alert("Do Something");
 }); 
 ```
 or with action NO 
 ### 
-```
+```go
 _confirm("are you sure want to exit ?",function(){
 			alert("Do Something");
 },function(){
@@ -257,7 +245,7 @@ For load document from another page you just write code like this
 
 or you can use function call back like this
 ### 
-``` 
+```go 
 	_loadDoc("http://URL.com",function(response){
 		if (response==='SOMETHING')
 		{
@@ -277,7 +265,7 @@ For request document with GET  from another page you just write code like this
 or you can use function call back like this
 
 ### 
-```
+```go
 _requestGET("http://URL.com/index.php?id=123",function(response){
 	if (response==='T')
 	{
@@ -296,7 +284,7 @@ For request document with POST  from another page you just write code like this
 or you can use function call back like this
 
 ### 
-```
+```go
 _requestPOST("http://url.com/index.php","name=example",function(response){
 	if (response==='T')
 	{
@@ -352,7 +340,7 @@ You can easy get location user with this code ( return latitude and longitude )
 or you can use function call back like this
 
 ### 
-```
+```go
 _getLocation(function(result){
 		var latlong = result.coords.latitude + "," + result.coords.longitude;
 	}); 
@@ -371,7 +359,8 @@ You can write to console with color GREEN with this code
 Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
 
 
+
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+The MIT License (MIT) - see [`LICENSE.md`](https://github.com/fatih/color/blob/master/LICENSE.md) for more details
 
