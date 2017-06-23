@@ -1,13 +1,90 @@
 # GarudaFramework Javascript
 
-I was created simple short code based on javascript. You can easy write code of Javascript. 
-If you familiar with JQuery 'GF-1.js' framework can be used/colaboration on/with JQuery. 
-You can add more function too to those code. 
-Before you testing this framework , you can drink a cup of cofee ! Keep code and Thank you !
+
+
+I was created simple query of javascript code. You can easy write code of Javascript.  If you familiar with JQuery 'GF-1.js' framework can be used/colaboration on/with JQuery. 
+You can add more function too to those code. Before you testing this code , you can drink a cup of cofee ! Keep code and 
+Thank you ! I hate the long syntax !
+
+## Getting Started
+
+First you have to download "GF-1.js" and then copy this code to your HTML. 
+```
+<script src="JS/GF-1.js"></script>
+```
+or if you want to use for production you can use this CDN, just copy this code to your HTML
+```
+<script src="https://rawgit.com/lamhotsimamora/GF-Javascript/master/JS/GF-1.js"></script>
+```
+
+## Enable / Disable Console
+You will be see log on console, and you can disable the console with change the value of variabel ```run_console```
+
+1. Open "GF-1.js"
+2. See on line 1
+3. If you find this code ```var run_console  = true;```, change to ``` false ```, and the end the code will be 
+``` var run_console  = false; ```
 
 ## Change LOG 
+# NEW SYNTAX OF CODE _UPDATE_ || June 2017
 
-# NEW SYNTAX OF CODE _UPDATE_ 
+### New variabel of flat ui color
+## Color Flat UI https://flatuicolors.com/	
+* wet_asphalt   =  "#34495e" 
+* midnight_blue =  "#2c3e50" 
+* concrete      =  "#95a5a6" 
+* asbestos      =  "#7f8c8d" 
+* turqoise	  	=  "#1abc9c" 
+* green_sea     =  "#16a085" 
+* peter_river   =  "#3498db" 
+* belize_hole   =  "#2980b9" 
+* amethyst      =  "#9b59b6" 
+* wisteria      =  "#8e44ad" 
+* alizarian     =  "#e74c3c" 
+* pomegranate   =  "#c0392b" 
+* clouds        =  "#ecf0f1" 
+* silver        =  "#bdc3c7" 
+* carrot        =  "#e67e22" 
+* pumpkin       =  "#d35400" 
+* sun_flower    =  "#f1c40f" 
+* orange		=  "#f39c12" 
+* emerald       =  "#2ecc71" 
+* nephritis	  	=  "#27ae60"
+
+Example syntax of code
+###  ``` _writeLog("Test",flat_ui_color.alizarian); ```
+
+
+For give event onkeyup input text 
+### 
+```  
+_onKeyUp("id_of_input_txt",function(){
+         value = _getValById("txt_email");
+         _printTo("display_txt_email1",value);
+   }); 
+```
+###
+For give event onkeyup input text 
+### 
+``` 
+_onKeyDown("id_of_input_txt",function(){
+         value = _getValById("txt_email");
+         _printTo("display_txt_email1",value);
+   }); 
+```
+###
+
+For query selector style background color 
+### 
+``` 
+_qSelectorBackgroundCol(".selector_class1",flat_ui_color.alizarian);
+
+```
+For query selector inner HTML 
+### 
+``` 
+_qSelectorHTML("#div1","Hello! World ");
+```
 
 For refresh the current page 
 ### ``` _refresh(); ```
@@ -50,27 +127,6 @@ For get count of Form on HTML
 ### ```_countForm(); ```
 For set an image to image of object
 ### ```_setImage("id_of_object","image path"); ```
-
-## Getting Started
-
-First you have to downlaod "GF-1.js" and then copy this code to your HTML
-```
-<script src="JS/GF-1.js"></script>
-```
-or if you using internet you can use this code 
-```
-<script src="https://rawgit.com/lamhotsimamora/GF-Javascript/master/JS/GF-1.js"></script>
-```
-
-## Enable / Disable Console
-You will be see log on console, and you can disable the console with change the value of variabel ```run_console```
-
-1. Open "GF-1.js"
-2. See on line 1
-3. If you find this code ```var run_console  = true;```, change to ``` false ```, and the end the code will be 
-``` var run_console  = false; ```
-
-## Test the CODE. 
 
 For get value of input text you just write code like this 
 ### ``` var id_text = _getValById("input_text_id"); ```
