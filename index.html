@@ -10,11 +10,11 @@
 
 <div id="#alert"> </div>
 
-<h3> 1 </h3> <div id="_page1"> </div> </br></br>
-<h3> 2 </h3> <div id="_page2"> </div> </br></br>
+<h3> 1 </h3> <div id="_page1"> </div> <hr>
+<h3> 2 </h3> <div id="_page2"> </div> <hr>
 
-<h3> Encrypt </h3> <div id="content_page1"> </div> </br></br>
-<h3> Decrypt </h3> <div id="content_page2"> </div> </br></br>
+<h3> Encrypt </h3> <div id="content_page1"> </div> <hr>
+<h3> Decrypt </h3> <div id="content_page2"> </div> <hr>
 
 <div id="" name="name_div">
 	<h3> Name 	: <div id="t_name"></div>  </h3>
@@ -23,34 +23,37 @@
 	<h3> Address : <div id="t_address"></div> </h3>
 	<h3> URL : <div id="t_URL"></div> </h3>
 </div>
+<img src="" id="img_profile" alt="">
 
-
-<input type="text" id="txt_name"  name="t_name" placeholder="Name" value="" onkeyup="enterName(this.value);">
-<input type="text" id="txt_email"  name="t_name" placeholder="Email" value="" onkeyup="enterEmail(this.value);">
-<input type="number" id="txt_phone"  name="" placeholder="Phone" value="" onkeyup="enterPhone(this.value);">
-<input type="text" id="txt_address"  name="" placeholder="Address" value="" onkeyup="enterAddress(this.value);">
+<input type="text" id="txt_name"  name="t_name" placeholder="Name" value="" onkeyup="enterName(this.value);"> </br></br>
+<input type="text" id="txt_email"  name="t_name" placeholder="Email" value="" onkeyup="enterEmail(this.value);"></br></br>
+<input type="number" id="txt_phone"  name="" placeholder="Phone" value="" onkeyup="enterPhone(this.value);"></br></br>
+<input type="text" id="txt_address"  name="" placeholder="Address" value="" onkeyup="enterAddress(this.value);"></br></br>
 <input type="text" id="txt_url"  name="" placeholder="URL" value="" onkeyup="enterURl(this.value);">
-
+<hr>
 <button id="btn_save" name="23" onclick="Save()">Save</button></br></br>
 <button id="btn_profile" name="23" onclick="getProfile()">Load Profile</button> </br></br>
 <button id="btn_about" name="23" onclick="getAbout()">Load About</button></br></br>
 <button id="btn_location" name="23" onclick="getLocation()">Location</button></br></br>
 
 <button id="btn_open" name="" onclick="_openUrl('https://www.w3schools.com');">Google</button>
+<button id="btn_test" name="" onclick="">Test</button>
 
 <button id="btn_exit" onclick="exit();">Exit</button>
+<hr>
 
-<div id="_test_response_ajax_1"> </div>
-<div id="_test_response_ajax_2"> </div>
-<div id="_test_response_ajax_3"></div>
 
-<div id="_function_test6"></div>
+<div id="_test_response_ajax_1"> </div><hr>
+<div id="_test_response_ajax_2"> </div><hr>
+<div id="_test_response_ajax_3"></div><hr>
 
-<div id="_function_test1"></div>
-<div id="_function_test2"></div>
-<div id="_function_test3"></div>
-<div id="_function_test4"></div>
-<div id="_function_test5"></div>
+<div id="_function_test6"></div><hr>
+
+<div id="_function_test1"></div><hr>
+<div id="_function_test2"></div><hr>
+<div id="_function_test3"></div><hr>
+<div id="_function_test4"></div><hr>
+<div id="_function_test5"></div><hr>
 
 
 
@@ -58,6 +61,22 @@
 
 <script type="text/javascript">
 
+var Email = _checkEmail("test@gmail.com");
+
+
+_writeLog("Checking URL -> "+URL);
+_writeLog("Checking Email -> "+Email);
+
+
+function refresh(){
+	_refresh("");
+	_refresh("google.com");
+}
+
+_onClick("btn_test",function(){
+
+	_writeLog("Success Event OnClick");
+});
 
 function enterName(str){
 	_printTo("t_name",_colorFont(_replaceMaster(str),"blue"));
@@ -72,9 +91,22 @@ function enterAddress(str){
 	_printTo("t_address",_colorFont(str,"black"));
 }
 function enterURl(str){
+	var URL  = _isUrl(str);
 
+	if (URL)
+	{
+		_writeLog("URL Valid");
+	}
+	else
+	{
+		_writeLog("URL Is Not Valid");
+	}
 }
 
+
+function clear(){
+	_clear("txt_name");
+}
 
 function Save(){
 	if (_getValById("txt_name")==='')
@@ -161,6 +193,7 @@ _printTo("_function_test1",_randomStr());
 _printTo("_function_test2",_randomInt());
 _docWrite("Document Write Example");
 //_newForm(false,"https://www.lamhotsimamora.com/");
+//_newForm(false,"google.com");
 _printTo("_function_test4",_detectBrowser());
 
 //_setCookie("ccc","Lamhot");
@@ -172,7 +205,7 @@ function getLocation(){
 		_printTo("_function_test4",latlong);
 	});
 }
-_getLocation();
+
 
 _focus("txt_name");
 
@@ -213,8 +246,19 @@ _loadDoc("http://localhost/js/json.php",function(obj){
 });
 
 
-//alert(myObj.age);
-//_newForm(false,"google.com");
+function more(){
+	var domain = _getDomain();
+	var get_title = _getTitle();
+	var count_image = _countImage();
+	var count_link = _countLink();
+	var count_form = _countForm();
+
+	_removeMe("id_of_object"); 
+	_showMe("id_of_object"); 
+	_hideMe("id_of_object"); 
+}
+
+_setImage("img_profile","Example.png");
 </script>
 
 
