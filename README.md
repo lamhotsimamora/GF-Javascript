@@ -9,11 +9,13 @@ Before you testing this framework , you can drink a cup of cofee ! Keep code and
 
 # NEW SYNTAX OF CODE _UPDATE_ 
 
-For refresh the page 
+For refresh the current page 
 ### ``` _refresh(); ```
+or with url 
+### ``` _refresh("www.example.com"); ```
 
 For check valid URL
-### ``` _isUrl("value"); ```
+### ``` _isUrl("www.example.com"); ```
 
 For remove object
 ### ``` _removeMe("id_of_object"); ```
