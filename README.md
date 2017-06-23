@@ -6,6 +6,11 @@ I was created simple query of javascript code. You can easy write code of Javasc
 You can add more function too to those code. Before you testing this code , you can drink a cup of cofee ! Keep code and 
 Thank you ! I hate the long syntax !
 
+
+## See Example On My Website Page
+
+* [GarudaFramework](https://garudaframework.lamhotsimamora.com//page/example) - Garuda Framework Javascript Demo
+
 ## Getting Started
 
 First you have to download "GF-1.js" and then copy this code to your HTML. 
@@ -29,7 +34,8 @@ You will be see log on console, and you can disable the console with change the 
 # NEW SYNTAX OF CODE _UPDATE_ || June 2017
 
 ### New variabel of flat ui color
-## Color Flat UI https://flatuicolors.com/	
+# Color Flat UI  [![GoDoc](http://img.shields.io/badge/go-documentation-blue.svg?style=flat-square)](https://flatuicolors.com/) 
+
 * wet_asphalt   =  "#34495e" 
 * midnight_blue =  "#2c3e50" 
 * concrete      =  "#95a5a6" 
@@ -51,13 +57,16 @@ You will be see log on console, and you can disable the console with change the 
 * emerald       =  "#2ecc71" 
 * nephritis	  	=  "#27ae60"
 
-Example syntax of code
-###  ``` _writeLog("Test",flat_ui_color.alizarian); ```
+Example code to write console log with color alizarian, Don't remember to write *flat_ui_color* before the name of color
+###  
+```go
+_writeLog("Test",flat_ui_color.alizarian); 
+```
 
 
 For give event onkeyup input text 
 ### 
-```  
+```go  
 _onKeyUp("id_of_input_txt",function(){
          value = _getValById("txt_email");
          _printTo("display_txt_email1",value);
@@ -66,7 +75,7 @@ _onKeyUp("id_of_input_txt",function(){
 ###
 For give event onkeyup input text 
 ### 
-``` 
+```go
 _onKeyDown("id_of_input_txt",function(){
          value = _getValById("txt_email");
          _printTo("display_txt_email1",value);
@@ -76,70 +85,119 @@ _onKeyDown("id_of_input_txt",function(){
 
 For query selector style background color 
 ### 
-``` 
+```go 
 _qSelectorBackgroundCol(".selector_class1",flat_ui_color.alizarian);
 
 ```
 For query selector inner HTML 
 ### 
-``` 
+```go
 _qSelectorHTML("#div1","Hello! World ");
 ```
 
 For refresh the current page 
-### ``` _refresh(); ```
-or with url 
-### ``` _refresh("www.example.com"); ```
+### 
+```go
+_refresh(); 
+```
+or with your URL 
+### 
+```go 
+_refresh("www.example.com"); 
+```
 
 For check valid URL
-### ``` _isUrl("www.example.com"); ```
+### 
+```go 
+_isUrl("www.example.com"); 
+```
 
-For remove object
-### ``` _removeMe("id_of_object"); ```
-
+For remove the object 
+### 
+```go 
+_removeMe("id_of_object"); 
+```
 For display object
-### ``` _showMe("id_of_object");```
+### 
+```go 
+_showMe("id_of_object");
+```
 For hidden object
-### ``` _hideMe("id_of_object"); ```
+### 
+```go
+_hideMe("id_of_object"); 
+```
 For check style hidden object
-### ``` _isHidden("id_of_object");```
+### 
+```go
+_isHidden("id_of_object");
+```
 For give event onclick to button
 ###
-```
+```go
 _onClick("id_of_object",function(){
 
 });
 
 ```
 For get base URL of document
-### ``` _baseUrl(); ```
+### 
+```go 
+_baseUrl(); 
+```
 For get domain of server
-### ```_getDomain(); ```
+### ```go 
+_getDomain(); 
+```
 For get all cookie client
-### ```_getAllCookie(); ```
+### 
+```go
+_getAllCookie(); 
+```
 For get title of HTML
-### ```_getTitle(); ```
+### 
+```go
+_getTitle(); 
+```
 For get count of image on HTML 
-### ```_countImage(); ```
+### 
+```go
+_countImage(); 
+```
 For get count of link on HTML 
-### ```_countLink(); ```
+### 
+```go
+_countLink();
+```
 For get count of Form on HTML
-### ```_countForm(); ```
+### 
+```go
+_countForm(); 
+```
 For set an image to image of object
-### ```_setImage("id_of_object","image path"); ```
-
+### 
+```go
+_setImage("id_of_object","image path"); 
+```
 For get value of input text you just write code like this 
-### ``` var id_text = _getValById("input_text_id"); ```
-
+### 
+```go 
+var id_text = _getValById("input_text_id"); 
+```
 For get value of input text you just write code like this 
-### ``` var name_text = _getValByName("name_of_input"); ```
+### 
+```go 
+var name_text = _getValByName("name_of_input"); 
+```
 
 For get count length of Input with type TEXT you just write code like this
 ### 
-``` 
+```go 
 var get = _getIdByName("t_name");
 _writeLog(get[0].type == "text"); 
 ```
+
+## 
 
 For get name of object like DIV or Input Text or TextArea  you just write code like this
 ### ``` var id_obj = _getNameById("id_of_object"); ```
@@ -307,10 +365,6 @@ You can write to console with color GREEN with this code
 ### ```_writeLog("test",false); ``` -> 
 
 
-
-## See On My Framework Page
-
-* [GarudaFramework](https://garudaframework.lamhotsimamora.com//page/example) - Garuda Framework Javascript Demo
 
 ## Contributing
 
