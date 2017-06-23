@@ -169,6 +169,22 @@ For set an image to image of object
 ```go
 _setImage("id_of_object","image path"); 
 ```
+For get all cookie client
+### 
+```go
+_getAllCookie(); 
+```
+
+For get domain name of server
+### 
+```go
+_getDomain(); 
+```
+
+##
+
+##
+
 For get value of input text you just write code like this 
 ### 
 ```go 
