@@ -359,44 +359,81 @@ _requestPOST("http://url.com/index.php","name=example",function(response){
 ```
 
 For create random string or random integer you just write code like this
-### ``` var get_value = _randomStr(); ```
-
-### ``` var get_value = _randomInt(); ```
-
-For generate encrpyt of integer you just write code like this
-### ``` var id_user = _encryptInt(12312323); ```
+### 
+```go 
+var get_value = _randomStr(); 
+```
+### 
+```go 
+var get_value = _randomInt(); 
+```
+For generate encode of integer you just write code like this
+### 
+```go 
+var id_user = _encryptInt(12312323); 
+```
 
 That function i was created with my simple algorithm. So no one know that key except "GF-1.js"
 
-And for decrypt it you can use this code 
-### ``` var id_user = _decryptInt(id_user); ```
+And for decode it, you can use this code like this
+### 
+```go 
+var id_user = _decryptInt(id_user); 
+```
 
 For replace string like <script> </script> or  tag php <?php, you can use this code 
-### ```_replaceMaster("string replace for tag php and javascript");```
+### 
+```go
+_replaceMaster("example replace string <html> <input type='text'> <button> <hr> and more");
+```
 
 For return the value of _replaceMaster, you can use this code 
-### ```_returnMaster("hastag script"); ```
+### 
+```go
+_returnMaster("#example_hastag"); 
+```
 
 For ecape the HTML code, you can use this code
-### ```_escapeHtml("value");```
+### 
+```go
+_escapeHtml("<h1>hello world</h1>");
+```
 
-Check email will be return true if email is valid
-### ```_checkEmail("email@check.com");```
+You can check email , and the result will be return true if email is valid
+### 
+```go
+_checkEmail("email@check.com");
+```
 
 You can easy create cookie with this code
-### ```_setCookie("name_cookie","value_cookie");``` -> 
+### 
+```go
+_setCookie("name_cookie","value_cookie");
+``` 
 
 You can easy get cookie with this code
-### ```_getCookie("name_of_cookie");``` 
+### 
+```go
+_getCookie("name_of_cookie");
+``` 
 
 You can easy delete cookie with this code
-### ```_deleteCookie("name_cookie");``` 
+### 
+```go
+_deleteCookie("name_cookie");
+``` 
 
 You can easy detect browser user with this code
-### ``` var get_browser = _detectBrowser();``` 
+### 
+```go 
+var get_browser = _detectBrowser();
+``` 
 
 You can easy get location user with this code ( return latitude and longitude )
-### ```_getLocation(); ``` 
+### 
+```go
+_getLocation(); 
+``` 
 
 or you can use function call back like this
 
@@ -407,11 +444,17 @@ _getLocation(function(result){
 	}); 
 
 ```
-You can write to console with color RED with this code
-### ```_writeLog("test"); ``` -> 
+You can write to console log with color RED with this code
+### 
+```go
+_writeLog("test"); 
+``` 
 or
-You can write to console with color GREEN with this code
-### ```_writeLog("test",false); ``` -> 
+You can write to console log with color GREEN with this code
+### 
+```go
+_writeLog("test",false); 
+``` 
 
 
 
