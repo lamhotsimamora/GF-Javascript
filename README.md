@@ -40,7 +40,7 @@ You will be see log on console, and you can disable the console with change the 
 * midnight_blue =  "#2c3e50" 
 * concrete      =  "#95a5a6" 
 * asbestos      =  "#7f8c8d" 
-* turqoise	  	=  "#1abc9c" 
+* turqoise	=  "#1abc9c" 
 * green_sea     =  "#16a085" 
 * peter_river   =  "#3498db" 
 * belize_hole   =  "#2980b9" 
@@ -57,13 +57,13 @@ You will be see log on console, and you can disable the console with change the 
 * emerald       =  "#2ecc71" 
 * nephritis	=  "#27ae60"
 
-Example code to write console log with color alizarian, Don't remember to write *flat_ui_color* before the name of color
+Example code to write console log with color alizarian, Don't forget to write *flat_ui_color* before the name of color
 ###  
 ```go
 _writeLog("Test",flat_ui_color.alizarian); 
 ```
 
-For give event onkeyup input text 
+For give event onkeyup of input text 
 ### 
 ```go  
 _onKeyUp("id_of_input_txt",function(){
@@ -72,7 +72,7 @@ _onKeyUp("id_of_input_txt",function(){
    }); 
 ```
 ###
-For give event onkeyup input text 
+For give event onkeydown of input text 
 ### 
 ```go
 _onKeyDown("id_of_input_txt",function(){
@@ -82,13 +82,13 @@ _onKeyDown("id_of_input_txt",function(){
 ```
 ###
 
-For query selector style background color 
+For give query selector style background color 
 ### 
 ```go 
 _qSelectorBackgroundCol(".selector_class1",flat_ui_color.alizarian);
 
 ```
-For query selector inner HTML 
+For give query selector inner HTML 
 ### 
 ```go
 _qSelectorHTML("#div1","Hello! World ");
@@ -204,33 +204,63 @@ _writeLog(get[0].type == "text");
 ```
 
 For get name of object like DIV or Input Text or TextArea  you just write code like this
-### ``` var id_obj = _getNameById("id_of_object"); ```
+### 
+```go 
+var id_obj = _getNameById("id_of_object"); 
+```
 
 For only get id of DIV you just write code like this
-### ``` var get_div = _getById("div_1"); ```
+### 
+```go
+var get_div = _getById("div_1"); 
+```
 and you can do with this 
-### ``` get.innerHTML="test"; ```
+### 
+```go 
+get_div.innerHTML="test"; 
+```
 
 For set focus of input text you just write code like this
-### ``` _focus("input_text_id"); ```
+### 
+```go
+_focus("input_text_id"); 
+```
 
 For clear input text you just write code like this
-### ``` _clear("input_text_id"); ```
+### 
+```go 
+_clear("input_text_id"); 
+```
 
 For set value of input text you just write code like this
-### ``` _setValue("id_of_input_text","Hello World"); ```
+### 
+```go
+_setValue("id_of_input_text","Hello World"); 
+```
 
 For create new tab/form with URL you just write code like this
-### ``` _newForm(false,"https://www.facebook.com"); ```
+### 
+```go 
+_newForm(false,"https://www.facebook.com"); 
+```
 
 For create new tab/form with CONTENT you just write code like this
-### ``` _newForm("Content STRING"); ```
+### 
+```go 
+_newForm("Example STRING"); 
+```
 
-For write to Inner HTML of object you just write code like this
-### ``` _printTo("id_of_object","content"); ```
+For Inner HTML of object like DIV you just write code like this
+### 
+```go
+_printTo("id_of_object","content"); 
+```
 
 For open new url you just write code like this
-### ``` _openUrl('https://www.w3schools.com'); ```
+### 
+```go 
+_openUrl('https://www.w3schools.com'); 
+```
 
 For create confirm alert box with only action YES you just write code like this
 ### 
@@ -249,15 +279,24 @@ _confirm("are you sure want to exit ?",function(){
 });
 ```
 For document write you just write code like this
-### ``` _docWrite("id_of_object"); ```
+### 
+```go 
+_docWrite("id_of_object"); 
+```
 
 For write alert using Bootstrap like this page * [Bootstrap Alert](https://www.w3schools.com/bootstrap/bootstrap_alerts.asp) 
 
 You can easy use that just write code like this
-### ``` _writeAlert("id_of_object","testtt","danger"); ```
+### 
+```go 
+_writeAlert("id_of_object","testtt","danger"); 
+```
 
-For load document from another page you just write code like this
-### ``` _loadDoc("http://URL.com","id_of_object"); ```
+For load document AJAX from another page you just write code like this
+### 
+```go 
+_loadDoc("http://URL.com","id_of_object"); 
+```
 
 or you can use function call back like this
 ### 
@@ -275,8 +314,11 @@ or you can use function call back like this
 	}); 
 ```
 
-For request document with GET  from another page you just write code like this
-### ``` _requestGET("url","id_of_object"); ```
+For request document with GET Ajax from another page you just write code like this
+### 
+```go 
+_requestGET("url","id_of_object"); 
+```
 
 or you can use function call back like this
 
@@ -294,8 +336,11 @@ _requestGET("http://URL.com/index.php?id=123",function(response){
 }); 
 ```
 
-For request document with POST  from another page you just write code like this
-### ``` _requestPOST("URL","name=example","id_of_object"); ```
+For request document with POST Ajax from another page you just write code like this
+### 
+```go
+_requestPOST("URL","name=example","id_of_object"); 
+```
 
 or you can use function call back like this
 
