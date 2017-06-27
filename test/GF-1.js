@@ -217,6 +217,19 @@ function _writeLog(a, b) {
     if (void 0 === b) console.log("%c " + a, "background: #ffffff; color: " + c); else if (false === b) console.log("%c " + a, "background: #ffffff; color: " + d); else console.log("%c " + a, "background: #ffffff; color: " + b);
 }
 
+function getParameterByName(name, url) {
+    if (!url)
+      url = window.location.href;
+
+    name = name.replace(/[\[\]]/g, "\\$&");
+
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+
 function _requestPOST(a, b, c) {
     try {
         if (void 0 === a) {
