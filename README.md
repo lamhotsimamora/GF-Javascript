@@ -33,7 +33,7 @@ You will be see log on console, and you can disable the console with change the 
 ## Change LOG 
 # NEW SYNTAX OF CODE _UPDATE_ || June 2017
 
-Example code for preview image upload to input text file 
+Example code for preview image before upload with input file 
 ###  
 ```go
  _previewImage("id_of_input_file","id_of_image");
