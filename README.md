@@ -30,6 +30,12 @@ You will be see log on console, and you can disable the console with change the 
 3. If you find this code ```var run_console  = true;```, change to ``` false ```, and the end the code will be 
 ``` var run_console  = false; ```
 
+## Demo On Youtube
+<a href="https://www.youtube.com/watch?v=dy5Lg0W7vlc">Part 1</a>
+<a href="https://www.youtube.com/watch?v=m4iqjf0UgME">Part 2</a>
+<a href="https://www.youtube.com/watch?v=UdOU55W9Fsw">Part 3</a>
+<a href="https://www.youtube.com/watch?v=EZnZmzBm_Qw">Part 4</a>
+
 ## Change LOG 
 # NEW SYNTAX OF CODE _UPDATE_ || June 2017
 
