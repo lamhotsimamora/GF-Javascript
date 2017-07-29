@@ -138,17 +138,17 @@ _printTo("content_page2",decypt_id);
 
 
 function getProfile(){
-	 _requestPOST("http://localhost/js/profile.php","name="+encrypt_id+"","_page1");
+	 _requestPOST("http://localhost/GF-Javascript/profile.php","name="+encrypt_id+"","_page1");
 }
 
 function getAbout(){
 	var parameter = "GF.Js";
-	_requestGET("http://localhost/js/about.php?p="+parameter+"","_page2");
+	_requestGET("http://localhost/GF-Javascript/about.php?p="+parameter+"","_page2");
 }
 
 
 
-_requestGET("http://localhost/js/about.php?p=simamora",function(response){
+_requestGET("http://localhost/GF-Javascript/about.php?p=simamora",function(response){
 	if (response==='T')
 	{
 		_printTo("_test_response_ajax_1",response);
@@ -165,7 +165,7 @@ _requestGET("http://localhost/js/about.php?p=simamora",function(response){
 
 
 
-_requestPOST("http://localhost/js/profile.php","name=lamhot",function(response){
+_requestPOST("http://localhost/GF-Javascript/profile.php","name=BrendanEich",function(response){
 	if (response==='T')
 	{
 		_printTo("_test_response_ajax_2",response);
@@ -180,10 +180,9 @@ _requestPOST("http://localhost/js/profile.php","name=lamhot",function(response){
 	}
 });
 
-_requestPOST("http://localhost/js/test.php","id="+encrypt_id+"","_function_test6");
 
 
-_loadDoc("http://localhost/js/page.php",function(response){
+_loadDoc("http://localhost/GF-Javascript/page.php",function(response){
 	_printTo("_test_response_ajax_3",response);
 });
 
@@ -192,11 +191,11 @@ _printTo("_function_test5",_getHost());
 _printTo("_function_test1",_randomStr());
 _printTo("_function_test2",_randomInt());
 _docWrite("Document Write Example");
-//_newForm(false,"https://www.lamhotsimamora.com/");
+//_newForm(false,"https://github.com");
 //_newForm(false,"google.com");
 _printTo("_function_test4",_detectBrowser());
 
-//_setCookie("ccc","Lamhot");
+//_setCookie("ccc","testt");
 //_getCookie("UserApp");
 //_deleteCookie("ccc");
 function getLocation(){
@@ -231,7 +230,7 @@ function exit(){
 	});
 }
 
-_loadDoc("http://localhost/js/json.php",function(obj){
+_loadDoc("http://localhost/GF-Javascript/json.php",function(obj){
 	var myJson = JSON.parse(obj);
 	var status =  myJson.status_login;
 	if (status)
@@ -245,13 +244,17 @@ _loadDoc("http://localhost/js/json.php",function(obj){
 	
 });
 
+var get_title ;
+var count_image;
+var count_link;
+var count_form ;
 
 function more(){
-	var domain = _getDomain();
-	var get_title = _getTitle();
-	var count_image = _countImage();
-	var count_link = _countLink();
-	var count_form = _countForm();
+	
+	get_title   = _getTitle();
+	count_image = _countImage();
+	count_link  = _countLink();
+	count_form  = _countForm();
 
 	_removeMe("id_of_object"); 
 	_showMe("id_of_object"); 
@@ -259,6 +262,8 @@ function more(){
 }
 
 _setImage("img_profile","Example.png");
+
+alert(_getDomain());
 </script>
 
 

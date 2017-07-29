@@ -332,16 +332,6 @@ or you can use function call back like this
 		
 	}); 
 ```
-if you wanna checking 404 response server, you just write code like this
-### 
-```go 
-	_loadDoc("http://URL.com",function(response){
-		if (response===false)
-		{
-		  _writeLog("404 Response ");
-		}
-	}); 
-```
 
 For request document with GET Ajax from another page you just write code like this
 ### 
@@ -364,16 +354,6 @@ _requestGET("http://URL.com/index.php?id=123",function(response){
 	}
 }); 
 ```
-if you wanna checking 404 response server, you just write code like this
-### 
-```go 
-	_requestGET("http://URL.com/index.php?id=123",function(response){
-		if (response===false)
-		{
-		  _writeLog("404 Response ");
-		}
-	}); 
-```
 
 For request document with POST Ajax from another page you just write code like this
 ### 
@@ -395,16 +375,6 @@ _requestPOST("http://url.com/index.php","name=example",function(response){
 		// do something
 	}
 }); 
-```
-if you wanna checking 404 response server, you just write code like this
-### 
-```go 
-	_requestPOST("http://url.com/index.php","name=example",function(response){
-		if (response===false)
-		{
-		  _writeLog("404 Response ");
-		}
-	}); 
 ```
 
 For create random string or random integer you just write code like this
