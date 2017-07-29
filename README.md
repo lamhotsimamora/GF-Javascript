@@ -242,6 +242,13 @@ For clear input text you just write code like this
 ### 
 ```go 
 _clear("input_text_id"); 
+
+```
+or clear div object you just write code like this
+### 
+```go 
+_clear("id_object_div",true); 
+
 ```
 
 For set value of input text you just write code like this
