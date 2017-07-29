@@ -25,21 +25,34 @@
 
 <h3 id="oke_oce">JavaScript Query</h3>
 	<code>
-	<div class="selector_class1">Hello World 1</div>
-	<div class="selector_class2">Hello World 2</div>
-	<div class="selector_class3">Hello World 3</div>
-	<div class="selector_class4">Hello World 4</div>
-	<div class="selector_class5">Hello World 5</div>
-	<div class="selector_class6">Hello World 6</div>
-	<div class="selector_class7">Hello World 7</div>
-	<div class="selector_class8">Hello World 8</div>
-	<div class="selector_class9">Hello World 9</div>
-	<div class="selector_class10">Hello World 10</div>
-	<div class="selector_class11">Hello World 11</div>
-</code>
+		<div class="selector_class1">Hello World 1</div>
+		<div class="selector_class2">Hello World 2</div>
+		<div class="selector_class3">Hello World 3</div>
+		<div class="selector_class4">Hello World 4</div>
+		<div class="selector_class5">Hello World 5</div>
+		<div class="selector_class6">Hello World 6</div>
+		<div class="selector_class7">Hello World 7</div>
+		<div class="selector_class8">Hello World 8</div>
+		<div class="selector_class9">Hello World 9</div>
+		<div class="selector_class10">Hello World 10</div>
+		<div class="selector_class11">Hello World 11</div>
+	</code>
 
+	<div id="example_clear">
+		Hello World
+	</div>
+	<hr>
+	<input type="" name="" id="input_clear" value="Test Input">
+	<button id="btn_clear">Clear</button>
 <script>
- 
+ 	_onClick("btn_clear",function(){
+ 		clearAll();
+ 	});
+ 	function clearAll()
+ 	{
+ 		_clear("input_clear");
+ 		_clear("example_clear",true);
+ 	}	
 
 	/*
 	
