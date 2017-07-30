@@ -138,17 +138,17 @@ _printTo("content_page2",decypt_id);
 
 
 function getProfile(){
-	 _requestPOST("http://localhost/GF-Javascript/profile.php","name="+encrypt_id+"","_page1");
+	 _requestPOST(_myUrl()+"profile.php","name="+encrypt_id+"","_page1");
 }
 
 function getAbout(){
 	var parameter = "GF.Js";
-	_requestGET("http://localhost/GF-Javascript/about.php?p="+parameter+"","_page2");
+	_requestGET(_myUrl()+"about.php?p="+parameter+"","_page2");
 }
 
 
 
-_requestGET("http://localhost/GF-Javascript/about.php?p=simamora",function(response){
+_requestGET(_myUrl()+"about.php?p=simamora",function(response){
 	if (response==='T')
 	{
 		_printTo("_test_response_ajax_1",response);
@@ -165,7 +165,7 @@ _requestGET("http://localhost/GF-Javascript/about.php?p=simamora",function(respo
 
 
 
-_requestPOST("http://localhost/GF-Javascript/profile.php","name=BrendanEich",function(response){
+_requestPOST(_myUrl()+"profile.php","name=BrendanEich",function(response){
 	if (response==='T')
 	{
 		_printTo("_test_response_ajax_2",response);
@@ -182,7 +182,7 @@ _requestPOST("http://localhost/GF-Javascript/profile.php","name=BrendanEich",fun
 
 
 
-_loadDoc("http://localhost/GF-Javascript/page.php",function(response){
+_loadDoc(_myUrl()+"page.php",function(response){
 	_printTo("_test_response_ajax_3",response);
 });
 
@@ -230,7 +230,7 @@ function exit(){
 	});
 }
 
-_loadDoc("http://localhost/GF-Javascript/json.php",function(obj){
+_loadDoc(_myUrl()+"json.php",function(obj){
 	var myJson = JSON.parse(obj);
 	var status =  myJson.status_login;
 	if (status)
@@ -263,7 +263,9 @@ function more(){
 
 _setImage("img_profile","Example.png");
 
-alert(_getDomain());
+alert("_getDomain : "+_getDomain());
+alert("_baseUrl   : "+_baseUrl());
+alert("_myUrl     : "+_myUrl());
 </script>
 
 
