@@ -1,28 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<title>Welcome To Garuda Query Javascript</title>
 	<meta charset="UTF-8">
 	<title>New Syntax Of Code</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<script src="JS/GF-1.js"></script>
 </head>
 <body>
-<input type="file" id="text_file">
-<img src="" alt="" id="load_image" width="100" height="100">
-<hr>
-<input type="text" id="txt_email">
 
 
-<div id="div1"></div>
-<div id="div_html"></div>
-<hr>
-<div id="display_txt_email1">
-	
+<div class="container">
+    <hr><hr>
+	<input type="file" id="text_file" class="form-control" >
+	<img src="" alt="" id="load_image" width="100" height="100">
+	<hr>
+	<input class="form-control" type="text" id="txt_email">
+
+
+	<div id="div1"></div>
+	<div id="div_html"></div>
+	<hr>
+	<div id="display_txt_email1">
+
+	</div>
+	<hr>
+	<div id="display_txt_email2">
+
+	</div>
 </div>
-<hr>
-<div id="display_txt_email2">
-	
-</div>
 
+<div class="container">
+	
 <h3 id="oke_oce">JavaScript Query</h3>
 	<code>
 		<div class="selector_class1">Hello World 1</div>
@@ -42,8 +52,10 @@
 		Hello World
 	</div>
 	<hr>
-	<input type="" name="" id="input_clear" value="Test Input">
-	<button id="btn_clear">Clear</button>
+	<input class="form-control" type="text" name="" id="input_clear" value="Test Input">
+	<hr>
+	<button id="btn_clear" class="btn-primary">Clear</button>
+</div>
 <script>
  	_onClick("btn_clear",function(){
  		clearAll();
@@ -90,17 +102,17 @@
    });
 
 
-_qSelectorBackgroundCol(".selector_class1",flat_ui_color.alizarian);
-_qSelectorBackgroundCol(".selector_class2",flat_ui_color.concrete);
-_qSelectorBackgroundCol(".selector_class3",flat_ui_color.turqoise);
-_qSelectorBackgroundCol(".selector_class4",flat_ui_color.green_sea);
-_qSelectorBackgroundCol(".selector_class5",flat_ui_color.carrot);
-_qSelectorBackgroundCol(".selector_class6",flat_ui_color.pumpkin);
-_qSelectorBackgroundCol(".selector_class7",flat_ui_color.sun_flower);
-_qSelectorBackgroundCol(".selector_class8",flat_ui_color.emerald);
-_qSelectorBackgroundCol(".selector_class9",flat_ui_color.nephritis);
-_qSelectorBackgroundCol(".selector_class10",flat_ui_color.orange);
-_qSelectorBackgroundCol(".selector_class11",flat_ui_color.amethyst);
+	_qSelectorBackgroundCol(".selector_class1",flat_ui_color.alizarian);
+	_qSelectorBackgroundCol(".selector_class2",flat_ui_color.concrete);
+	_qSelectorBackgroundCol(".selector_class3",flat_ui_color.turqoise);
+	_qSelectorBackgroundCol(".selector_class4",flat_ui_color.green_sea);
+	_qSelectorBackgroundCol(".selector_class5",flat_ui_color.carrot);
+	_qSelectorBackgroundCol(".selector_class6",flat_ui_color.pumpkin);
+	_qSelectorBackgroundCol(".selector_class7",flat_ui_color.sun_flower);
+	_qSelectorBackgroundCol(".selector_class8",flat_ui_color.emerald);
+	_qSelectorBackgroundCol(".selector_class9",flat_ui_color.nephritis);
+	_qSelectorBackgroundCol(".selector_class10",flat_ui_color.orange);
+	_qSelectorBackgroundCol(".selector_class11",flat_ui_color.amethyst);
 
 
    _qSelectorHTML("#div1","Hello! World ");
