@@ -32,6 +32,21 @@
 </div>
 
 <div class="container">
+	<div id="t_year"></div><div id="t_month"></div><div id="t_day"></div>
+	<hr>
+
+	 <div id="t_day_name_eng"></div>
+	 <div id="t_day_name_ind"></div>
+	 <div id="t_date"></div>
+	 <div id="t_date_custom"></div>
+	 <hr>
+	 <div id="t_month_name_eng"></div>
+	 <div id="t_month_name_ind"></div>
+	 <hr>
+	 <div id="t_time"></div>
+</div>
+<hr>
+<div class="container">
     <div id="#alert"> </div>
 	<div id="t_name"></div> 
 	<input class="form-control" type="text" id="txt_name"  name="t_name" placeholder="Name" value="" onkeyup="enterName(this.value);">
@@ -248,9 +263,22 @@
 			/***/
 
 
+			_printTo("t_year","Year : "+_getYear());
+			_printTo("t_day","Day : "+_getDay());
+			_printTo("t_month","Month : "+_getMonth());
+
+			_printTo("t_day_name_eng","Day : "+_getDayName());
+			_printTo("t_day_name_ind","Hari : "+_getDayName(true));
+
+			_printTo("t_date","Date : "+_getDate());
+			_printTo("t_date_custom","Date Custom : "+_getDate("-"));
+
+			_printTo("t_month_name_eng","Month Name : "+_getMonthName());
+			_printTo("t_month_name_ind","Nama Bulan : "+_getMonthName(true));
+
+			_printTo("t_time","Time : "+_getTime());
 			
-
-
+			
 			_printTo("_function_test5",_getHost());
 			_printTo("_function_test1",_randomStr());
 			_printTo("_function_test2",_randomInt());
