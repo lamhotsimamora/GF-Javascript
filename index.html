@@ -10,9 +10,10 @@
 
 
 <div class="container">
-	<h1>
+	<h1 id="up_body">
 		Welcome To Garuda Query Javascript
 	</h1>
+	<button class="btn-default" onclick="_scroll('down_body')">Scrool Down</button>
 	<hr>
 </div>
 
@@ -98,10 +99,15 @@
 			<div id="_function_test5"></div><hr>
 			<div id="_function_test6"></div><hr>
 			<div id="_function_test7"></div><hr>
-
+				
+			<div id="s_width"></div>
+			<div id="s_height"></div>
+			<hr>
 </div>
 
-
+<div id="down_body" class="container">
+	<button class="btn-default" onclick="_scroll('up_body')">Scrool Up</button>
+</div>
 
 <script type="text/javascript">
 
@@ -277,6 +283,9 @@
 			_printTo("t_month_name_ind","Nama Bulan : "+_getMonthName(true));
 
 			_printTo("t_time","Time : "+_getTime());
+
+			_printTo("s_width","Screen Width : "+_sWidth);
+			_printTo("s_height","Screen Height : "+_sHeight);
 			
 			
 			_printTo("_function_test5",_getHost());
