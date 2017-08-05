@@ -36,7 +36,6 @@ You will be see log on console, and you can disable the console with change the 
 <a href="https://www.youtube.com/watch?v=UdOU55W9Fsw">Part 3</a>
 <a href="https://www.youtube.com/watch?v=EZnZmzBm_Qw">Part 4</a>
 
-## Change LOG 
 # NEW SYNTAX OF CODE _UPDATE_ || August 2017
 
 For get the base URL you can use this method
