@@ -38,6 +38,13 @@ You will be see log on console, and you can disable the console with change the 
 
 # NEW SYNTAX OF CODE _UPDATE_ || August 2017
 
+For import file of javascript to HTML , you can do with this code
+###  
+```go
+   _import("path_of_file");
+```
+
+
 For get the base URL you can use this method
 ###  
 ```go
