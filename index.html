@@ -13,7 +13,7 @@
 	<h1 id="up_body">
 		Welcome To Garuda Query Javascript
 		<button class="btn-primary btn-xs" id="btn_next_page" name="" 
-			onclick="_myUrl()+'index-2.html';">Next</button>
+			onclick="nextPage();">Next</button>
 	</h1>
 	<button class="btn-default" onclick="_scroll('down_body')">Scrool Down</button>
 	<hr>
@@ -112,6 +112,11 @@
 </div>
 
 <script type="text/javascript">
+			function nextPage()
+			{
+				var url= _myUrl()+'index-2.html';	
+				_refresh(url);
+			}
 
 
 			_getById("_function_test7",function(obj){
