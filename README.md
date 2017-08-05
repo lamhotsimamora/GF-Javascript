@@ -37,9 +37,15 @@ You will be see log on console, and you can disable the console with change the 
 <a href="https://www.youtube.com/watch?v=EZnZmzBm_Qw">Part 4</a>
 
 ## Change LOG 
-# NEW SYNTAX OF CODE _UPDATE_ || June 2017
+# NEW SYNTAX OF CODE _UPDATE_ || August 2017
 
-For scroll to object of DIV, you just write code like this
+For get the base URL you can use this method
+###  
+```go
+   var my_url = _myUrl();
+```
+
+For smooth scroll to object of DIV, you just write code like this
 ###  
 ```go
  _scroll("id_div");
