@@ -5,11 +5,20 @@
 	<script src="JS/GF-1.js"></script>
 </head>
 <body>
-	
+	<button class="btn-primary btn-xs" id="btn_next_page" name="" 
+			onclick="nextPage();">Next</button>
+	<hr>
 
 	<script type="text/javascript">
 		_import("test.js");
 		_import("oke.js");
+
+		function nextPage()
+		{
+			var url= _myUrl()+'GF-Javascript/index-4.html';	
+			_refresh(url);
+		}
+	
 	</script>
 
 </body>
