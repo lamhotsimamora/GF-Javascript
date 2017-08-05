@@ -39,6 +39,33 @@ You will be see log on console, and you can disable the console with change the 
 ## Change LOG 
 # NEW SYNTAX OF CODE _UPDATE_ || June 2017
 
+For scroll to object of DIV, you just write code like this
+###  
+```go
+ _scroll("id_div");
+```
+For get date, day,month, year and time, you can use this method
+###  
+```go
+var year 		= _getYear()
+var day 		= _getDay()
+var month 		= _getMonth()
+var dayNameEng 		= _getDayName()
+var dayNameInd 		= _getDayName(true)
+var date_1 		= _getDate()
+var date_2 		= _getDate("-")
+var monthNameEng 	= _getMonthName()
+var monthNameInd 	= _getMonthName(true)
+var time 		= _getTime()
+```
+
+For get screen width and height, you just write code like this
+###  
+```go
+var screen_width = _sWidth
+var screen_height = _sHeight
+```
+
 Example code for preview image before upload with input file 
 ###  
 ```go
