@@ -38,6 +38,30 @@ You will be see log on console, and you can disable the console with change the 
 
 # NEW SYNTAX OF CODE _UPDATE_ || August 2017
 
+
+For give event keyboard arrow left , right, up and down ( https://lamhotsimamora.github.io/GF-Javascript/index-4.html )
+###  
+```go
+	_keyArrow(function(){
+	    _writeLog("LEFT");
+	},function(){
+	    _writeLog("RIGHT");
+	},function(){
+	   _writeLog("UP");
+	},function(){
+	   _writeLog("DOWN");
+	});
+```
+
+or with custom key code, example backspace key code ( https://lamhotsimamora.github.io/GF-Javascript/index-4.html )
+###  
+```go
+	_keyCustom(function(){
+	     _writeLog("BACK SPACE");
+	},_keyCode.backspace);
+```
+
+
 For import file of javascript to HTML , you can do with this code
 ###  
 ```go
