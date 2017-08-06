@@ -39,6 +39,21 @@ You will be see log on console, and you can disable the console with change the 
 # NEW SYNTAX OF CODE _UPDATE_ || August 2017
 
 
+For set data to attribute of object by element id, you just write code like this
+###  
+```go
+	var g1 = new _gData("d_username","data-username","Lorem Ipsum");
+	g1.setData();
+```
+
+and you can get value data of attribute, like this
+###  
+```go
+	var g2 = new _gData("d_username","data-username");
+	alert(g2.dataById);
+	alert(g2.dataByTag);
+```
+
 For give event keyboard arrow left , right, up and down ( https://lamhotsimamora.github.io/GF-Javascript/index-4.html )
 ###  
 ```go
@@ -146,6 +161,11 @@ _onKeyUp("id_of_input_txt",function(){
          _printTo("display_txt_email1",value);
    }); 
 ```
+For give event onkeyup of input text and then write to text
+### 
+```go  
+	_onKeyUpToText("id_of_input_txt","id_of_object");
+```
 ###
 For give event onkeydown of input text 
 ### 
@@ -210,6 +230,13 @@ For give event onclick to button
 ###
 ```go
 _onClick("id_of_object",function(){
+	// do something
+});
+```
+For give event double click to button
+###
+```go
+_onDClick("id_of_object",function(){
 	// do something
 });
 ```
