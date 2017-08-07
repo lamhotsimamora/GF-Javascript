@@ -39,9 +39,11 @@ You will be see log on console, and you can disable the console with change the 
 # NEW SYNTAX OF CODE _UPDATE_ || August 2017
 
 
-For set data to attribute of object by element id, you just write code like this
+For set data to attribute of object by element id, you just write code like this ( https://lamhotsimamora.github.io/GF-Javascript/index-5.html )
 ###  
 ```go
+        <div id="d_username" data-username=""></div>
+
 	var g1 = new _gData("d_username","data-username","Lorem Ipsum");
 	g1.setData();
 ```
@@ -49,6 +51,8 @@ For set data to attribute of object by element id, you just write code like this
 and you can get value data of attribute, like this
 ###  
 ```go
+        <div id="d_username" data-username="Lorem Ipsum Name"></div>
+
 	var g2 = new _gData("d_username","data-username");
 	alert(g2.dataById);
 	alert(g2.dataByTag);
@@ -77,7 +81,7 @@ or with custom key code, example backspace key code ( https://lamhotsimamora.git
 ```
 
 
-For import file of javascript to HTML , you can do with this code
+For import file of javascript to HTML , you can do with this code ( https://lamhotsimamora.github.io/GF-Javascript/index-3.html )
 ###  
 ```go
    _import("path_of_file");
