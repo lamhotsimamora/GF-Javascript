@@ -38,6 +38,35 @@ You will be see log on console, and you can disable the console with change the 
 
 # NEW SYNTAX OF CODE _UPDATE_ || August 2017
 
+For draw image to canvas HTML, you can write code like this ( https://lamhotsimamora.github.io/GF-Javascript/index-6.html )
+###  
+```go
+   _drawImage("my_canvas","my_image");	
+```
+
+For draw line to canvas HTML, you can write code like this
+###  
+```go
+   _drawLine("my_canvas",30,12);
+```
+
+For draw text to canvas HTML, you can write code like this
+###  
+```go
+  _drawText("my_canvas","Lamhot Simamora");
+```
+
+For draw circle to canvas HTML, you can write code like this
+###  
+```go
+  _drawCircle("my_canvas",100,100,100,100);
+```
+
+For clear canvas HTML, you can write code like this
+###  
+```go
+   _clearCanvas("my_canvas");
+```
 
 For set data to attribute of object by element id, you just write code like this ( https://lamhotsimamora.github.io/GF-Javascript/index-5.html )
 ###  
