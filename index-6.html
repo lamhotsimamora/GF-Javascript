@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Canvas HTML | Garuda Query Javascript</title>
+	<script src="JS/GF-1.js"></script>
+</head>
+<body>
+	<img id="my_image" src="a.png" alt="" width="50" height="50">
+	<hr>
+	<button onclick="loadImage()">Draw Image</button>
+	<button onclick="loadText()">Draw Text</button>
+	<button onclick="loadLine()">Draw Line</button>	
+	<button onclick="loadCircle()">Draw Circle</button>	
+	<button onclick="clearCanvas()">Clear Canvas</button>
+	<hr>
+	<canvas id="my_canvas" width="600" height="600" style="border:1px solid #000000;">
+
+	<script type="text/javascript">
+		function loadImage()
+		{
+			clearCanvas()
+			_drawImage("my_canvas","my_image");
+		}
+		function loadLine()
+		{
+			clearCanvas()
+			_drawLine("my_canvas",30,12);
+			_drawLine("my_canvas",50,50);
+		}
+		function loadCircle()
+		{
+			clearCanvas()
+			_drawCircle("my_canvas",100,100,100,100);
+			_drawCircle("my_canvas",100,100,50,50);
+		}
+		function loadText()
+		{
+			clearCanvas()
+			_drawText("my_canvas","Lamhot Simamora");
+		}
+
+
+		function clearCanvas()
+		{
+			_clearCanvas("my_canvas");
+		}
+		var x = _getById();
+		var y = _getIdByName();
+		_writeLog(_error_message.id);
+
+		_requestGET();
+		_requestPOST();
+		_loadDoc();
+	</script>
+</body>
+</html>

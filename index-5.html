@@ -8,6 +8,8 @@
 <body>
 	<div class="container">
 	    <hr>
+	    <button class="btn-primary btn-xs" id="btn_next_page" name="" 
+			onclick="nextPage();">Next</button>
 			<strong>
 				<div id="d_name" data-name="Lorem Ipsum Name"><a href="#">Data name</a></div>
 				<div id="d_email" data-email="">Data email</div>
@@ -36,6 +38,11 @@
 	
 
 <script type="text/javascript">
+function nextPage()
+		{
+			var url= _myUrl()+'GF-Javascript/index-6.html';	
+			_refresh(url);
+		}
 		   _onClick("d_name",function()
 			{
 				var g1 = new _gData("d_email","data-email","LoremIpsum@gmail.com");

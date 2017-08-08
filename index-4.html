@@ -20,6 +20,8 @@
 	<div class="container">
 			<hr>
 			<center>
+			<button class="btn-primary btn-xs" id="btn_next_page" name="" 
+			onclick="nextPage();">Next</button>
 				<div class="well"><H2>Key Board Event | Garuda Query Javscript</H2></div>
 					
 				 <div class="panel panel-primary">
@@ -43,7 +45,11 @@
 					</div>
 
 	<script type="text/javascript">
-
+		function nextPage()
+		{
+			var url= _myUrl()+'GF-Javascript/index-5.html';	
+			_refresh(url);
+		}
 
 		_keyArrow(function(){
 			_printTo("key_name","LEFT");
