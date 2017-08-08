@@ -9,7 +9,7 @@
 	<div class="container">
 	    <hr>
 	    <button class="btn-primary btn-xs" id="btn_next_page" name="" 
-			onclick="nextPage();">Next</button>
+			onclick="nextPage();">Next</button> <hr>
 			<strong>
 				<div id="d_name" data-name="Lorem Ipsum Name"><a href="#">Data name</a></div>
 				<div id="d_email" data-email="">Data email</div>
@@ -45,13 +45,29 @@ function nextPage()
 		}
 		   _onClick("d_name",function()
 			{
+				/*
+				* create new object with parameter
+				* _gData("id_object","data_attribut","value attribut");
+				*/
 				var g1 = new _gData("d_email","data-email","LoremIpsum@gmail.com");
+				/*
+				* set value to attribut
+				*/
 				g1.setData();
 
 				_printTo("t_1",g1.dataById);
 
+				/*
+				* create new object with parameter
+				* _gData("id_object","data_attribut","value attribut");
+				*/
 				var g2 = new _gData("d_name","data-name");
 
+				/*
+				* get value of attribute
+				* dataById
+				* dataByTag
+				*/
 				_printTo("t_2",g2.dataById);
 				_printTo("t_3",g2.dataByTag);
 
@@ -60,10 +76,18 @@ function nextPage()
 				_printTo("t_4",g3.dataByTag);
 			});
 
+		   /**
+		    * _onDclick("id_object",function_callback);
+		    * for create event double click
+		    */
 			_onDClick("d_click",function(){
 				alert("double click");
 			});
 
+			/**
+			 * _onKeyUpToText("id_input_text","id_object_that_to_print_text");
+			 * for create event on key up input text
+			 */
 			_onKeyUpToText("t_name","text_name");
 		
 </script>
