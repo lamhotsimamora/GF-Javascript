@@ -19,38 +19,36 @@
 		function loadImage()
 		{
 			clearCanvas()
+			// _drawImage("id_canvas","id_image");
 			_drawImage("my_canvas","my_image");
 		}
 		function loadLine()
 		{
 			clearCanvas()
+			// _drawLine("id_canvas",X,Y);
 			_drawLine("my_canvas",30,12);
 			_drawLine("my_canvas",50,50);
 		}
 		function loadCircle()
 		{
 			clearCanvas()
-			_drawCircle("my_canvas",100,100,100,100);
-			_drawCircle("my_canvas",100,100,50,50);
+			// _drawCircle("id_canvas",xCenter,yCenter,Diameter);
+			_drawCircle("my_canvas",100,100,100);
+			_drawCircle("my_canvas",100,100,50);
 		}
 		function loadText()
 		{
 			clearCanvas()
+			// _drawText("id_canvas","TEXT");
 			_drawText("my_canvas","Lamhot Simamora");
 		}
-
 
 		function clearCanvas()
 		{
 			_clearCanvas("my_canvas");
 		}
-		var x = _getById();
-		var y = _getIdByName();
-		_writeLog(_error_message.id);
-
-		_requestGET();
-		_requestPOST();
-		_loadDoc();
+		
+		
 	</script>
 </body>
 </html>
