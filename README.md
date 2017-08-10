@@ -1,10 +1,24 @@
-# GarudaFramework Javascript
+# Garuda Query Javascript
+
+I was created simple query of javascript code. You can easy write code of Javascript and you can easy to do DOM (document object manipulation).  
+If you familiar with jQuery, gQuery can be used with jQuery. You can modify the source code. Do what you want.
+Everything has been tested and support much browser (Chrome, Firefox, & Opera ).
 
 
-
-I was created simple query of javascript code. You can easy write code of Javascript.  If you familiar with JQuery 'GF-1.js' framework can be used/colaboration on/with JQuery. 
-You can add more function too to those code. Before you testing this code , you can drink a cup of cofee ! Keep code and 
-Thank you ! I hate the long syntax !
+<table>
+    <tbody>
+        <tr>
+            <td height=320>
+                <a href="https://raw.githubusercontent.com/alrra/browser-logos/master/src/main-desktop-browser-logos.png">
+                    <img src="https://lamhotsimamora.github.io/GF-Javascript/browser-support.png" alt="Main desktop browsers">
+                </a>
+                <a href="https://raw.githubusercontent.com/alrra/browser-logos/master/src/main-mobile-browser-logos.png">
+                   <img src="https://lamhotsimamora.github.io/GF-Javascript/browser-support.png" alt="Main mobile browsers">
+                </a>
+            </td>
+        </tr>
+    </tbody>
+</table>
 
 
 ## See Example *GF-1.js* On My Website Page
@@ -128,26 +142,26 @@ For smooth scroll to object of DIV, you just write code like this
 ```go
  _scroll("id_div");
 ```
-For get date, day,month, year and time, you can use this method
+For get date, day,month, year and time, you can use this method 
 ###  
 ```go
-var year 		= _getYear()
-var day 		= _getDay()
-var month 		= _getMonth()
-var dayNameEng 		= _getDayName()
-var dayNameInd 		= _getDayName(true)
-var date_1 		= _getDate()
-var date_2 		= _getDate("-")
-var monthNameEng 	= _getMonthName()
-var monthNameInd 	= _getMonthName(true)
-var time 		= _getTime()
+var year 		= _getYear();
+var day 		= _getDay();
+var month 		= _getMonth();
+var dayNameEng 		= _getDayName();
+var dayNameInd 		= _getDayName(true);
+var date_1 		= _getDate();
+var date_2 		= _getDate("-");
+var monthNameEng 	= _getMonthName();
+var monthNameInd 	= _getMonthName(true);
+var time 		= _getTime();
 ```
 
 For get screen width and height, you just write code like this
 ###  
 ```go
-var screen_width = _sWidth
-var screen_height = _sHeight
+var screen_width = _sWidth;
+var screen_height = _sHeight;
 ```
 
 Example code for preview image before upload with input file 
@@ -197,7 +211,7 @@ _onKeyUp("id_of_input_txt",function(){
 For give event onkeyup of input text and then write to text
 ### 
 ```go  
-	_onKeyUpToText("id_of_input_txt","id_of_object");
+    _onKeyUpToText("id_of_input_txt","id_of_object");
 ```
 ###
 For give event onkeydown of input text 
