@@ -4,22 +4,9 @@ I was created simple query of javascript code. You can easy write code of Javasc
 If you familiar with jQuery, gQuery can be used with jQuery. You can modify the source code. Do what you want.
 Everything has been tested and support much browser (Chrome, Firefox, & Opera ).
 
-
-<table>
-    <tbody>
-        <tr>
-            <td height=320>
-                <a href="https://raw.githubusercontent.com/alrra/browser-logos/master/src/main-desktop-browser-logos.png">
-                    <img src="https://lamhotsimamora.github.io/GF-Javascript/browser-support.png" alt="Main desktop browsers">
-                </a>
-                <a href="https://raw.githubusercontent.com/alrra/browser-logos/master/src/main-mobile-browser-logos.png">
-                   <img src="https://lamhotsimamora.github.io/GF-Javascript/browser-support.png" alt="Main mobile browsers">
-                </a>
-            </td>
-        </tr>
-    </tbody>
-</table>
-
+<div style="text-align:center">
+<img src="https://raw.githubusercontent.com/lamhotsimamora/GF-Javascript/master/browser-support.png">img</img>
+</div>
 
 ## See Example *GF-1.js* On My Website Page
 * [Room Chat](https://www.chat.lamhotsimamora.com) - Real Time Chat
