@@ -1,4 +1,4 @@
-# Garuda Query Javascript
+# Garuda Query Javascript | Pretty Code | Easy Use
 
 I was created simple query of javascript code. You can easy write code of Javascript and you can easy to do DOM (document object manipulation).  
 If you familiar with jQuery, gQuery can be used with jQuery. You can modify the source code. Do what you want.
@@ -10,7 +10,7 @@ Everything has been tested and support much browser (Chrome, Firefox, & Opera ).
 </img></center>
 </div>
 
-## See Example *GF-1.js* On My Website Page
+## See Example *gQuery* On My Web
 * [Room Chat](https://www.chat.lamhotsimamora.com) - Real Time Chat
 * [GarudaFramework](https://garudaframework.lamhotsimamora.com//page/example) - Garuda Framework Javascript Demo
 
@@ -39,7 +39,9 @@ You will be see log on console, and you can disable the console with change the 
 <a href="https://www.youtube.com/watch?v=UdOU55W9Fsw">Part 3</a>
 <a href="https://www.youtube.com/watch?v=EZnZmzBm_Qw">Part 4</a>
 
-# NEW SYNTAX OF CODE _UPDATE_ || August 2017
+----------------------------------------------
+
+## NEW SYNTAX OF CODE _UPDATE_ || August 2017
 
 For draw image to canvas HTML, you can write code like this ( https://lamhotsimamora.github.io/GF-Javascript/index-6.html )
 ###  
@@ -160,7 +162,7 @@ Example code for preview image before upload with input file
 ```
 
 ### New variabel of flat ui color
-# Color Flat UI  [![GoDoc](http://img.shields.io/badge/go-documentation-blue.svg?style=flat-square)](https://flatuicolors.com/) 
+### Color Flat UI  [![GoDoc](http://img.shields.io/badge/go-documentation-blue.svg?style=flat-square)](https://flatuicolors.com/) 
 
 * wet_asphalt   =  "#34495e" 
 * midnight_blue =  "#2c3e50" 
