@@ -5,7 +5,9 @@ If you familiar with jQuery, gQuery can be used with jQuery. You can modify the 
 Everything has been tested and support much browser (Chrome, Firefox, & Opera ).
 
 <div style="text-align:center">
-<img src="https://raw.githubusercontent.com/lamhotsimamora/GF-Javascript/master/browser-support.png">img</img>
+<center>
+<img src="https://raw.githubusercontent.com/lamhotsimamora/GF-Javascript/master/browser-support.png">
+</img></center>
 </div>
 
 ## See Example *GF-1.js* On My Website Page
