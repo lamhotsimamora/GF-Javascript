@@ -13,6 +13,7 @@ Everything has been tested and support much browser (Chrome, Firefox, & Opera ).
 ## See Example *gQuery* On My Web
 * [Room Chat](https://www.chat.lamhotsimamora.com) - Real Time Chat
 * [GarudaFramework](https://garudaframework.lamhotsimamora.com//page/example) - Garuda Framework Javascript Demo
+* [GarudaFrameworkPro](https://garudaframeworkpro.lamhotsimamora.com/javascript-library) - Garuda Framework Pro Demo
 
 ## Getting Started
 
