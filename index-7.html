@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Text Style &  Item List & Table | Garuda Query Javascript</title>
+	<script src="JS/GF-1.js"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+
+	<div class="container">
+	<hr>
+		<p id="d_1">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+		<button onclick="change1();" class="btn btn-default">Change 1</button>
+		<button onclick="change2();" class="btn btn-default">Change 2</button>
+		<button onclick="change3();" class="btn btn-default">Change 3</button>
+		<hr>
+		<button id="btn_tambah_1" onclick="addList1();" class="btn btn-success">Add List 1</button>
+		<button id="btn_tambah_2" onclick="addList2();" class="btn btn-success">Add List 2</button>
+		<hr>
+		<ul id="list_1" class="list-group">
+			<li class="list-group-item">Marquisa</li>
+		</ul>
+		<hr>
+		<ul id="list_2" class="list-group">
+			<li class="list-group-item">Lemon</li>
+		</ul>
+
+		
+	
+	</div>
+
+	<div class="container">
+		<hr>
+		<div class="alert alert-info">
+		<strong>Insert !</strong> Press INSERT For Short Cut Add
+		</div>
+	
+		<input type="text" class="form-control" name="" placeholder="First Name" id="t_firstname"></br>
+		<input type="text" class="form-control" name="" placeholder="Last Name" id="t_lastname"></br>
+		<input type="email" class="form-control" name="" placeholder="Email" id="t_email"> </br>
+		<button id="btn_table" onclick="addValueTable();" class="btn btn-primary btn-md">Add</button>
+		<hr>
+
+		 <table class="table table-bordered">
+		    <thead>
+		      <tr>
+		        <th>No</th>
+		        <th>Firstname</th>
+		        <th>Lastname</th>
+		        <th>Email</th>
+		      </tr>
+		    </thead>
+		    <tbody id="table_val">
+		     	<tr>
+		     		<td>1</td>
+		     		<td>Siap</td>
+		     		<td>Man</td>
+		     		<td>Man@gmail.cpm</td>
+		     	</tr>
+		    </tbody>
+		  </table>
+		  <div id="b_down"></div>
+	</div>
+
+	<script type="text/javascript">
+	
+		var i=0;
+		var j=0;
+
+		_focus("t_firstname");
+
+		function addList1()
+		{
+			i++;
+			var data_list_1 = [
+				 "Apple","Banana","Orange"
+			];
+			_addList("list_1","list-group-item",data_list_1);
+		}
+		
+		function addList2()
+		{
+			j++;
+			var data_list_2 = "Apple "+j;
+			_addList("list_2","list-group-item",data_list_2);
+		}
+
+ 		var number=2;
+		function addValueTable()
+		{
+			var first_name = _getValById("t_firstname");
+			var last_name  =  _getValById("t_lastname");
+			var email      = _getValById("t_email");
+
+			if (first_name==='')
+			{
+				_focus("t_firstname");
+				return;
+			}
+			if (last_name==='')
+			{
+				_focus("t_lastname");
+				return;
+			}
+			if (email==='')
+			{
+				_focus("t_email");
+				return;
+			}
+
+			var data_table = [
+				 number,first_name,last_name, email
+			];
+			number++;
+			/**
+			 * Function _addItemTable("array");
+			 * Format ["item 1","item 2","item 3"]
+			 */
+			_addItemTable("table_val",data_table);
+			
+		}
+
+
+		/**
+		 * Function _textStyle("Array")
+		 * Format ["font style","font size","text align","color","variant"]
+		 */
+		function change1()
+		{
+			var style = ["italic", "xx-large", "center","red"];
+			_textStyle("d_1",style);
+		}
+
+		/**
+		 * Function _textStyle("Array");
+		 * Format ["font style","font size","text align","color","variant"]
+		 */
+		function change2()
+		{
+			var style = ["bold", "xx-small", "left","blue","small-caps"];
+			_textStyle("d_1",style);
+		}
+
+		/**
+		 * Function _textStyle("Array");
+		 * Format ["font style","font size","text align","color","variant"]
+		 */
+		function change3()
+		{
+			var style = ["bold", "xx-large", "right","green",""];
+			_textStyle("d_1",style);
+		}
+
+
+		_keyCustom(function(){
+			addValueTable();
+			_scroll("b_down");
+		},_keyCode.insert);
+	
+	</script>
+
+</body>
+</html>

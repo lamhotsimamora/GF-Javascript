@@ -3,19 +3,37 @@
 <head>
 	<title>Canvas HTML | Garuda Query Javascript</title>
 	<script src="JS/GF-1.js"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 <body>
-	<img id="my_image" src="a.png" alt="" width="50" height="50">
+	
+	<div class="container">
+		<button class="btn-primary btn-xs" id="btn_next_page" name="" 
+			onclick="nextPage();">Next</button> <hr>
+	</div>
+
 	<hr>
-	<button onclick="loadImage()">Draw Image</button>
-	<button onclick="loadText()">Draw Text</button>
-	<button onclick="loadLine()">Draw Line</button>	
-	<button onclick="loadCircle()">Draw Circle</button>	
-	<button onclick="clearCanvas()">Clear Canvas</button>
-	<hr>
-	<canvas id="my_canvas" width="600" height="600" style="border:1px solid #000000;">
+	
+	<div class="container">
+		<img id="my_image" src="a.png" alt="" width="50" height="50">
+		<hr>
+		<button onclick="loadImage()">Draw Image</button>
+		<button onclick="loadText()">Draw Text</button>
+		<button onclick="loadLine()">Draw Line</button>	
+		<button onclick="loadCircle()">Draw Circle</button>	
+		<button onclick="clearCanvas()">Clear Canvas</button>
+		<hr>
+		<canvas id="my_canvas" width="600" height="600" style="border:1px solid #000000;">
+	</div>
+	
 
 	<script type="text/javascript">
+		function nextPage()
+		{
+			var url= _myUrl()+'GF-Javascript/index-7.html';	
+			_refresh(url);
+		}
+
 		function loadImage()
 		{
 			clearCanvas()
