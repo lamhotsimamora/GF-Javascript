@@ -44,6 +44,20 @@ You will be see log on console, and you can disable the console with change the 
 
 ## NEW SYNTAX OF CODE _UPDATE_ || August 2017
 
+
+For set disabled right click, you just write code like this ( https://lamhotsimamora.github.io/GF-Javascript/index-4.html )
+```go
+	_rightClick("Disabled Right Click");
+```
+or you can use callback function 
+```go
+	_rightClick(function(){
+	   alert("Do Something Here");
+	});
+```
+----------------------------------------------
+
+
 For write value to body HTML <strong>document.body.innerHTML = "Lorem Ipsum"</strong>, you can write code like this
 ```go
 _writeBody("Lorem Ipsum");

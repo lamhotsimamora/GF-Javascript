@@ -24,7 +24,8 @@
 			<button class="btn-primary btn-xs" id="btn_next_page" name="" 
 			onclick="nextPage();">Next</button>
 			<hr>
-				<div class="well"><H2>Key Board Event | Garuda Query Javscript</H2></div>
+				<div class="well">
+				<H2>Key Board Event & Right Click </H2></div>
 						<input type="text" name="" class="form-control" placeholder="Text"><hr>
 				 <div class="panel panel-primary">
 				 
@@ -48,6 +49,12 @@
 					</div>
 
 	<script type="text/javascript">
+
+		_rightClick(function(){
+		   alert("Do Something Here");
+		});
+
+
 		function nextPage()
 		{
 			var url= _myUrl()+'GF-Javascript/index-5.html';	
