@@ -44,6 +44,54 @@ You will be see log on console, and you can disable the console with change the 
 
 ## NEW SYNTAX OF CODE _UPDATE_ || August 2017
 
+
+For add item to list,
+```go
+<ul> 
+  <li>A</li>
+  <li>B</li>
+</ul>
+```
+
+you can write code like this, ( https://lamhotsimamora.github.io/GF-Javascript/index-7.html )
+###
+```go
+var data_list_1 = [
+    "Apple","Banana","Orange"
+];
+_addList("list_1","list-group-item",data_list_1);
+```
+
+For add item to table,
+```go
+<table class="table table-bordered">
+        <thead>
+		<tr>
+			<th>No</th>
+			<th>Firstname</th>
+			<th>Lastname</th>
+			<th>Email</th>
+		</tr>
+	</thead>
+	<tbody id="table_val">
+		<tr>
+			<td>1</td>
+			<td>A</td>
+			<td>B</td>
+			<td>C</td>
+		</tr>
+	</tbody>
+</table>
+```
+you can write code like this, ( https://lamhotsimamora.github.io/GF-Javascript/index-7.html )
+###
+```go
+var data_table = [
+   1,"A","B","C"
+];
+_addItemTable("table_val",data_table);
+```
+
 For draw image to canvas HTML, you can write code like this ( https://lamhotsimamora.github.io/GF-Javascript/index-6.html )
 ###  
 ```go
