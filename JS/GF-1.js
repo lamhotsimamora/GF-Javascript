@@ -7,7 +7,7 @@ For licensing, see LICENSE.md 'https://raw.githubusercontent.com/lamhotsimamora/
 */
 
 
-var run_console = true;
+var run_console = false;
 var _error_message = {
 	id:"Id of object is not defined",
 	name: "Name of object is not defined",
