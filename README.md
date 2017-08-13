@@ -52,7 +52,6 @@ For add item to list,
   <li>B</li>
 </ul>
 ```
-
 you can write code like this, ( https://lamhotsimamora.github.io/GF-Javascript/index-7.html )
 ###
 ```go
@@ -61,7 +60,7 @@ var data_list_1 = [
 ];
 _addList("list_1","list-group-item",data_list_1);
 ```
-
+----------------------------------------------
 For add item to table,
 ```go
 <table class="table table-bordered">
@@ -91,7 +90,7 @@ var data_table = [
 ];
 _addItemTable("table_val",data_table);
 ```
-
+----------------------------------------------
 For draw image to canvas HTML, you can write code like this ( https://lamhotsimamora.github.io/GF-Javascript/index-6.html )
 ###  
 ```go
