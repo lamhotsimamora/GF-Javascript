@@ -82,6 +82,7 @@ _addList("list_1","list-group-item",data_list_1);
 ----------------------------------------------
 For add item to table,
 ```go
+<!-- html -->
 <table class="table table-bordered">
         <thead>
 		<tr>
@@ -143,8 +144,9 @@ For clear canvas HTML, you can write code like this
 For set data to attribute of object by element id, you just write code like this ( https://lamhotsimamora.github.io/GF-Javascript/index-5.html )
 ###  
 ```go
+	<!-- html -->
         <div id="d_username" data-username=""></div>
-
+	// gQuery
 	var g1 = new _gData("d_username","data-username","Lorem Ipsum");
 	g1.setData();
 ```
@@ -152,8 +154,9 @@ For set data to attribute of object by element id, you just write code like this
 and you can get value data of attribute, like this
 ###  
 ```go
+	<!-- html -->
         <div id="d_username" data-username="Lorem Ipsum Name"></div>
-
+	// gQuery
 	var g2 = new _gData("d_username","data-username");
 	alert(g2.dataById);
 	alert(g2.dataByTag);
