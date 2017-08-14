@@ -8,9 +8,9 @@
 <body>
 
 	<div class="container">
-
+		<button class="btn-primary btn-xs" id="btn_next_page" name="" 
+			onclick="nextPage();">Next</button>
 	<hr>
-	<a href=".">Get Me Back</a>
 	
 	<hr>
 		<p id="d_1">
@@ -74,7 +74,11 @@
 	</div>
 
 	<script type="text/javascript">
-	
+		function nextPage()
+		{
+			var url= _myUrl()+'GF-Javascript/index-8.html';	
+			_refresh(url);
+		}
 		var i=0;
 		var j=0;
 

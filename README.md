@@ -45,6 +45,22 @@ You will be see log on console, and you can disable the console with change the 
 
 ## NEW SYNTAX OF CODE _UPDATE_ || 15 August 2017
 
+For select text, you just write code like this  ( https://lamhotsimamora.github.io/GF-Javascript/index-8.html )
+```go
+<!-- html -->
+<textarea class="form-control" id="my_text_area">
+			   	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			   	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			   	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			   	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			   	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			   	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</textarea>
+// gQuery 
+_selectText("my_text_area");
+```
+
+----------------------------------------------
 For add option value HTML,
 ```go
 <!-- html -->
@@ -53,7 +69,7 @@ For add option value HTML,
 </select>	
 
 ```
-you can write code like this, 
+you can write code like this, ( https://lamhotsimamora.github.io/GF-Javascript/index-8.html )
 ```go
 	var data_val = [
 		1,2,3,4,5
