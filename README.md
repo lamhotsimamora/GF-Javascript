@@ -53,7 +53,7 @@ For add option value HTML,
 </select>	
 
 ```
-you can write code like this,
+you can write code like this, 
 ```go
 	var data_val = [
 		1,2,3,4,5
@@ -63,7 +63,12 @@ you can write code like this,
 	];
 	_addOption("first_select",data_val,data_fruit);
 ```
-
+----------------------------------------------
+For get value or text of select option, you just write code like this 
+```go
+	var value_first = _getOption("my_select");
+```
+----------------------------------------------
 
 For set disabled right click, you just write code like this ( https://lamhotsimamora.github.io/GF-Javascript/index-4.html )
 ```go
