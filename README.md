@@ -112,7 +112,7 @@ _writeBody("Lorem Ipsum");
 For add item to list,
 ```go
 <!-- html -->
-<ul> 
+<ul id="list_1"> 
   <li>A</li>
   <li>B</li>
 </ul>
@@ -123,6 +123,7 @@ you can write code like this, ( https://lamhotsimamora.github.io/GF-Javascript/i
 var data_list_1 = [
     "Apple","Banana","Orange"
 ];
+// 'list-group-item' is a class css, you can type the class inside that.
 _addList("list_1","list-group-item",data_list_1);
 ```
 ----------------------------------------------
