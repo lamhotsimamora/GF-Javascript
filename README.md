@@ -64,7 +64,7 @@ _selectText("my_text_area");
 For add option value HTML,
 ```go
 <!-- html -->
-<select name="first_select" class="form-control" id="first_select">
+<select name="my_select" class="form-control" id="my_select">
 	<option value="1">A</option>			   		
 </select>	
 
@@ -77,12 +77,13 @@ you can write code like this, ( https://lamhotsimamora.github.io/GF-Javascript/i
 	var data_fruit = [
 		"Avocado","Apple","Banana","Broccoli","Orange"
 	];
-	_addOption("first_select",data_val,data_fruit);
+	_addOption("my_select",data_val,data_fruit);
 ```
 ----------------------------------------------
 For get value or text of select option, you just write code like this 
 ```go
 	var value_first = _getOption("my_select");
+	var text_first = _getOption("my_select");
 ```
 ----------------------------------------------
 
