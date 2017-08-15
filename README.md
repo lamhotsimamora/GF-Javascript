@@ -87,7 +87,7 @@ you can write code like this, ( https://lamhotsimamora.github.io/GF-Javascript/i
 	_addOption("my_select",data_val,data_fruit);
 ```
 ----------------------------------------------
-For get value or text of select option, you just write code like this 
+For get value or text of select option when selected, you just write code like this 
 ```go
         // For get value
 	var value_first = _getOption("my_select");
