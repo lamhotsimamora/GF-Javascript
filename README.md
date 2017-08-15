@@ -4,6 +4,9 @@ I was created simple query of javascript code. You can easy write code of Javasc
 If you familiar with jQuery, gQuery can be used with jQuery. You can modify the source code. Everything has been tested and support much browser like Chrome, Firefox, Opera , Safari & Internet Explorer. 
 Garuda Query has an identical symbol with underscore in front of function name, So you can use this library for other framework javascript.
 
+gQuery is not Kaleng Kaleng or Kroco Kroco... You can do a professional job with gQuery.
+
+
 <div style="text-align:center">
 <center>
 <img src="https://raw.githubusercontent.com/lamhotsimamora/GF-Javascript/master/browser-support.png">
