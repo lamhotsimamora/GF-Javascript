@@ -86,8 +86,10 @@ you can write code like this, ( https://lamhotsimamora.github.io/GF-Javascript/i
 ----------------------------------------------
 For get value or text of select option, you just write code like this 
 ```go
+        // For get value
 	var value_first = _getOption("my_select");
-	var text_first = _getOption("my_select");
+        // For get text of value
+	var text_first = _getOption("my_select",true);
 ```
 ----------------------------------------------
 
