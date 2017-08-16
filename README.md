@@ -5,10 +5,13 @@
 </img></center>
 </div>
 I was created simple query of javascript code. You can easy write code of Javascript and you can easy to do DOM (document object manipulation).  
-If you familiar with jQuery, gQuery can be used with jQuery. You can modify the source code. Everything has been tested and support much browser like Chrome, Firefox, Opera , Safari & Internet Explorer. 
-Garuda Query has an identical symbol with underscore in front of function name, So you can use this library for other framework javascript.
+If you familiar with jQuery, gQuery can be used with jQuery. You can modify the source code. 
 
-gQuery is not Kaleng Kaleng or Kroco Kroco... You can do a professional job with gQuery.
+Garuda Query has an identical symbol with underscore in front of function name, So you can also use this library with another framework javascript.
+
+Everything has been tested and support much browser like Chrome, Firefox, Opera , Safari & Internet Explorer. 
+
+gQuery is not library kaleng-kaleng. You can create a professional web with gQuery.
 
 
 <div style="text-align:center">
@@ -27,7 +30,7 @@ gQuery is not Kaleng Kaleng or Kroco Kroco... You can do a professional job with
 First you have to download / clone this repository and then copy this code to your HTML. 
 Copy this code if you want to clone.
 ```
-	git clone https://github.com/lamhotsimamora/GF-Javascript.git 
+git clone https://github.com/lamhotsimamora/GF-Javascript.git 
 ```
 ----------------------------------------------
 ```
@@ -78,7 +81,7 @@ For select text, you just write code like this  ( https://lamhotsimamora.github.
 ```go
 <!-- html -->
 <textarea class="form-control" id="my_text_area">
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
 </textarea>
 // gQuery 
 _selectText("my_text_area");
