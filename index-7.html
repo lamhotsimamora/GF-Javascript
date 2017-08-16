@@ -25,7 +25,9 @@
 		<button onclick="change3();" class="btn btn-default">Change 3</button>
 		<hr>
 		<button id="btn_tambah_1" onclick="addList1();" class="btn btn-success">Add List 1</button>
+		<button id="btn_remove1" onclick="removeList1();" class="btn btn-danger btn-md">x</button>
 		<button id="btn_tambah_2" onclick="addList2();" class="btn btn-success">Add List 2</button>
+		<button id="btn_remove2" onclick="removeList2();" class="btn btn-danger btn-md">x</button>
 		<hr>
 		<ul id="list_1" class="list-group">
 			<li class="list-group-item">Marquisa</li>
@@ -47,10 +49,13 @@
 	
 		<input type="text" class="form-control" name="" placeholder="First Name" id="t_firstname"></br>
 		<input type="text" class="form-control" name="" placeholder="Last Name" id="t_lastname"></br>
-		<input type="email" class="form-control" name="" placeholder="Email" id="t_email"> </br>
+		<input type="email" class="form-control" name="" placeholder="Email" id="t_email"> 
+		</br>
 		<button id="btn_table" onclick="addValueTable();" class="btn btn-primary btn-md">Add</button>
 		<hr>
-
+		<button class="btn btn-danger btn-md" onclick="removeItemTable();">x</button><hr>
+		<div id="id_table"></div>
+		<hr>
 		 <table class="table table-bordered">
 		    <thead>
 		      <tr>
@@ -73,15 +78,37 @@
 	</div>
 
 	<script type="text/javascript">
+		
+		var i=0;
+		var j=0;
+		var t=0;
+		var number=2;
+
+		_focus("t_firstname");
+
+		
+		function removeItemTable()
+		{
+			_printTo(t,"");
+			t++;
+		}
+
 		function nextPage()
 		{
 			var url= _myUrl()+'GF-Javascript/index-8.html';	
 			_refresh(url);
 		}
-		var i=0;
-		var j=0;
 
-		_focus("t_firstname");
+		function removeList1()
+		{
+			_printTo("Apple","");
+			_printTo("Banana","");
+			_printTo("Orange","");
+		}
+		function removeList2()
+		{
+			_printTo("Apple"+j,"");
+		}
 
 		function addList1()
 		{
@@ -95,16 +122,15 @@
 		function addList2()
 		{
 			j++;
-			var data_list_2 = "Apple "+j;
-			_addList("list_2","list-group-item",data_list_2);
+			var data_fruit = "Apple"+j;
+			_addList("list_2","list-group-item",data_fruit);
 		}
 
- 		var number=2;
 		function addValueTable()
 		{
-			var first_name = _getValById("t_firstname");
+			var first_name =  _getValById("t_firstname");
 			var last_name  =  _getValById("t_lastname");
-			var email      = _getValById("t_email");
+			var email      =  _getValById("t_email");
 
 			if (first_name==='')
 			{
@@ -131,7 +157,7 @@
 			 * Format ["item 1","item 2","item 3"]
 			 */
 			_addItemTable("table_val",data_table);
-			
+			_printTo("id_table","ID Object -> "+_getLastIncrement());
 		}
 
 
@@ -170,7 +196,12 @@
 			addValueTable();
 			_scroll("b_down");
 		},_keyCode.insert);
-	
+		
+
+
+		_setValue("t_firstname","Lorem");
+		_setValue("t_lastname","Ipsum");
+		_setValue("t_email","Ipsum@gmail.com");
 	</script>
 
 </body>

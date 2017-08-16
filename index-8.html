@@ -20,11 +20,20 @@
 			  <button class="btn btn-primary" id="btn_add">Add</button>
 			  <button class="btn btn-success" id="btn_get">Get Value</button>
 			  <hr>
+			  <button class="btn btn-danger md" onclick="removeOption1();">x</button>
+			  <hr>
+			    <button class="btn btn-danger md" onclick="removeOption2();">x</button> <hr>
 			  <select name="first_select" class="form-control" id="first_select">
 			   		
 			  </select>
+
+			  <hr>
 			   <hr>	
 			  <select name="second_select" class="form-control" id="second_select">
+			   		
+			  </select>
+			  <hr>
+			   <select name="three_select" class="form-control" id="three_select">
 			   		
 			  </select>
 			  <hr>
@@ -32,10 +41,7 @@
 			   <textarea class="form-control" id="my_text_area">
 			   	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			   	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			   	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			   	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			   	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			   	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			   	quis nostrud exercitation ullamco laboris
 			   </textarea><hr>
 			  
 			<hr>
@@ -43,25 +49,33 @@
 		</div>
 	
 	<script type="text/javascript">
+		var id_fruit = [
+			1,2,3,4,5
+		];
+		var id_animal = [
+			"a","b","c","d","e"
+		];
+
+		var data_fruit = [
+			"Avocado","Apple","Banana","Broccoli","Orange"
+		];
+		var data_animal = [
+			"Dog","Chicken","Cow","Cat","Bear"
+		];
+
 
 		_onClick("btn_select",function(){
 			_selectText("my_text_area");
 		});
 
+		var i = 0;
 		_onClick("btn_add",function(){
-			var data_val = [
-				1,2,3,4,5
-			];
-			var data_fruit = [
-				"Avocado","Apple","Banana","Broccoli","Orange"
-			];
-			var data_animal = [
-				"Dog","Chicken","Cow","Cat","Bear"
-			];
+			_addOption("first_select",id_fruit,data_fruit);
 
-			_addOption("first_select",data_val,data_fruit);
+			_addOption("second_select",data_animal);
 
-			_addOption("second_select",data_val,data_animal);
+			_addOption("three_select","Alfa"+i);
+		    i++;
 		});
 		_onClick("btn_get",function(){
 			var value_first = _getOption("first_select");
@@ -74,6 +88,16 @@
 		});
 
 
+		function removeOption1()
+		{
+			// On Progresss
+			_writeLog(_getById("10"));
+		}
+		function removeOption2()
+		{
+			// On Progresss
+			_writeLog(_getById("Alfa0"+i));
+		}
 	</script>
 </body>
 
