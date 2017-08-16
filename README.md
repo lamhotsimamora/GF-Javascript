@@ -56,12 +56,15 @@ You will be see log on console, and you can disable the console with change the 
 
 ## NEW SYNTAX OF CODE _UPDATE_ || 15 August 2017
 
-For create new Iframe, you can do with this code ,
+For create new Iframe, you can do with this code , ( https://lamhotsimamora.github.io/GF-Javascript/index-9.html )
 ```go
 // function _newIframe() will be return id of iframe -> iframe1
 // _newIframe("URL",width,height,id_object);
 var id =_newIframe("http://www.garudaframeworkpro.lamhotsimamora.com",500,500,"my_frame");
-// or 
+```
+or (if id is not set, so it's can be document write)
+
+```go 
 var obj = _newIframe("http://www.garudaframeworkpro.lamhotsimamora.com",500,500);
 ```
 ----------------------------------------------
