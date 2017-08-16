@@ -59,7 +59,10 @@ You will be see log on console, and you can disable the console with change the 
 For create new Iframe, you can do with this code ,
 ```go
 // function _newIframe() will be return id of iframe -> iframe1
+// _newIframe("URL",width,height,id_object);
 var id =_newIframe("http://www.garudaframeworkpro.lamhotsimamora.com",500,500,"my_frame");
+// or 
+var obj = _newIframe("http://www.garudaframeworkpro.lamhotsimamora.com",500,500);
 ```
 ----------------------------------------------
 
