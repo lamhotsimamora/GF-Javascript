@@ -95,68 +95,6 @@
 					_printTo("txt_result_2","You select : "+cb1+" "+cb2+" "+cb3);
 				});
                 
-				function _newIframe(src,w,h,id)
-				{
-					
-					if (src===undefined)
-					{
-						if (run_console)
-						{
-							_writeLog("_newIframe-> Source is undefined");
-						}
-						return;
-					}
-					if (_isUrl(src)===false)
-					{
-
-						if (run_console)
-						{
-							_writeLog("_newIframe -> URL is not valid");
-						}
-						return;
-					}
-					if (w===undefined)
-					{
-						if (run_console)
-						{
-							_writeLog("_newIframe-> Width is undefined set to 400");
-						}
-						w = 400;
-					} 
-					if (h===undefined)
-					{
-						if (run_console)
-						{
-							_writeLog("_newIframe-> Height is undefined set to 400");
-						}
-						h = 400;
-					} 
-					if (id===undefined)
-					{
-						if (run_console)
-						{
-							_writeLog("_newIframe-> "+_error_message.id+", Render iframe to document write");
-						}
-						
-						_docWrite('<div id="iframe1"><iframe src="'+src+'" height="'+w+'" width="'+h+'"></iframe></div>');
-						return "iframe1";
-					}
-					else if (_getById(id))
-					{
-						_printTo(id,'<div id="iframe1"><iframe src="'+src+'" height="'+w+'" width="'+h+'"></iframe></div>');
-						return "iframe1";
-					}
-					else
-					{
-						if (run_console)
-						{
-							_writeLog("_newIframe-> "+_error_message.obj);
-						}
-						
-					}
-					
-				}
-
 				var id =_newIframe("http://www.garudaframeworkpro.lamhotsimamora.com",500,500,"my_frame");
 				
 				_printTo("my_div_frame",id);
