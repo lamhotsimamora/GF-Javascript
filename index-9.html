@@ -9,7 +9,8 @@
 <body>
 		
 		<div class="container">
-		<a href=".">Get Me Back</a>
+		<button class="btn-primary btn-xs" id="btn_next_page" name="" 
+			onclick="nextPage();">Next</button>
 			<hr>
 			<button class="btn btn-success btn-md" id="btn_check_1">Check</button><hr>
 				<form>
@@ -66,6 +67,11 @@
 		</div>
 
 		<script type="text/javascript">
+		function nextPage()
+		{
+			var url= _myUrl()+'GF-Javascript/index-10.html';	
+			_refresh(url);
+		}
 				_onClick("btn_check_1",function(){
 					var value = '';
 					if (_getById("radio1").checked)
