@@ -25,6 +25,11 @@ gQuery is not Kaleng Kaleng or Kroco Kroco... You can do a professional job with
 ## Getting Started
 
 First you have to download / clone this repository and then copy this code to your HTML. 
+Copy this code if you want to clone.
+```
+	git clone https://github.com/lamhotsimamora/GF-Javascript.git 
+```
+----------------------------------------------
 ```
 <script src="JS/GF-1.js"></script>
 ```
