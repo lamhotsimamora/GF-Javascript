@@ -7,7 +7,7 @@ For licensing, see LICENSE.md 'https://raw.githubusercontent.com/lamhotsimamora/
 */
 
 
-var run_console = false;
+var run_console = true;
 var _error_message = {id:"Id of object is not defined", name: "Name of object is not defined", url: "Url is not defined", clbck_id: "Create callback function or id of object", val: "Value of object is undefined", cnvs: "Id Canvas is undefined", val_n: "Value is not found", class : "Class of object is not defined", obj : "Object is not found"}
 var _componentHTML = {li_open: "<li class='", li_close: '</li>', tr_open: "<tr id='", tr_close: '</tr>', td_open: "<td>", td_close: '</td>', option_open : "<option value='", option_close : '</option>'}
 var _sWidth = screen.width; var _sHeight = screen.height; var _obj_d = new Date(); var __data_angka = new Array("1", "2", "3", "4", "5", "6", "7", "8", "9", "0"); var __data_huruf = new Array("?", "$", "*", "~", "!", "^", "%", ">", "-", "|"); var _protocol; var _host;

@@ -56,6 +56,13 @@ You will be see log on console, and you can disable the console with change the 
 
 ## NEW SYNTAX OF CODE _UPDATE_ || 15 August 2017
 
+For create new Iframe, you can do with this code ,
+```go
+// function _newIframe() will be return id of iframe -> iframe1
+var id =_newIframe("http://www.garudaframeworkpro.lamhotsimamora.com",500,500,"my_frame");
+```
+----------------------------------------------
+
 For select text, you just write code like this  ( https://lamhotsimamora.github.io/GF-Javascript/index-8.html )
 ```go
 <!-- html -->

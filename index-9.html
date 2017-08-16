@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Radio Button & Check Box</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="JS/GF-1.js"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+		
+		<div class="container">
+		<a href=".">Get Me Back</a>
+			<hr>
+			<button class="btn btn-success btn-md" id="btn_check_1">Check</button><hr>
+				<form>
+					
+					  <label class="radio-inline">
+					  		<input type="radio" name="optradio" id="radio1" value="BMW">BMW
+					  </label>
+				
+					
+					  <label class="radio-inline">
+					  		<input type="radio" name="optradio" id="radio2" value="FERRARI">FERRARI
+					  </label>
+			
+					
+					  <label class="radio-inline">
+					  		<input type="radio" name="optradio" id="radio3" value="LAMBORGINI">LAMBORGINI
+					  </label>
+					
+				</form>
+			<hr>
+
+			<h3 id="txt_result_1"></h3>
+			
+		</div>
+			
+
+		<div class="container">
+		<hr>
+				<button class="btn btn-success btn-md" id="btn_check_2">Check</button><hr>
+				<form>
+						<div class="checkbox">
+						  <label><input type="checkbox" id="combobox1" value="Apple">Apple</label>
+						</div>
+						<div class="checkbox">
+						  <label><input type="checkbox" id="combobox2" value="Banana">Banana</label>
+						</div>
+						<div class="checkbox">
+						  <label><input type="checkbox" id="combobox3" value="Orange">Orange</label>
+						</div>
+				</form>
+				<hr>
+				<h3 id="txt_result_2"></h3>
+		</div>
+
+		<div class="container">
+		<hr>
+		<button class="btn btn-danger btn-md" id="btn_remove_iframew">x</button>
+		<hr>
+		<div id="my_div_frame"> </div>
+		<hr>
+			<p id="my_frame">
+				
+			</p>
+		</div>
+
+		<script type="text/javascript">
+				_onClick("btn_check_1",function(){
+					var value = '';
+					if (_getById("radio1").checked)
+					{
+						value = _getValById("radio1");
+					}
+					else if (_getById("radio2").checked)
+					{
+						value = _getValById("radio2");
+					}
+					else if (_getById("radio3").checked)
+					{
+						value = _getValById("radio3");
+					}
+
+					_printTo("txt_result_1","You select : "+value);
+
+				});
+
+
+				_onClick("btn_check_2",function(){
+
+					var cb1 = _getById("combobox1").checked ? _getValById("combobox1") : "";
+					var cb2 = _getById("combobox2").checked ? _getValById("combobox2") : "";
+					var cb3 = _getById("combobox3").checked ? _getValById("combobox3") : "";
+					
+					_printTo("txt_result_2","You select : "+cb1+" "+cb2+" "+cb3);
+				});
+                
+				function _newIframe(src,w,h,id)
+				{
+					
+					if (src===undefined)
+					{
+						if (run_console)
+						{
+							_writeLog("_newIframe-> Source is undefined");
+						}
+						return;
+					}
+					if (_isUrl(src)===false)
+					{
+
+						if (run_console)
+						{
+							_writeLog("_newIframe -> URL is not valid");
+						}
+						return;
+					}
+					if (w===undefined)
+					{
+						if (run_console)
+						{
+							_writeLog("_newIframe-> Width is undefined set to 400");
+						}
+						w = 400;
+					} 
+					if (h===undefined)
+					{
+						if (run_console)
+						{
+							_writeLog("_newIframe-> Height is undefined set to 400");
+						}
+						h = 400;
+					} 
+					if (id===undefined)
+					{
+						if (run_console)
+						{
+							_writeLog("_newIframe-> "+_error_message.id+", Render iframe to document write");
+						}
+						
+						_docWrite('<div id="iframe1"><iframe src="'+src+'" height="'+w+'" width="'+h+'"></iframe></div>');
+						return "iframe1";
+					}
+					else if (_getById(id))
+					{
+						_printTo(id,'<div id="iframe1"><iframe src="'+src+'" height="'+w+'" width="'+h+'"></iframe></div>');
+						return "iframe1";
+					}
+					else
+					{
+						if (run_console)
+						{
+							_writeLog("_newIframe-> "+_error_message.obj);
+						}
+						
+					}
+					
+				}
+
+				var id =_newIframe("http://www.garudaframeworkpro.lamhotsimamora.com",500,500,"my_frame");
+				
+				_printTo("my_div_frame",id);
+
+				_onClick("btn_remove_iframew",function(){
+					_printTo("iframe1","");
+				});
+		</script>
+</body>
+</html>
