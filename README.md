@@ -62,7 +62,7 @@ For create new Iframe, you can do with this code , ( https://lamhotsimamora.gith
 // _newIframe("URL",width,height,id_object);
 var id =_newIframe("http://www.garudaframeworkpro.lamhotsimamora.com",500,500,"my_frame");
 ```
-or (if id is not set, so it's can be document write)
+or ( if id is not set, so it's can be document write )
 
 ```go 
 var obj = _newIframe("http://www.garudaframeworkpro.lamhotsimamora.com",500,500);
@@ -73,9 +73,7 @@ For select text, you just write code like this  ( https://lamhotsimamora.github.
 ```go
 <!-- html -->
 <textarea class="form-control" id="my_text_area">
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
 </textarea>
 // gQuery 
 _selectText("my_text_area");
@@ -92,21 +90,21 @@ For add option value HTML,
 ```
 you can write code like this, ( https://lamhotsimamora.github.io/GF-Javascript/index-8.html )
 ```go
-	var data_val = [
-		1,2,3,4,5
-	];
-	var data_fruit = [
-		"Avocado","Apple","Banana","Broccoli","Orange"
-	];
-	_addOption("my_select",data_val,data_fruit);
+var data_val = [
+	1,2,3,4,5
+];
+var data_fruit = [
+	"Avocado","Apple","Banana","Broccoli","Orange"
+];
+_addOption("my_select",data_val,data_fruit);
 ```
 ----------------------------------------------
 For get value or text of select option when selected, you just write code like this 
 ```go
-        // For get value
-	var value_first = _getOption("my_select");
-        // For get text of value
-	var text_first = _getOption("my_select",true);
+// For get value
+var value_first = _getOption("my_select");
+// For get text of value
+var text_first = _getOption("my_select",true);
 ```
 ----------------------------------------------
 
