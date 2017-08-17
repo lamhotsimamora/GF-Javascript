@@ -6,6 +6,7 @@
 <img src="https://lamhotsimamora.github.io/Garuda-Framework-Professional-Edition/merdeka.png" width="700" height="400">
 </img></center>
 </div>
+
 ----------------------------------------------
 
 I was created simple query of javascript code. You can easy write code of Javascript and you can easy to do DOM (document object manipulation).  
