@@ -5,6 +5,7 @@
 </img></center>
 </div>
 I was created simple query of javascript code. You can easy write code of Javascript and you can easy to do DOM (document object manipulation).  
+
 If you familiar with jQuery, gQuery can be used with jQuery. You can modify the source code. 
 
 Garuda Query has an identical symbol with underscore in front of function name, So you can also use this library with another framework javascript.
@@ -82,7 +83,7 @@ For print object or body HTML, you can write code like this ( https://lamhotsima
 ```go 
 _print("id_object",600,400);
 ```
-or 
+or if you want to print full of body, 
 ```go 
 _print();
 ```
