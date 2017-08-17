@@ -1,9 +1,13 @@
 # Garuda Query Javascript | Pretty Code | Easy Use
+----------------------------------------------
 <div style="text-align:center">
 <center>
+
 <img src="https://lamhotsimamora.github.io/Garuda-Framework-Professional-Edition/merdeka.png" width="700" height="400">
 </img></center>
 </div>
+----------------------------------------------
+
 I was created simple query of javascript code. You can easy write code of Javascript and you can easy to do DOM (document object manipulation).  
 
 If you familiar with jQuery, gQuery can be used with jQuery. You can modify the source code. 
@@ -21,6 +25,7 @@ gQuery is not library kaleng-kaleng. You can create a professional web with gQue
 </img></center>
 </div>
 
+----------------------------------------------
 ## See Example *gQuery* On My Web
 * [Room Chat](https://www.chat.lamhotsimamora.com) - Real Time Chat
 * [GarudaFramework](https://garudaframework.lamhotsimamora.com//page/example) - Garuda Framework Javascript Demo
