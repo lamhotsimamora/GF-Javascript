@@ -64,6 +64,29 @@ You will be see log on console, and you can disable the console with change the 
 
 ## NEW SYNTAX OF CODE _UPDATE_ || 15 August 2017
 
+
+For give event mouse over you just write code like this ( https://lamhotsimamora.github.io/GF-Javascript/index-10.html )
+```go 
+_onMouseOver("id_object",function(){
+	alert("Do something here...");
+});
+```
+For give event mouse out you just write code like this 
+```go 
+_onMouseOut("id_object",function(){
+	alert("Do something here...");
+});
+```
+----------------------------------------------
+For print object or body HTML, you can write code like this ( https://lamhotsimamora.github.io/GF-Javascript/index-10.html )
+```go 
+_print("id_object",600,400);
+```
+or 
+```go 
+_print();
+```
+----------------------------------------------
 For create new Iframe, you can do with this code , ( https://lamhotsimamora.github.io/GF-Javascript/index-9.html )
 ```go
 // function _newIframe() will be return id of iframe -> iframe1
