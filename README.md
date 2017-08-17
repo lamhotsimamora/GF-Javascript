@@ -1,7 +1,7 @@
 # Garuda Query Javascript | Pretty Code | Easy Use
 <div style="text-align:center">
 <center>
-<img src="https://lamhotsimamora.github.io/Garuda-Framework-Professional-Edition/Garuda-Framework-Pro-Edition-Logo-Official.png">
+<img src="https://lamhotsimamora.github.io/Garuda-Framework-Professional-Edition/Garuda-Framework-Pro-Edition-Logo-Official.png" width="700" height="400">
 </img></center>
 </div>
 I was created simple query of javascript code. You can easy write code of Javascript and you can easy to do DOM (document object manipulation).  
