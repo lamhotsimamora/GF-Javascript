@@ -62,7 +62,7 @@ You will be see log on console, and you can disable the console with change the 
 <a href="https://www.youtube.com/watch?v=kK87qWO3g8g">Part 6</a>
 ----------------------------------------------
 
-## NEW SYNTAX OF CODE _UPDATE_ || 15 August 2017
+## NEW SYNTAX OF CODE _UPDATE_ || 17 August 2017
 
 
 For give event mouse over you just write code like this ( https://lamhotsimamora.github.io/GF-Javascript/index-10.html )
