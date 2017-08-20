@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Example Event Drag & Drop , On Load , On Page Show , On Change | gQuery Javascript </title>
+</head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="JS/GF-1.js"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<body id="my_body">
+		
+		<div class="container">
+		<hr>
+		<a href=".">Get Me Back</a>
+		<hr>
+			<center>
+				<h2>
+					Example Event Drag & Drop , On Load , On Page Show , On Change
+				</h2>
+			</center>
+		</div>
+
+	<div class="container">
+		 
+		 <div class="well">
+		 	 <hr>
+			  <center>
+			  	<h3 id="display_text_one"></h3>
+			  </center>
+			 <h4 id="my_text_one" draggable="true" ondragover="_allowDrop(event)">Drag Me Please (Apple)</h4>
+			  <hr>
+			  <h3 id="display_text_drop_one"></h3>
+			 <hr>
+		 </div>
+		 <hr>
+		
+		<center>
+			<div id="txt_drag" ondragover="_allowDrop(event)"><strong>DRAG & DROP HERE</strong></div>
+		</center>
+
+		 <hr>
+		 <div class="well">
+		 	 <hr>
+			  <center>
+			  	<h3 id="display_text_two"></h3>
+			  </center>
+			 <h4 id="my_text_two" draggable="true" ondragover="_allowDrop(event)">Drag Me Please (Banana)</h4>
+			  <hr>
+			  <h3 id="display_text_drop_two"></h3>
+			 <hr>
+		 </div>
+
+		 <hr>
+		 <div class="well">
+		 		<h4 id="display_username"></h4>
+		 		<hr>
+		 		<div>
+		 			<i>This is for event On Change</i>
+		 		</div>
+		 		<input type="text" id="my_input" placeholder="Username" name="" class="form-control">
+		 </div>
+		
+		
+
+	</div>
+	
+	
+	<script type="text/javascript">
+	
+		
+
+		_onLoad("my_body",function(){
+				_writeLog("On Load -> my_body");
+				
+				var val_text_one,val_text_two;
+				
+				_onDrag("my_text_one",function(){
+					_printTo("display_text_one","Drag Apple...");
+				});
+
+				_onDrag("display_text_one",function(){
+					_printTo("display_text_two","Drag Banana...");
+				});
+
+				_onDrop("my_text_one",function(){
+					val_text_one = _getById("my_text_two").innerHTML;
+					_printTo("display_text_drop_one",val_text_one);
+				});
+
+		       _onDrop("my_text_two",function(){
+		       	    val_text_two = _getById("my_text_one").innerHTML;
+					_printTo("display_text_drop_two",val_text_two);
+				});
+
+		        _onDrop("txt_drag",function(){
+		        	alert("Do something here");
+		        });
+
+				_onChange("my_input",function(){
+					var value = _getValById("my_input");
+					_printTo("display_username",value.toUpperCase());
+				});
+		});
+			
+		_onPageShow("my_body",function(){
+			_writeLog("On Page Show -> my_body");
+		});
+	</script>
+
+</body>
+</html>

@@ -10,9 +10,8 @@
 <body>
 	
 	<div class="container">
-		<hr>
-		<a href=".">Get Me Back</a>
-		<hr>
+		<button class="btn-primary btn-xs" id="btn_next_page" name="" 
+			onclick="nextPage();">Next</button>
 		<hr>
 		<button class="btn btn-primary btn-md" id="btn_print_article">Print Article</button>
 		<button class="btn btn-primary btn-md" id="btn_print_all">Print All</button>
@@ -40,6 +39,12 @@
 	</div>
 
 	<script type="text/javascript">
+
+	   function nextPage()
+		{
+			var url= _myUrl()+'GF-Javascript/index-11.html';	
+			_refresh(url);
+		}
 		
 		_onClick("btn_print_article",function(){
 			_print("my_article",600,400);
