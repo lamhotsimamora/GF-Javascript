@@ -19,6 +19,9 @@ Everything has been tested and support much browser like Chrome, Firefox, Opera 
 
 gQuery is not kaleng-kaleng library . You can create a professional web with gQuery.
 
+## See All Of Function
+* [All Of Function](https://lamhotsimamora.github.io/GF-Javascript/index-index.html) - All Of Function
+
 
 <div style="text-align:center">
 <center>
