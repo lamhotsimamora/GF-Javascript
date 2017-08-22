@@ -36,8 +36,29 @@
 			<div id="text_email"></div>
 			<input type="text"  id="t_email" placeholder="Email..." class="form-control"> 
 		</div>
+		<hr>
+		<div>
+			<h3 class="gClass" id="d_hello">Hello World</h3>
+		</div>
 		
-		<h1 class="gClass" id="d_hello">Hello World</h1>
+	</div>
+
+	<div class="container">
+		<center>
+			<h4>Resize this screen !</h4>
+		
+		<hr>
+		<h2><div id="display_resize"></div></h2>
+		</center>
+	</div>
+
+
+	<div class="container">
+	<hr>
+		<center>
+			<h3><div id="display_focus"></div></h3> <hr>
+			<input type="text" id="my_focus" class="form-control" name="" placeholder="My Focus">
+		</center>
 	</div>
 	
 
@@ -104,6 +125,16 @@
 
 			_onKeyUpToText("t_email","text_email",function(a,b){
 				_writeLog(a+" "+b);
+			});
+
+
+			_onResize(function(e){
+				_printTo("display_resize","Resize "+e);
+			});
+
+
+			_onFocus("my_focus",function(){
+				_printTo("display_focus","On Focus : Do Something Here");
 			});
 					
 </script>

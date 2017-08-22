@@ -17,7 +17,7 @@ Garuda Query has an identical symbol with underscore in front of function name, 
 
 Everything has been tested and support much browser like Chrome, Firefox, Opera , Safari & Internet Explorer. 
 
-gQuery is not library kaleng-kaleng. You can create a professional web with gQuery.
+gQuery is not kaleng-kaleng library . You can create a professional web with gQuery.
 
 
 <div style="text-align:center">
@@ -53,12 +53,14 @@ or if you want to use for production you can use this <a href="https://rawgit.co
 ```
 ----------------------------------------------
 ## Enable / Disable Console
-You will be see log on console, and you can disable the console with change the value of variabel ```run_console```
+You will be see log on console, and you can disable the console log with change the value of variabel ```run_console```
 
 1. Open "GF-1.js"
 2. See on line 1
-3. If you find this code ```var run_console  = true;```, change to ``` false ```, and the end the code will be 
-``` var run_console  = false; ```
+3. If you find this code ```var run_console  = false;```, change to ``` true ```, and the end the code will be 
+``` var run_console  = true; ```
+
+
 
 ## Demo On Youtube
 <a href="https://www.youtube.com/watch?v=dy5Lg0W7vlc">Part 1</a>
@@ -69,8 +71,41 @@ You will be see log on console, and you can disable the console with change the 
 <a href="https://www.youtube.com/watch?v=kK87qWO3g8g">Part 6</a>
 ----------------------------------------------
 
-## NEW SYNTAX OF CODE _UPDATE_ || 17 August 2017
+## _UPDATE_ SYNTAX OF CODE  || 22 August 2017
 
+----------------------------------------------
+You can write custom console log with color RED with this code 
+### 
+```go
+_writeLog("test"); 
+``` 
+or
+You can write to console log with color GREEN with this code ( https://lamhotsimamora.github.io/GF-Javascript/index-2.html )
+### 
+```go
+_writeLog("Custom Console Log",false); 
+``` 
+----------------------------------------------
+
+
+For give event on focus, you just write code like this ( https://lamhotsimamora.github.io/GF-Javascript/index-5.html )
+```go 
+	<!-- html -->
+	<input type="text" id="my_focus" class="form-control" name="" placeholder="My Focus">
+```
+```go 
+	// gQuery
+	_onFocus("my_focus",function(){
+		_writeLog("On Focus : Do Something Here");
+	});
+```
+
+For give event resize screen, you just write code like this ( https://lamhotsimamora.github.io/GF-Javascript/index-5.html )
+```go 
+	_onResize(function(r){
+		_writeLog("Resize Screen : "+r);
+	});
+```
 
 For give event mouse over you just write code like this ( https://lamhotsimamora.github.io/GF-Javascript/index-10.html )
 ```go 
@@ -795,23 +830,6 @@ _getLocation(function(result){
 	}); 
 
 ```
-----------------------------------------------
-You can write to console log with color RED with this code
-### 
-```go
-_writeLog("test"); 
-``` 
-or
-You can write to console log with color GREEN with this code
-### 
-```go
-_writeLog("test",false); 
-``` 
-----------------------------------------------
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ----------------------------------------------
 
