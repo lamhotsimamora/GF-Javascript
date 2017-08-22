@@ -3,7 +3,7 @@
 <div style="text-align:center">
 <center>
 
-<img src="https://lamhotsimamora.github.io/Garuda-Framework-Professional-Edition/merdeka.png" width="700" height="400">
+<img src="https://lamhotsimamora.github.io/Garuda-Framework-Professional-Edition/merdeka.png" width="400" height="200">
 </img></center>
 </div>
 
