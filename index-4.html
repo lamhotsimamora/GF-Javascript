@@ -3,7 +3,7 @@
 <head>
 	<title>Key Board Event | GARUDA QUERY JAVASCRIPT</title>
 	<script src="JS/GF-1.js"></script>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<style type="text/css">
 		#key_name {
@@ -25,29 +25,31 @@
 			<button class="btn-primary btn-xs" id="btn_next_page" name="" 
 			onclick="nextPage();">Next</button>
 			<hr>
-				<div class="well">
-				<H2>Key Board Event & Right Click </H2></div>
-						<input type="text" name="" class="form-control" placeholder="Text"><hr>
-				 <div class="panel panel-primary">
-				 
-			      <div class="panel-heading">CODE</div>
-			      <div class="panel-body"><strong><H1><div id="key_code"></div></H1></strong></div>
+			<div class="well">
+			    <H2>Key Board Event & Right Click </H2>
+			</div>
+			<input type="text" name="" class="form-control" placeholder="Text">
+			<hr>
+			<div class="panel panel-primary">
+			    <div class="panel-heading">CODE</div>
+			    <div class="panel-body"><strong><H1><div id="key_code"></div></H1></strong></div>
+			</div>
+			<hr>
+			<div class="panel panel-default">
+			    <div class="panel-heading"></div>
+			    <div class="panel-body"><strong>
+								<H1>
+
+								<div id="key_name"></div>
+
+								</H1>
+								</strong>
 			    </div>
-			    <hr>
-					<div class="panel panel-default">
-					<div class="panel-heading"></div>
-					<div class="panel-body"><strong>
-					<H1>
-
-					<div id="key_name"></div>
-
-					</H1>
-					</strong>
-					</div>
-					</div>
-
-					</center>
-					</div>
+			</div>
+			<hr>
+			<input type="text"  id="my_down" class="form-control" name="" placeholder="Username">
+			</center>
+		</div>
 
 	<script type="text/javascript">
 
@@ -250,6 +252,15 @@
 			_printTo("key_code","PREVIOUS");
 			_printTo("key_code",_keyCode.num_lock);
 		},_keyCode.previous);
+
+
+		_onKeyDown("my_down",function(e){
+			_writeLog("On Key Down " +e);
+		});
+
+		_onKeyUp("my_down",function(e){
+			_writeLog("On Key Up "+e);
+		});
 	</script>
 
 </body>

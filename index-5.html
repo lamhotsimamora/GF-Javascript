@@ -32,6 +32,9 @@
 		<div class="panel">
 			<div id="text_name"></div>
 			<input type="text"  id="t_name" placeholder="Name..." class="form-control"> 
+			<hr>
+			<div id="text_email"></div>
+			<input type="text"  id="t_email" placeholder="Email..." class="form-control"> 
 		</div>
 		
 		<h1 class="gClass" id="d_hello">Hello World</h1>
@@ -96,7 +99,12 @@
 			 */
 			_onKeyUpToText("t_name","text_name");
 
-			
+			_keyCustom();
+
+
+			_onKeyUpToText("t_email","text_email",function(a,b){
+				_writeLog(a+" "+b);
+			});
 					
 </script>
 

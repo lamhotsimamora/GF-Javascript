@@ -108,6 +108,7 @@
 </div>
 
 <div id="down_body" class="container">
+	<input type="text" id="txt_oke_oce" class="form-control" name="">
 	<button class="btn-default" onclick="_scroll('up_body')">Scrool Up</button>
 </div>
 
@@ -160,8 +161,13 @@
 				}
 			}
 
-			
+			_valueInput("txt_oke_oce","Mantap");
 
+			var string ="%HASTAG%test";
+
+			var result = _returnMaster(string);
+
+			_writeLog(result);
 
 			function clearAll(){
 				_clear("txt_name");
@@ -271,7 +277,7 @@
 					_printTo("_test_response_ajax_2",response);
 				}
 			});
-
+			
 
 			/***/
 
