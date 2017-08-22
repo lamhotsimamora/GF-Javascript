@@ -5,7 +5,7 @@ Web    : www.lamhotsimamora.com
 All rights reserved.
 For licensing, see LICENSE.md 'https://raw.githubusercontent.com/lamhotsimamora/GF-Javascript/master/license.md'
 */
-var run_console = true;
+var run_console = false;
 var _sWidth = screen.width; var _sHeight = screen.height; var _protocol; var _host;var _obj_d = new Date();
 var _error_message = {id:"Id of object is undefined", name: "Name of object is undefined", url: "Url is undefined", url_n : "Url is not valid", clbck_id: "Create callback function or id of object", val: "Value of object is undefined", val_n: "Value is not found", cnvs: "Id Canvas is undefined", val_n: "Value is not found", class : "Class of object is undefined", obj : "Element is not found", fu : "The parameter should be a callback function ", fu_n : "Function call back is undefined", content : "Content is undefined"}
 var _da = new Array("1", "2", "3", "4", "5", "6", "7", "8", "9", "0"); var _dh = new Array("?", "$", "*", "~", "!", "^", "%", ">", "-", "|"); var _componentHTML = {li_open: "<li class='", li_close: '</li>', tr_open: "<tr id='", tr_close: '</tr>', td_open: "<td>", td_close: '</td>', option_open : "<option value='", option_close : '</option>'}
