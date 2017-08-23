@@ -89,7 +89,11 @@ You can write to console log with color GREEN with this code ( https://lamhotsim
 _writeLog("Custom Console Log",false); 
 ``` 
 ----------------------------------------------
-
+For filter array value, like remove undefined , null, or false, you can do with this code 
+```go 
+    var data_array = ['lorem','ipsum',null,'false'];
+	var new_array  = _cleanArray(data_array,null,'false');
+```
 
 For give event on focus, you just write code like this ( https://lamhotsimamora.github.io/GF-Javascript/index-5.html )
 ```go 
