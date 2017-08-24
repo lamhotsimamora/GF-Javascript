@@ -5,11 +5,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<script src="JS/GF-1.js"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
 </head>
 <body>
 
 
 <div class="container">
+
 	<h1 id="up_body">
 		Welcome To Garuda Query Javascript
 		<button class="btn-primary btn-xs" id="btn_next_page" name="" 
@@ -22,6 +25,8 @@
 <div class="container">
 		
 		<hr>
+		Font Awesome Required !
+		<div id="my_animation1"> </div> <div id="my_animation2"> </div> <div id="my_animation3"> </div> 
 		<hr>
 		<img src="" class="thumbnail" id="img_profile" alt="">
 		<button class='btn-success btn-md' onclick="loadImage()">Change Image
@@ -119,6 +124,9 @@
 				_refresh(url);
 			}
 
+			_animation("my_animation1","Loading...","refresh");
+			_animation("my_animation2","Loading...","circle");
+			_animation("my_animation3","Loading...","spinner");
 
 			_getById("_function_test7",function(obj){
 				obj.innerHTML = "lorem ipsum";

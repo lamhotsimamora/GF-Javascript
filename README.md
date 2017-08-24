@@ -264,7 +264,7 @@ For draw image to canvas HTML, you can write code like this ( https://lamhotsima
 For draw line to canvas HTML, you can write code like this
 ###  
 ```go
-   _drawLine("my_canvas",30,12);
+   _drawLine("my_canvas",30,12,40,60);
 ```
 
 For draw text to canvas HTML, you can write code like this
