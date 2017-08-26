@@ -5,7 +5,7 @@ Web    : www.lamhotsimamora.com
 All rights reserved.
 For licensing, see LICENSE.md 'https://raw.githubusercontent.com/lamhotsimamora/GF-Javascript/master/license.md'
 */
-const run_console = true;
+const run_console = false;
 let _protocol; let _host; let _inc = 0; const _sWidth = screen.width; const _sHeight = screen.height; const _obj_d = new Date();
 const _error_message = {id: "Id of element is undefined", name: "Name of element is undefined", url: "Url is undefined", url_n: "Url is not valid", clbck_id: "Create callback function or id of object", val: "Value of object is undefined", val_n: "Value is not found", cnvs: "Id Canvas is undefined", val_n: "Value is not found", class: "Class of object is undefined", obj: "Element is not found", fu: "The parameter should be a callback function ", fu_n: "Function call back is undefined", content: "Content is undefined", key_cook: "Key of cookie is nothing", ajax_start : "Start Load data", ajax_finish :"Finish Load Data", ajax_process:"Request has been proccess", ajax_header :"Request is denied ! Header of request is not come from original server !", ajax_obj:"Object is not initialized"}
 const _da = new Array("1", "2", "3", "4", "5", "6", "7", "8", "9", "0"); const _dh = new Array("?", "$", "*", "~", "!", "^", "%", ">", "-", "|"); 
