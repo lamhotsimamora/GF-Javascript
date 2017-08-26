@@ -50,9 +50,9 @@ or
 ```
 <script src="GF-1.js"></script>
 ```
-or if you want to use for production you can use this <a href="https://rawgit.com/lamhotsimamora/GF-Javascript/master/JS/GF-1.js">CDN</a>, just copy this code to your HTML
+or if you want to use for production you can use this <a href="https://raw.githubusercontent.com/lamhotsimamora/GF-Javascript/master/JS/GF-1.js">CDN</a>, just copy this code to your HTML
 ```
-<script src="https://rawgit.com/lamhotsimamora/GF-Javascript/master/JS/GF-1.js"></script>
+<script src="https://raw.githubusercontent.com/lamhotsimamora/GF-Javascript/master/JS/GF-1.js"></script>
 ```
 ----------------------------------------------
 ## Enable / Disable Console
