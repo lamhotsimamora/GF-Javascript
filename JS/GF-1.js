@@ -1,5 +1,5 @@
 /*
-Copyright (c) 2017, Garuda Query Javscript
+Copyright (c) 2017, Garuda Query Javascript
 Author : Lamhot Simamora. 
 Web    : www.lamhotsimamora.com
 All rights reserved.
