@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Example Set & Get To Storage Browser</title>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="JS/GF-1.js"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<body>
+	
+	
+	<div class="container">
+			
+			<a href=".">Get Me Back</a>
+		
+	</div>
+
+
+	<script type="text/javascript">
+	    var token = _randomStr(25);
+
+	    /**
+	     * Example Save to Storage With Array
+	     * ['id','status','token','ip','key']
+	     * @type {Object}
+	     */
+		const my_data = {
+			"id"	: 1,
+			"status": true,
+			"token"	: token,
+			"ip"	: '192.168.12.1',
+			"key"	: true
+		}
+		_saveStorage(my_data,"_myApp");
+		/***/
+
+		/**
+		 * Example Save to Storage Without Array
+		 */
+		_saveStorage("my_key","my_val");
+
+		var id 		= _getStorage('id_myApp');
+		var status  = _getStorage('status_myApp');
+		var token   = _getStorage('token_myApp');
+		var ip      = _getStorage('ip_myApp');
+
+
+		_writeLog("=======");
+		_writeLog(id);
+		_writeLog(status);
+		_writeLog(token);
+		_writeLog(ip);
+	</script>
+</body>
+</html>
