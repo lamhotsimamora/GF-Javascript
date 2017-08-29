@@ -1,0 +1,13 @@
+<?php
+
+
+if (isset($_POST['name']))
+{
+	$result = '<article class="message is-primary"> <div class="message-header"> <p><strong>Response From Server !</strong><a> Example Ajax with POST </a></p> <button class="delete" aria-label="delete"></button> </div> <div class="message-body"> Name Is : "'.$_POST['name'].'" </div> </article>';
+	echo $result;
+}
+else if (isset($_GET['name']))
+{
+	$result = '<article class="message is-primary"> <div class="message-header"> <p><strong>Response From Server !</strong><a> Example Ajax with GET </a></p> <button class="delete" aria-label="delete"></button> </div> <div class="message-body"> Name Is : "'.$_GET['name'].'" </div> </article>';
+	echo $result;
+}

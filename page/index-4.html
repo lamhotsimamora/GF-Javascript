@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Key Board Event | GARUDA QUERY JAVASCRIPT</title>
-	<script src="JS/GF-1.js"></script>
+	<script src="https://cdn.rawgit.com/lamhotsimamora/GF-Javascript/master/JS/GF-1.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<style type="text/css">
@@ -23,8 +23,7 @@
 			<center>
 
 			<button class="btn-primary btn-xs" id="btn_next_page" name="" 
-			onclick="nextPage();">Next</button>
-			<hr>
+			onclick="_refresh(_myUrl()+'page/index-5.html');">Next</button>
 			<div class="well">
 			    <H2>Key Board Event & Right Click </H2>
 			</div>
@@ -58,11 +57,7 @@
 		});
 
 
-		function nextPage()
-		{
-			var url= _myUrl()+'GF-Javascript/index-5.html';	
-			_refresh(url);
-		}
+	
 
 		_keyArrow(function(){
 			_printTo("key_name","LEFT");

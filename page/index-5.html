@@ -4,13 +4,13 @@
 	<title>Attribute HTML | Garuda Query Javascript</title>
 </head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<script src="JS/GF-1.js"></script>
+	<script src="https://cdn.rawgit.com/lamhotsimamora/GF-Javascript/master/JS/GF-1.js"></script>
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <body>
 	<div class="container">
 	    <hr>
-	    <button class="btn-primary btn-xs" id="btn_next_page" name="" 
-			onclick="nextPage();">Next</button> <hr>
+	   <button class="btn-primary btn-xs" id="btn_next_page" name="" 
+			onclick="_refresh(_myUrl()+'page/index-6.html');">Next</button>
 			<strong>
 				<div id="d_name" data-name="Lorem Ipsum Name"><a href="#">Data name</a></div>
 				<div id="d_email" data-email="">Data email</div>
@@ -65,14 +65,7 @@
 <script type="text/javascript">
 
 
-			
-			
-			function nextPage()
-			{
-				var url= _myUrl()+'GF-Javascript/index-6.html';	
-				_refresh(url);
-			}
-			
+	
 		   _onClick("d_name",function()
 			{
 				/*

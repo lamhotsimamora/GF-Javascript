@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Welcome To Garuda Query Javascript | New Syntax Of Code</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://cdn.rawgit.com/lamhotsimamora/GF-Javascript/master/JS/GF-1.js"></script>
+</head>
+<body>
+
+
+<div class="container">
+    <hr>
+	<button class="btn-primary btn-xs" id="btn_next_page" name="" 
+			onclick="_refresh(_myUrl()+'page/index-3.html');">Next</button>
+	<hr>
+	<input type="file" id="text_file" class="form-control" >
+	<img src="" alt="" id="load_image" width="100" height="100">
+	<hr>
+	<input class="form-control" type="text" id="txt_email">
+
+
+	<div id="div1"></div>
+	<div id="div_html"></div>
+	<hr>
+	<div id="display_txt_email1">
+
+	</div>
+	<hr>
+	<div id="display_txt_email2">
+
+	</div>
+</div>
+
+<div class="container">
+	
+<h3 id="oke_oce">JavaScript Query</h3>
+	<code>
+		<div class="selector_class1">Hello World 1</div>
+		<div class="selector_class2">Hello World 2</div>
+		<div class="selector_class3">Hello World 3</div>
+		<div class="selector_class4">Hello World 4</div>
+		<div class="selector_class5">Hello World 5</div>
+		<div class="selector_class6">Hello World 6</div>
+		<div class="selector_class7">Hello World 7</div>
+		<div class="selector_class8">Hello World 8</div>
+		<div class="selector_class9">Hello World 9</div>
+		<div class="selector_class10">Hello World 10</div>
+		<div class="selector_class11">Hello World 11</div>
+	</code>
+
+	<div id="example_clear">
+		Hello World
+	</div>
+	<hr>
+	<input class="form-control" type="text" name="" id="input_clear" value="Test Input">
+	<hr>
+	<button id="btn_clear" class="btn-primary">Clear</button>
+</div>
+<script>
+	
+		
+	
+	 	_onClick("btn_clear",function(){
+	 		clearAll();
+	 	});
+ 	
+	 	function clearAll()
+	 	{
+	 		_clear("input_clear");
+	 		_clear("example_clear",true);
+	 	}	
+
+		/*
+		
+		Color Flat UI https://flatuicolors.com/
+		
+		wet_asphalt   =  "#34495e" 
+		midnight_blue =  "#2c3e50" 
+		concrete      =  "#95a5a6" 
+		asbestos      =  "#7f8c8d" 
+		turqoise	  =  "#1abc9c" 
+		green_sea     =  "#16a085" 
+		peter_river   =  "#3498db" 
+		belize_hole   =  "#2980b9" 
+		amethyst      =  "#9b59b6" 
+		wisteria      =  "#8e44ad" 
+		alizarian     =  "#e74c3c" 
+		pomegranate   =  "#c0392b" 
+		clouds        =  "#ecf0f1" 
+		silver        =  "#bdc3c7" 
+		carrot        =  "#e67e22" 
+		pumpkin       =  "#d35400" 
+		sun_flower    =  "#f1c40f" 
+		orange		  =  "#f39c12" 
+		emerald       =  "#2ecc71" 
+		nephritis	  =  "#27ae60"*/
+
+
+	   _onKeyUp("txt_email",function(){
+	   		 value = _getValById("txt_email");
+	   		_printTo("display_txt_email1",value);
+	   });
+	   _onKeyDown("txt_email",function(){
+	   		 value = _getValById("txt_email");
+	   		_printTo("display_txt_email2",value);
+	   });
+
+
+		_qSelectorBackgroundCol(".selector_class1",flat_ui_color.alizarian);
+		_qSelectorBackgroundCol(".selector_class2",flat_ui_color.concrete);
+		_qSelectorBackgroundCol(".selector_class3",flat_ui_color.turqoise);
+		_qSelectorBackgroundCol(".selector_class4",flat_ui_color.green_sea);
+		_qSelectorBackgroundCol(".selector_class5",flat_ui_color.carrot);
+		_qSelectorBackgroundCol(".selector_class6",flat_ui_color.pumpkin);
+		_qSelectorBackgroundCol(".selector_class7",flat_ui_color.sun_flower);
+		_qSelectorBackgroundCol(".selector_class8",flat_ui_color.emerald);
+		_qSelectorBackgroundCol(".selector_class9",flat_ui_color.nephritis);
+		_qSelectorBackgroundCol(".selector_class10",flat_ui_color.orange);
+		_qSelectorBackgroundCol(".selector_class11",flat_ui_color.amethyst);
+
+
+		_qSelectorHTML("#div1","Hello! World ");
+
+		_previewImage("text_file","load_image");
+
+	  	_writeLog("Custom Console Log",false); 
+
+
+
+
+	  	var data_name = [
+	  		'Lorem','',null,null,"Anto","Santo", ''
+	  	]	
+	  	
+	  	_writeLog(data_name);
+	  	var result = _cleanArray(data_name,null);
+	  	_writeLog(result);
+
+
+		
+</script>
+</body>
+</html>

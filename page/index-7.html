@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Text Style &  Item List & Table | Garuda Query Javascript</title>
-	<script src="JS/GF-1.js"></script>
+	<script src="https://cdn.rawgit.com/lamhotsimamora/GF-Javascript/master/JS/GF-1.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
@@ -10,7 +10,7 @@
 
 	<div class="container">
 		<button class="btn-primary btn-xs" id="btn_next_page" name="" 
-			onclick="nextPage();">Next</button>
+			onclick="_refresh(_myUrl()+'page/index-8.html');">Next</button>
 	<hr>
 	
 		<p id="d_1">
@@ -94,11 +94,6 @@
 			t++;
 		}
 
-		function nextPage()
-		{
-			var url= _myUrl()+'GF-Javascript/index-8.html';	
-			_refresh(url);
-		}
 
 		function removeList1()
 		{

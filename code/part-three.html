@@ -1,0 +1,30 @@
+<div class="container">
+
+
+	<hr>
+	<div id="result_event"></div>
+	<hr>
+	<input type="text" class="input is-info" placeholder="Username" name="" id="my_text">
+
+	</br>
+	</br>
+	<article class="message is-primary">
+		  For give event onfocus 
+		  </br>
+		  <code>
+		  	  _onFocus("my_text",function(res){
+		  	  		_printTo("result_event","On Focus "+ res);
+		  	  });
+		  </code>
+			 <hr>
+			For give event resize screen
+			</br>
+		  <code>
+				_onResize(function(r){
+					_writeLog("Resize Screen : "+r);
+				});
+		  </code>
+	</article>
+
+
+</div>

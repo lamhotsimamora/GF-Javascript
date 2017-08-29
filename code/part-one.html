@@ -1,0 +1,90 @@
+<div class="container">
+		<div class="control">
+				<input type="text" class="input is-primary" placeholder="Username" id="txt_username" name=""></br></br>
+				<input type="text" class="input is-info" placeholder="Email" id="txt_email" name=""></br>
+				</br>
+				<button class="button is-info is-outlined" id="my_btn">Save</button>
+				<button class="button is-primary is-outlined" id="clear_btn">Clear</button>
+				<hr>
+		</div>
+
+		<article class="message is-primary">
+				For set focus to input text </br>
+				<code>
+					_focus("txt_username");
+				</code>
+				<hr>
+				For get value of input text
+				</br>
+				<code>
+					var txt_username = _getValById("txt_username");
+				</code>
+				
+				<hr>
+				For clear input text
+				</br>
+				<code>
+					_clear("txt_username");
+				</code>
+				<hr>
+				For set value of input text
+				</br>
+				<code>
+					_setValue("txt_username","Lorem Ipsum");
+				</code>
+				<hr>
+
+		</article>
+
+		<article class="message is-success">
+			    For Inner HTML to element <button class="button is-info is-outlined" id="btn_print">Show</button>
+				</br>
+				<code>
+					_printTo("alert_display","Lorem Ipsum");
+				</code>
+				<div id="test_print"> </div>
+				
+				<hr>
+				For clear element HTML <button class="button is-info is-outlined" id="btn_remove">Remove</button>
+				</br>
+				<code>
+					_clear("test_print",true);
+				</code>
+				</br>
+				
+				<hr>
+				For give event on click to button <button class="button is-success is-outlined" id="btn_click">Click</button>
+				</br>
+				<code>
+					_onClick("btn_click",function(){
+					   alert("Do something here");
+					});
+				</code>
+				<hr>
+				For give event on double click to button <button class="button is-success is-outlined" id="btn_d_click">Double Click</button>
+				</br>
+				<code>
+					_onDClick("btn_d_click",function(){
+					   alert("Double Click, something here");
+					});
+				</code>
+
+				<hr>
+				For custom console log
+				</br>
+				<code>
+					_writeLog("This is Custom Console Log ! Color Red");
+				</code>
+				<hr>
+				<code>
+					_writeLog("This is Custom Console Log ! Color Green",false);
+				</code>
+				<hr>
+				For Inner HTML to Body Element <button class="button is-success is-outlined" id="btn_body">Body</button>
+				</br>
+				<code>
+					_writeBody("Lorem Ipsum");
+				</code>
+		</article>
+
+</div>

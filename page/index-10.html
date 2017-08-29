@@ -3,7 +3,7 @@
 <head>
 	<title>Mouse Over & Mouse Out</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<script src="JS/GF-1.js"></script>
+	<script src="https://cdn.rawgit.com/lamhotsimamora/GF-Javascript/master/JS/GF-1.js"></script>
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 
@@ -11,7 +11,7 @@
 	
 	<div class="container">
 		<button class="btn-primary btn-xs" id="btn_next_page" name="" 
-			onclick="nextPage();">Next</button>
+			onclick="_refresh(_myUrl()+'page/index-11.html');">Next</button>
 		<hr>
 		<button class="btn btn-primary btn-md" id="btn_print_article">Print Article</button>
 		<button class="btn btn-primary btn-md" id="btn_print_all">Print All</button>
@@ -34,17 +34,13 @@
 	<div class="container">
 		<hr>
 		<div id="img_layout">
-			<img id="my_img" src="browser-support.png" width="200" height="200">	
+			<img id="my_img" src="" width="200" height="200">	
 		</div>
 	</div>
 
 	<script type="text/javascript">
-
-	   function nextPage()
-		{
-			var url= _myUrl()+'GF-Javascript/index-11.html';	
-			_refresh(url);
-		}
+		_setImage("my_img",_myUrl()+"image/browser-support.png");
+	
 		
 		_onClick("btn_print_article",function(){
 			_print("my_article",600,400);
@@ -67,10 +63,10 @@
 		});
 
 		_onMouseOver("img_layout",function(){
-			_setImage("my_img","a.png");
+			_setImage("my_img",_myUrl()+"image/download.png");
 		});
 		_onMouseOut("img_layout",function(){
-			_setImage("my_img","browser-support.png");
+			_setImage("my_img",_myUrl()+"image/logo.png");
 		});
 	</script>
 

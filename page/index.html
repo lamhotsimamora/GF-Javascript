@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome To Garuda Query Javascript</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://cdn.rawgit.com/lamhotsimamora/GF-Javascript/master/JS/GF-1.js"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+</head>
+<body>
+
+
+<div class="container">
+
+	<h1 id="up_body">
+		Welcome To Garuda Query Javascript
+		<button class="btn-primary btn-xs" id="btn_next_page" name="" 
+			onclick="_refresh(_myUrl()+'page/index-2.html');">Next</button>
+	</h1>
+	<button class="btn-default" onclick="_scroll('down_body')">Scrool Down</button>
+	<hr>
+</div>
+
+<div class="container">
+		
+		<hr>
+		Font Awesome Required !
+		<div id="my_animation1"> </div> <div id="my_animation2"> </div> <div id="my_animation3"> </div> 
+		<hr>
+		<img src="" class="thumbnail" id="img_profile" alt="">
+		<button class='btn-success btn-md' onclick="loadImage()">Change Image
+
+		</button>
+	
+		<hr><hr>	
+		<h4>   <div id="content_page1"> </div></h4> 
+		<h4>   <div id="content_page2"> </div></h4>  
+		<hr>
+</div>
+
+<div class="container">
+	<div id="t_year"></div><div id="t_month"></div><div id="t_day"></div>
+	<hr>
+
+	 <div id="t_day_name_eng"></div>
+	 <div id="t_day_name_ind"></div>
+	 <div id="t_date"></div>
+	 <div id="t_date_custom"></div>
+	 <hr>
+	 <div id="t_month_name_eng"></div>
+	 <div id="t_month_name_ind"></div>
+	 <hr>
+	 <div id="t_time"></div>
+</div>
+<hr>
+<div class="container">
+    <div id="#alert"> </div>
+	<div id="t_name"></div> 
+	<input class="form-control" type="text" id="txt_name"  name="t_name" placeholder="Name" value="" onkeyup="enterName(this.value);">
+	<hr>
+	<div id="t_email"></div>
+	<input class="form-control" type="text" id="txt_email"  name="t_name" placeholder="Email" value="" onkeyup="enterEmail(this.value);">
+	<hr>
+	<div id="t_phone"></div> 
+	<input class="form-control" type="number" id="txt_phone"  name="" placeholder="Phone" value="" onkeyup="enterPhone(this.value);">
+	<hr>
+	<div id="t_address"></div>
+	<input class="form-control" type="text" id="txt_address"  name="" placeholder="Address" value="" onkeyup="enterAddress(this.value);">
+	<hr>
+	<div id="t_URL"></div>
+	<input class="form-control" type="text" id="txt_url"  name="" placeholder="URL" value="" onkeyup="enterURl(this.value);">
+	<hr>
+	<button class="btn-primary btn-xs" id="btn_save" name="23" onclick="Save()">Save</button>
+	<button class="btn-primary btn-xs" id="btn_clear" name="23" onclick="clearAll()">Clear</button>
+	<hr>
+		<div id="_page1"> </div> <hr>
+		<div id="_page2"> </div> <hr>
+	<button class="btn-primary btn-xs" id="btn_profile" name="23" onclick="getProfile()">Load Profile</button>
+	<button class="btn-primary btn-xs" id="btn_about" name="23" onclick="getAbout()">Load About</button>
+	<hr>
+	<div id="_function_test4"></div><hr>
+	<button class="btn-primary btn-xs" id="btn_location" name="23" onclick="getLocation()">Location</button>
+    <hr>
+	<button class="btn-primary btn-xs" id="btn_open" name="" onclick="_openUrl('https://www.google.com');">Google</button>
+	<hr>
+
+	<button class="btn-primary btn-xs" id="btn_test" name="" onclick="_openUrl('https://lamhotsimamora.github.io/GF-Javascript/index-2.html');">Next</button>
+
+	<button class="btn-primary btn-xs" id="btn_exit" onclick="exit();">Exit</button>
+</div>
+
+<hr>
+
+<div class="container">
+			<div id="_test_response_ajax_1"> </div><hr>
+			<div id="_test_response_ajax_2"> </div><hr>
+			<div id="_test_response_ajax_3"> </div><hr>
+
+			<div id="_function_test6"></div><hr>
+
+			<div id="_function_test1"></div><hr>
+			<div id="_function_test2"></div><hr>
+			<div id="_function_test3"></div><hr>
+			
+			<div id="_function_test5"></div><hr>
+			<div id="_function_test6"></div><hr>
+			<div id="_function_test7"></div><hr>
+				
+			<div id="s_width"></div>
+			<div id="s_height"></div>
+			<hr>
+</div>
+
+<div id="down_body" class="container">
+	<input type="text" id="txt_oke_oce" class="form-control" name="">
+	<button class="btn-default" onclick="_scroll('up_body')">Scrool Up</button>
+</div>
+
+<script type="text/javascript">
+			
+
+			_animation("my_animation1","Loading...","refresh");
+			_animation("my_animation2","Loading...","circle");
+			_animation("my_animation3","Loading...","spinner");
+
+			_getById("_function_test7",function(obj){
+				obj.innerHTML = "lorem ipsum";
+			});	
+
+			var Email = _checkEmail("test@gmail.com");
+
+
+			_writeLog("Checking URL -> "+URL);
+			_writeLog("Checking Email -> "+Email);
+
+
+			_onClick("btn_test",function(){
+
+				_writeLog("Success Event OnClick");
+			});
+
+			function enterName(str){
+				_printTo("t_name",_colorFont(_replaceMaster(str),"blue"));
+			}
+			function enterEmail(str){
+				_printTo("t_email",_colorFont(str,"green"));
+			}
+			function enterPhone(str){
+				_printTo("t_phone",_colorFont(str,"red"));
+			}
+			function enterAddress(str){
+				_printTo("t_address",_colorFont(str,"black"));
+			}
+			function enterURl(str){
+				var URL  = _isUrl(str);
+
+				if (URL)
+				{
+					_writeLog("URL Valid");
+				}
+				else
+				{
+					_writeLog("URL Is Not Valid");
+				}
+			}
+
+			_valueInput("txt_oke_oce","Mantap");
+
+			var string ="%HASTAG%test";
+
+			var result = _returnMaster(string);
+
+			_writeLog(result);
+
+			function clearAll(){
+				_clear("txt_name");
+				_clear("txt_email");
+				_clear("txt_phone");
+				_clear("txt_address");
+				_clear("txt_url");
+			}
+
+			function Save(){
+				if (_getValById("txt_name")==='')
+				{
+					_focus("txt_name");
+					_printTo("#alert",_colorFont("Name is empty")); return;
+				}
+				if (_getValById("txt_email")==='')
+				{
+					_focus("txt_email");
+					_printTo("#alert",_colorFont("Email is empty")); return;
+				}
+				if (_getValById("txt_phone")==='')
+				{
+					_focus("txt_phone");
+					_printTo("#alert",_colorFont("Phone is empty")); return;
+				}
+				if (_getValById("txt_address")==='')
+				{
+					_focus("txt_address");
+					_printTo("#alert",_colorFont("Address is empty")); return;
+				}
+				if (_getValById("txt_url")==='')
+				{
+					_focus("txt_url");
+					_printTo("#alert",_colorFont("URl is empty")); return;
+				}
+
+			}
+
+			var encode = _encryptInt(_randomInt());
+
+			_printTo("content_page1","Encode : "+encode);
+
+
+			var decode = _decryptInt(encode);
+
+			_printTo("content_page2","Decode : "+decode);
+
+
+			function getProfile(){
+				 _requestPOST(_myUrl()+"server/profile.php","name="+encode+"","_page1");
+			}
+
+			function getAbout(){
+				var parameter = "GF.Js";
+				_requestGET(_myUrl()+"server/about.php?p="+parameter+"","_page2");
+			}
+
+
+			/**
+			 * Ajax Request
+			 */
+			_requestGET(_myUrl()+"server/about.php?p=Garuda Query Javascript",function(response){
+				if (response==='T')
+				{
+					_printTo("_test_response_ajax_1",response);
+				}
+				else if (response==="F")
+				{
+					_printTo("_test_response_ajax_1",response);
+				}
+				else
+				{
+					_printTo("_test_response_ajax_1",response);
+				}
+			});
+
+			_loadDoc(_myUrl()+"server/json.php",function(obj){
+				var myJson = JSON.parse(obj);
+				var status =  myJson.status_login;
+				if (status)
+				{
+				   _printTo("_div_1",myJson.status);
+				}
+				else
+				{
+					_printTo("_div_2","Login Failed");
+				}
+				
+			});
+
+
+			
+
+			_requestPOST(_myUrl()+"server/profile.php","name=Brendan Eich",function(response){
+				if (response==='T')
+				{
+					_printTo("_test_response_ajax_2",response);
+				}
+				else if (response==="F")
+				{
+					_printTo("_test_response_ajax_2",response);
+				}
+				else
+				{
+					_printTo("_test_response_ajax_2",response);
+				}
+			});
+			
+
+			/***/
+
+
+			_printTo("t_year","Year : "+_getYear());
+			_printTo("t_day","Day : "+_getDay());
+			_printTo("t_month","Month : "+_getMonth());
+
+			_printTo("t_day_name_eng","Day : "+_getDayName());
+			_printTo("t_day_name_ind","Hari : "+_getDayName(true));
+
+			_printTo("t_date","Date : "+_getDate());
+			_printTo("t_date_custom","Date Custom : "+_getDate("-"));
+
+			_printTo("t_month_name_eng","Month Name : "+_getMonthName());
+			_printTo("t_month_name_ind","Nama Bulan : "+_getMonthName(true));
+
+			_printTo("t_time","Time : "+_getTime());
+
+			_printTo("s_width","Screen Width : "+_sWidth);
+			_printTo("s_height","Screen Height : "+_sHeight);
+			
+			
+			_printTo("_function_test5",_getHost());
+			_printTo("_function_test1",_randomStr());
+			_printTo("_function_test2",_randomInt());
+			_docWrite("Document Write Example");
+
+			_printTo("_function_test6",_detectBrowser());
+
+			function getLocation(){
+				_getLocation(function(result){
+					var latlong = "Latitude : " +result.coords.latitude + ", Longitude : " + result.coords.longitude;
+					_printTo("_function_test4",latlong);
+				});
+			}
+
+
+			_focus("txt_name");
+
+
+			var txt_name = _getById("txt_name");
+
+			_setValue("txt_name","lorem");
+			_setValue("txt_email","lorem@gmail.com");
+			_setValue("txt_phone","082113212");
+			_setValue("txt_address","Jln Rajawali No 1");
+			_setValue("txt_url","www.google.com");
+
+
+			function exit(){
+				_confirm("Do you want to exit ?",function(){
+					alert("Yes");
+				},function(){
+					alert("No");
+				});
+			}
+
+
+			var get_title   =  _getTitle();
+			var count_image = _countImage();
+			var count_link  = _countLink();
+			var count_form  = _countForm();
+
+			function more(){
+				_removeMe("id_of_object"); 
+				_showMe("id_of_object"); 
+				_hideMe("id_of_object"); 
+			}
+			var i_image = 0;
+			function loadImage()
+			{
+				
+				var data = ['a.png','b.png','c.png','d.png'];
+				
+				if (i_image===3)
+				{
+					_setImage("img_profile",_myUrl()+"image/"+data[i_image]);
+					i_image = 0;
+				}
+				else
+				{
+					_setImage("img_profile",_myUrl()+"image/"+data[i_image]);
+					i_image++;
+				}
+			}
+
+			loadImage();
+
+			_writeLog("_getDomain ->"+_getDomain());
+			_writeLog("_baseUrl ->"+_baseUrl());
+			_writeLog("_myUrl ->"+_myUrl());
+			_writeLog("get_title ->"+_getTitle());
+			_writeLog("count_image ->"+_countImage());
+			_writeLog("count_link ->"+_countLink());
+			_writeLog("count_form ->"+_countForm());
+
+
+		
+
+</script>
+
+
+</body>
+</html>
