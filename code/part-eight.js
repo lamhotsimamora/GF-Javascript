@@ -10,11 +10,12 @@ _keyArrow(function(){
 
 _keyCustom(function(){
     _printTo("display_key","BACKSPACE");
+    _writeLog(_keyCode.backspace);
 },_keyCode.backspace);
 
 _keyCustom(function(){
 	_printTo("display_key","CTRL");
-	_printTo("display_key",_keyCode.ctrl);
+	_writeLog(_keyCode.ctrl);
 },_keyCode.ctrl);
 
 _keyCustom(function(){
