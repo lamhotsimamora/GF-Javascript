@@ -7,7 +7,7 @@
 	<title>Welcome To Garuda Query Javascript</title>
 	<script src="JS/GF-1.js"></script>
 	<script src="asset/jquery.js"></script>
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="asset/font-awesome.css">
 	<link rel="stylesheet" href="asset/bulma.css">
   <meta name="og:image"     content="browser-support.png" />
   <meta name="ROBOTS"     content="index"/>
@@ -63,27 +63,39 @@
      
       <div class="navbar-item has-dropdown is-hoverable">
         
-       <a class="navbar-link  is-active" href="#documentation">
+       <a class="navbar-link" href="#documentation">
           Documentation
         </a>
         <div class="navbar-dropdown ">
-          <a class="navbar-item " href="#part-one" id="part_one">
+          <a class="navbar-item " href="#basic" id="part_one">
             Part 1 | Basic
           </a>
-           <a class="navbar-item " href="#part-one" id="part_two">
+           <a class="navbar-item " href="#ajax" id="part_two">
             Part 2 | Ajax
           </a>
-           <a class="navbar-item " href="#part-one" id="part_three">
-            Part 3 | Event
+           <a class="navbar-item " href="#mouse-event" id="part_three">
+            Part 3 | Mouse Event
           </a>
-           <a class="navbar-item " href="#soon" id="">
-            Part 4 | Coming Soon
+           <a class="navbar-item " href="#datetime" id="part_four">
+            Part 4 | Date Time
+            </a>
+           <a class="navbar-item " href="#canvas" id="part_five">
+           Part 5 | Canvas
           </a>
-           <a class="navbar-item " href="#soon" id="">
-           Part 5 | Coming Soon
-          </a>
-           <a class="navbar-item " href="#soon" id="">
-            Part 6 | Coming Soon
+           <a class="navbar-item " href="#storage" id="part_six">
+            Part 6 | Storage
+          </a> 
+           <a class="navbar-item " href="#attribute" id="part_seven">
+            Part 7 | Attribute
+          </a> 
+           <a class="navbar-item " href="#keyboard-event" id="part_eight">
+            Part 8 | Keyboard Event
+          </a> 
+           <a class="navbar-item " href="#image" id="part_nine">
+            Part 9 | Image 
+          </a> 
+           <a class="navbar-item " href="#soon" id="part_ten">
+            Part 10 | Coming Soon 
           </a> 
          
         
@@ -168,12 +180,8 @@
                         </div>
                     </div>
                     <div class="content">
-                        </br>
-                        I was created simple query of javascript code. You can easy write code of Javascript and you can easy to do DOM (document object manipulation). If you familiar with jQuery, gQuery can be used with jQuery. You can modify the source code. Garuda Query has an identical symbol with underscore in front of function name, So you can also use this library with another framework javascript. Everything has been tested and support much browser like Chrome, Firefox, Opera , Safari & Internet Explorer. You can create a professional web with gQuery.<a></a>. <a></a> <a></a>
-                        <br>
-                        <small>07:00 AM - 20 Agustus 2017</small>
-
-
+                        <hr>
+                          <p id="display_intro"> </p>
                         <hr>
                         <center>
                            <a href="./page/" target="_blank">DEMO</a>
@@ -203,10 +211,13 @@
 </section>
 <!-- -->
 
-<script type="text/javascript" id="my_script"></script>
-
 <script type="text/javascript">
 		$(document).ready(function(){
+
+           _loadDoc("./component/intro.gf","display_intro");
+
+            const display ="display_load";
+            const script = "my_script";
 
             function loadPage(u)
             {
@@ -221,19 +232,13 @@
                        _printTo("display_load",r);
                   });
             }
-
-        
-
              _onClick("btn_get_start",function(){
-                 loadPage("Getting-Started.html");
+                 loadPage("getting-started.html");
             });
 
             _onClick("btn_all_function",function(){
                   loadPage("index-index.html");
             });
-
-            const display ="display_load";
-            const script = "my_script";
 
             _onClick("part_one",function(){
                 _loadDoc("./code/part-one.html",function(res){
@@ -264,8 +269,75 @@
                   });
             });
 
+            _onClick("part_four",function(){
+                 _loadDoc("./code/part-four.html",function(res){
+                       if (res)
+                       {
+                           _printTo(display,res);
+                           _loadDoc("./code/part-four.js",script,_ajaxSetup.header,"script"); 
+                       }
+                  });
+            });
 
+            _onClick("part_five",function(){
+                 _loadDoc("./code/part-five.html",function(res){
+                       if (res)
+                       {
+                           _printTo(display,res);
+                           _loadDoc("./code/part-five.js",script,_ajaxSetup.header,"script"); 
+                       }
+                  });
+            });
+             _onClick("part_six",function(){
+                 _loadDoc("./code/part-six.html",function(res){
+                       if (res)
+                       {
+                           _printTo(display,res);
+                           _loadDoc("./code/part-six.js",script,_ajaxSetup.header,"script"); 
+                       }
+                  });
+            });
+
+          
+            _onClick("part_seven",function(){
+                 _loadDoc("./code/part-seven.html",function(res){
+                       if (res)
+                       {
+                           _printTo(display,res);
+                           _loadDoc("./code/part-seven.js",script,_ajaxSetup.header,"script"); 
+                       }
+                  });
+            });
+             _onClick("part_eight",function(){
+                 _loadDoc("./code/part-eight.html",function(res){
+                       if (res)
+                       {
+                           _printTo(display,res);
+                           _loadDoc("./code/part-eight.js",script,_ajaxSetup.header,"script"); 
+                       }
+                  });
+            });
+            _onClick("part_nine",function(){
+                 _loadDoc("./code/part-nine.html",function(res){
+                       if (res)
+                       {
+                           _printTo(display,res);
+                           _loadDoc("./code/part-nine.js",script,_ajaxSetup.header,"script"); 
+                       }
+                  });
+            });
+
+
+
+            function message(a,b)
+            {
+              return '<article class="message is-success"><div class="message-body"> <p>'+a+'</p>  '+b+' </div> </article>';
+            }
 		});
 </script>
+
+
+<script type="text/javascript" id="my_script"></script>
+
 </body>
 </html>

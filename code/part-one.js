@@ -57,7 +57,7 @@ _onClick("btn_remove",function(){
 });
 
 _onDClick("btn_d_click",function(){
-   alert("Double Click, something here");
+   alert("Double Click, Do something here");
 });
 _onClick("btn_body",function(){
 	_writeBody("Lorem Ipsum");

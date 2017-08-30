@@ -8,3 +8,7 @@ Garuda Query has an identical symbol with underscore in front of function name, 
 Everything has been tested and support much browser like Chrome, Firefox, Opera , Safari & Internet Explorer. 
 
 gQuery is not kaleng-kaleng library . You can create a professional web with gQuery.
+
+
+<br>
+<small>07:00 AM - 20 Agustus 2017</small>

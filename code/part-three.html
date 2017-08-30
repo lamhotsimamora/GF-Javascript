@@ -24,6 +24,99 @@
 					_writeLog("Resize Screen : "+r);
 				});
 		  </code>
+		 <hr>
+		  </br>
+			For give event on change  </br>
+			<code>
+				_onChange("my_text",function(){
+					var v = _getValById("my_text");
+					_printTo("result_event",v.toUpperCase());
+				});
+			</code>
+			<hr>
+			For give event on key up 
+			</br>
+			<hr>
+		  <input type="text" class="input is-primary" placeholder="Input One" name="" id="input_one">
+		  <h4 id="display_text_1"></h4>
+		  <hr>
+		  <code>
+				_onKeyUp("input_one",function(v){
+				      _printTo("display_text_1",_getValById("input_one"));
+				}); 
+		  </code>
+			<hr>
+			For give event on key down 
+			</br>
+			<hr>
+		  <input type="text" class="input is-success" placeholder="Input Two" name="" id="input_two">
+		  <h4 id="display_text_2"></h4>
+		  <hr>
+		  <code>
+				_onKeyDown("input_two",function(v){
+			        _printTo("display_text_2",_getValById("input_two"));
+			   }); 
+		  </code>
+		<hr>
+		For give event on key up and then write to element
+	     </br>
+	     <hr>
+		  <input type="text" class="input is-warning" placeholder="Input Three" name="" id="input_three">
+		  <h4 id="display_text_3"></h4>
+		  <hr>
+		  <code>
+				_onKeyUpToText("input_three","display_text_3");
+		  </code></br>
+			<hr>
+			
+			For give event on mouse over
+			</br>
+				<center><img src="./image/logo.png" width="100" height="100" id="my_image" draggable="true"></center>
+			</br>
+			<code>
+				_onMouseOver("my_image",function(){
+					alert("Mouse Over !");
+				});
+			</code>	
+			<hr>
+		  	For give event on mouse out </br>
+		  	<code>
+				_onMouseOut("my_image",function(){
+					alert("Mouse Out !");
+				});
+		  	</code>
+			<hr>
+		  	For give event on right click to HTML</br>
+	
+		  	<code>
+				_rightClick(function(){
+				   alert("Do Something Here");
+				});
+		  	</code>
+
+		  	<hr>
+			<center>
+			<div id="drag_drop">
+				
+			</div></center>
+		  	<hr>
+
+			
+			For give event on drag to HTML </br>
+		  	<code>
+		  		_onDrag("my_image",function(){
+					alert("On Drag");
+				});
+		  	</code>
+
+		  	<hr>
+
+		  	For give event on drop to HTML  </br>
+		  	<code>
+		  		_onDrop("my_image",function(){
+					alert("On Drop");
+				});
+		  	</code>
 	</article>
 
 
