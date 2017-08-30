@@ -12,3 +12,8 @@ gQuery is not kaleng-kaleng library . You can create a professional web with gQu
 
 <br>
 <small>07:00 AM - 20 Agustus 2017</small>
+
+<center>
+	<hr>
+	<a target="_blank" href="https://github.com/lamhotsimamora/GF-Javascript/fork"><i class="fa fa-code-fork" aria-hidden="true"></i> Fork</a>
+</center>
