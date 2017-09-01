@@ -15,9 +15,19 @@ gQuery is not kaleng-kaleng library . You can create a professional web with gQu
 
 <hr>
 	<strong>Open These Page In Desktop Mode ( Mobile Phone isn't RECOMMENDED )</strong>
-	<small><font color='red'>Press CTRL for open the documentaion</font> </small></br></br>
+	</br></br>
 	<i>If javascript doesnt work in documentation, refresh to HOME PAGE, and back to the PART of Documentation that you want to VISIT</i>
 	</br></br>
+	<div class="notification is-default">
+		<center>Quick ShortCut</center>
+	  <hr>
+	  <button class="delete"></button>
+	    Press <strong>Home</strong> for open the Home Page</br>
+	   	Press <strong>F2</strong> for open the Getting Started </br>
+	   	Press <strong>F4</strong> for open the All Of Function </br>
+   		Press <strong>CTRL</strong> for open the Documentation (Part 1, Part 2, ... ) </br>
+	   
+	</div>
 
 <hr>
 
