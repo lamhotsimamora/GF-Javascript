@@ -1,36 +1,45 @@
-_onClick("btn_select",function(){
-	_selectText("my_text");
-});
-_onClick("btn_add_select",function(){
-		var data_val = [
-			1,2,3,4,5
-		];
-		var data_fruit = [
-			"Avocado","Apple","Banana","Broccoli","Orange"
-		];
-		_addOption("my_select",data_val,data_fruit);
-});
-_onClick("btn_get_select",function(){
-	var value_first = _getOption("my_select");
-	var text_first = _getOption("my_select",true);
-
-
-	alert(value_first);
-	alert(text_first);
+_onClick("btn_new_tab",function(){
+	_newTab("https://www.google.com");
 });
 
-_onClick("btn_add_list",function(){
-	var data_list_1 = [
-	"Apple","Banana","Orange"
-	];
-	_addList("list_1","list-group-item",data_list_1);
+_onClick("btn_new_form_1",function(){
+	_newForm("Lorem Ipsum");
+});
+_onClick("btn_new_form_2",function(){
+	_newForm(false,"https://www.google.com");
+});
+_onClick("btn_new_form_3",function(){
+	_newForm(false,"https://www.google.com",800,800);
 });
 
-var _incTable = 1;
-_onClick("btn_add_item",function(){
-	var data_table = [
-	   _incTable,"Apple","Banana","Orange"
-	];
-	_addItemTable("table_val",data_table);
-	_incTable++;
+const invalid_url = "www.github.com/lamhotsimamora/";
+const valid_url   = "https://github.com/lamhotsimamora/";
+
+_onClick("btn_url",function(){
+	let result = _isUrl(invalid_url);
+	if (result)
+	{
+		alert("URL "+invalid_url+" is VALID !");
+	}
+	else
+	{
+		alert("URL "+invalid_url+" ISN'T Valid !");
+	}
+});
+
+_onClick("btn_url2",function(){
+	let result = _isUrl(valid_url);
+	if (result)
+	{
+		alert("URL "+valid_url+" is VALID !");
+	}
+	else
+	{
+		alert("URL "+valid_url+" ISN'T Valid !");
+	}
+});
+
+_onClick("btn_count_url",function(){
+	let count = _countLink();
+	alert("Count URL -> "+count);
 });

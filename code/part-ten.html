@@ -1,96 +1,54 @@
+
 <div class="container">
 	
 	<hr>
-	 		For select text
-	 		</br> 
-
-	 		<code>
-	 				_selectText("my_text");	
-	 		</code>
-			</br> </br> 
-			 <textarea id="my_text" class="input is-success">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </textarea> </br> </br>
-			<button class="button is-primary" id="btn_select">Select</button>
-			<hr>
-
-			For add value to select option </br> 
+	
+		For open new tab
+			</br></br>
 			<code>
-				var data_val = [
-					1,2,3,4,5
-				];
-				var data_fruit = [
-					"Avocado","Apple","Banana","Broccoli","Orange"
-				];
-				_addOption("my_select",data_val,data_fruit);
-			</code></br> </br>
-			For get value or text of select option  </br> 
-			<code>
-				var value_first = _getOption("my_select");
-				// For get text of value
-				var text_first = _getOption("my_select",true);
-			</code>  </br>  </br> 
-			<div class="select">
-				<select name="my_select" class="form-control" id="my_select">
-					<option value="1">==SELECT ME==</option>			   		
-				</select>
-			</div> </br>  </br> 
-			<button class="button is-warning" id="btn_add_select">Add</button> &nbsp
-			<button class="button is-warning" id="btn_get_select">Get</button>
-
-			<hr>
-
-			For add item to list  </br> 
-
-			<code>
-				var data_list_1 = [
-				    "Apple","Banana","Orange"
-				];
-			</code>	 
-			</br>  
-			</br> 
-			'list-group-item' is a class of css, so you can type the class inside that. </br> 
-			<code>
- 
-				_addList("list_1","list-group-item",data_list_1);
+				_newTab("https://www.google.com");
 			</code>
-			 </br>  </br> 
-			
-	 		<ul class="menu-list" id="list_1"> 
-					<li>A</li>
-					<li>B</li>
-			</ul>
-			 </br>  </br> 
-			<button class="button is-danger" id="btn_add_list">Add List</button>
+		</br></br>
 
-			<hr>
+		<button class="button is-primary" id="btn_new_tab">New Tab</button>
+		<hr>
 
-			For add item to table </br>
+		For open new form (1)
+		</br></br>
+		<code>
+			_newForm("Lorem Ipsum");
+		</code></br></br>
+		or (2)
+		</br></br>
+		<code>
+			_newForm(false,"https://www.google.com");
+		</code></br></br>
+		or with height & width (3)</br></br>
+		<code>
+			_newForm(false,"https://www.google.com",800,800);
+		</code>
+		</br></br>
+		<button class="button is-success" id="btn_new_form_1">New Form 1</button>
+		<button class="button is-success" id="btn_new_form_2">New Form 2</button>
+		<button class="button is-success" id="btn_new_form_3">New Form 3</button>
 
-			<code>
-				var data_table = [
-				   1,"A","B","C"
-				];
-				_addItemTable("table_val",data_table);
+		<hr>
 
-			</code>
-			</br>  </br> 
-			<button class="button is-default" id="btn_add_item">Add Item</button>
-				</br>  </br> 
-				<table class="table">
-						<thead>
-						<tr>
-						<th>No</th>
-						<th>Firstname</th>
-						<th>Lastname</th>
-						<th>Email</th>
-						</tr>
-				</thead>
-				<tbody id="table_val">
-						<tr>
-						<td>0</td>
-						<td>A</td>
-						<td>B</td>
-						<td>C</td>
-						</tr>
-				</tbody>
-				</table>
+		For checking URL is valid
+		</br></br>
+		<code>
+			let url = _isUrl("www.google.com");
+		</code>
+		</br></br>
+		<button class="button is-warning" id="btn_url">Invalid URL</button>
+		<button class="button is-warning" id="btn_url2">Valid URL</button>
+		<hr>
+		For count of URL in body HTML
+		</br></br>
+		<code>
+			let count = _countLink();();
+		</code></br></br>
+		<button class="button is-danger" id="btn_count_url">Count URL</button>
+	<hr>
+
 </div>

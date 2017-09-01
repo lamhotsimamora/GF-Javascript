@@ -113,12 +113,22 @@ $(document).ready(function(){
                   });
             });
 
-              _onClick("part_ten",function(){
+            _onClick("part_ten",function(){
                  _loadDoc("./code/part-ten.html",function(res){
                        if (res)
                        {
                            _printTo(display,res);
                            _loadDoc("./code/part-ten.js",script,_ajaxSetup.header,"script"); 
+                       }
+                  });
+            });
+
+            _onClick("part_eleven",function(){
+                 _loadDoc("./code/part-eleven.html",function(res){
+                       if (res)
+                       {
+                           _printTo(display,res);
+                           _loadDoc("./code/part-eleven.js",script,_ajaxSetup.header,"script"); 
                        }
                   });
             });

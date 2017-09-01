@@ -14,8 +14,8 @@ gQuery is not kaleng-kaleng library . You can create a professional web with gQu
 <small>07:00 AM - 20 Agustus 2017</small>
 
 <hr>
-	<strong>Open These Page In Desktop Mode (Mobile Phone isn't recommended)</strong></br>
-	<i>If javascript doesnt work in documentation, refresh to HOME PAGE, and back to the PART that you want to visit</i>
+	<strong>Open These Page In Desktop Mode (Mobile Phone isn't recommended)</strong></br></br>
+	<i>If javascript doesnt work in documentation, refresh to HOME PAGE, and back to the PART of Documentation that you want to VISIT</i>
 <hr>
 
 <center>
