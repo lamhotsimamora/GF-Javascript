@@ -10,8 +10,13 @@ Everything has been tested and support much browser like Chrome, Firefox, Opera 
 gQuery is not kaleng-kaleng library . You can create a professional web with gQuery.
 
 
-<br>
+</br></br>
 <small>07:00 AM - 20 Agustus 2017</small>
+
+<hr>
+	<strong>Open These Page In Desktop</strong></br>
+	<i>If javascript doesnt work in documentation, refresh to HOME PAGE, and back to the PART that you want to visit</i>
+<hr>
 
 <center>
 	<hr>
