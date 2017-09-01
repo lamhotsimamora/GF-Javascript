@@ -1,13 +1,26 @@
+<p>
+I was created simple query of javascript code. You can easy write code of Javascript and you can easy to do DOM (Document Object Model).  
 
-I was created simple query of javascript code. You can easy write code of Javascript and you can easy to do DOM (document object manipulation).  
+If you familiar with jQuery, gQuery can be used with jQuery.
+</p>
+ </br>
 
-If you familiar with jQuery, gQuery can be used with jQuery. You can modify the source code. 
-
-Garuda Query has an identical symbol with underscore in front of function name, So you can also use this library with another framework javascript.
+<p>
+Garuda Query has an identical symbol with underscore in front of function name ( No Conflict ), So you can also use this library with another framework javascript like.
 
 Everything has been tested and support much browser like Chrome, Firefox, Opera , Safari & Internet Explorer. 
 
-gQuery is not kaleng-kaleng library . You can create a professional web with gQuery.
+</p>
+
+<p>
+	You can create a professional front end website with gQuery, and then you might use jQuery for make the perfect front end.
+
+</p>
+
+<p>
+	 You can also modify the source code and you can use for distribution or production.
+	  
+</p>
 
 
 </br></br>
