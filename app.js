@@ -3,8 +3,8 @@ $(document).ready(function(){
             const documentationPage = [
                'home','part1','part2','part3',
                'part4','part5','part6','part7',
-               'part8','part9','part10','part11'
-               ,"Get-Start","All-Function"
+               'part8','part9','part10','part11',
+               'part12',"Get-Start","All-Function"
             ]
  
              _saveStorage("page",documentationPage[0]);
@@ -40,13 +40,13 @@ $(document).ready(function(){
             function getStart()
             {
                  loadPage("Getting-Started.html");
-                  _saveStorage("page",documentationPage[12]);
+                  _saveStorage("page",documentationPage[13]);
             }
 
             function allFunction()
             {
                   loadPage("index-index.html");
-                   _saveStorage("page",documentationPage[13]);
+                   _saveStorage("page",documentationPage[14]);
             }
 
             function part1()
@@ -192,6 +192,19 @@ $(document).ready(function(){
                   });
 
             }
+             function part12()
+            {
+                 _loadDoc("./code/part-twelve.html",function(res){
+                       if (res)
+                       {
+                           _printTo(display,res);
+                           _loadDoc("./code/part-twelve.js",script,_ajaxSetup.header,"script"); 
+                             _saveStorage("page",documentationPage[12]);
+                            now_page = _getStorage("page"); 
+                       }
+                  });
+
+            }
 
             _onClick("part_one",function(){
                  part1();
@@ -233,6 +246,10 @@ $(document).ready(function(){
 
             _onClick("part_eleven",function(){
                  part11();
+            });
+
+            _onClick("part_twelve",function(){
+                 part12();
             });
 
 
@@ -303,6 +320,10 @@ $(document).ready(function(){
                  
                  }
                   else if(now_page==='part11')
+                 {
+                     part12();
+                 }
+                   else if(now_page==='part12')
                  {
                      part1();
                  }

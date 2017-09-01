@@ -19,11 +19,9 @@ Everything has been tested and support much browser like Chrome, Firefox, Opera 
 
 <p>
 	 You can also modify the source code and you can use for distribution or production.
-	  
+
 </p>
 
-
-</br></br>
 <small>07:00 AM - 20 Agustus 2017</small>
 
 <hr>
