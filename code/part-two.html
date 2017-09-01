@@ -8,6 +8,8 @@
 		<hr>
 		<code>
 			_loadDoc("./server/page.php",function(r){
+		</code>	</br>
+		<code>
 			if (r)
 			{
 				_printTo("display_body",r);
@@ -21,6 +23,8 @@
 		<hr>
 		<code>
 			var my_name = "Lorem";
+			</code>	</br>
+			<code>
 			_requestGET("./server/profile.php?name="+my_name+"",function(r){
 			if (r)
 			{
@@ -35,6 +39,7 @@
 		<hr>
 		<code>
 			var my_name = "Lorem";
+			</code> </br><code>
 			_requestPOST("./server/profile.php","name="+my_name+"",function(r){
 			if (r)
 			{
