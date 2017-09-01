@@ -89,3 +89,7 @@ _onClick("btn_print_all",function(){
 _onClick("btn_print",function(){
 	_print("print_me",600,400);
 });
+
+_onClick("btn_scroll",function(){
+	_scroll("display_load");
+});
