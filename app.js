@@ -26,33 +26,46 @@ $(document).ready(function(){
                   loadPage("index-index.html");
             });
 
-            _onClick("part_one",function(){
-                _loadDoc("./code/part-one.html",function(res){
+            function part1()
+            {
+              _loadDoc("./code/part-one.html",function(res){
                      if (res)
                      {
                          _printTo(display,res);
                          _loadDoc("./code/part-one.js",script,_ajaxSetup.header,"script"); 
                      }
                 });
-            });
-
-            _onClick("part_two",function(){
-                 _loadDoc("./code/part-two.html",function(res){
+            }
+            function part2()
+            {
+               _loadDoc("./code/part-two.html",function(res){
                        if (res)
                        {
                            _printTo(display,res);
                            _loadDoc("./code/part-two.js",script,_ajaxSetup.header,"script"); 
                        }
                   });
-            });
-             _onClick("part_three",function(){
-                 _loadDoc("./code/part-three.html",function(res){
+            }
+            function part3()
+            {
+               _loadDoc("./code/part-four.html",function(res){
                        if (res)
                        {
                            _printTo(display,res);
-                           _loadDoc("./code/part-three.js",script,_ajaxSetup.header,"script"); 
+                           _loadDoc("./code/part-four.js",script,_ajaxSetup.header,"script"); 
                        }
-                  });
+                    });
+            }
+            _onClick("part_one",function(){
+                 part1();
+            });
+
+            _onClick("part_two",function(){
+                part2();
+            });
+
+             _onClick("part_three",function(){
+               part3();
             });
 
             _onClick("part_four",function(){
@@ -139,4 +152,75 @@ $(document).ready(function(){
             {
               return '<article class="message is-success"><div class="message-body"> <p>'+a+'</p>  '+b+' </div> </article>';
             }
+
+            const documentationPage = [
+               'home','part1','part2','part3',
+               'part4','part5','part6','part7',
+               'part8','part9','part10','part11'
+            ]
+
+           
+            _saveStorage("page",documentationPage[0]);
+              
+
+            var now_page = _getStorage("page");
+
+            _keyCustom(function(){
+                 if (now_page==='home')
+                 {
+                    part1();
+                    _saveStorage("page",documentationPage[1]);
+                    now_page = _getStorage("page");
+                 }
+                 else if(now_page==='part1')
+                 {
+                      part2();
+                      _saveStorage("page",documentationPage[2]);
+                      now_page = _getStorage("page");
+                 }
+                   else if(now_page==='part2')
+                 {
+                     part3();
+                    _saveStorage("page",documentationPage[3]);
+                     now_page = _getStorage("page");
+                 }
+                  else if(now_page==='part3')
+                 {
+                     _loadDoc("./code/part-four.html",function(res){
+                       if (res)
+                       {
+                           _printTo(display,res);
+                           _loadDoc("./code/part-four.js",script,_ajaxSetup.header,"script"); 
+                       }
+                    });
+                    _saveStorage("page",documentationPage[4]);
+                     now_page = _getStorage("page");
+                 }
+                  else if(now_page==='part4')
+                 {
+                     _loadDoc("./code/part-five.html",function(res){
+                       if (res)
+                       {
+                           _printTo(display,res);
+                           _loadDoc("./code/part-five.js",script,_ajaxSetup.header,"script"); 
+                       }
+                    });
+                    _saveStorage("page",documentationPage[5]);
+                     now_page = _getStorage("page");
+                 }
+                  else if(now_page==='part5')
+                 {
+                     _loadDoc("./code/part-six.html",function(res){
+                       if (res)
+                       {
+                           _printTo(display,res);
+                           _loadDoc("./code/part-six.js",script,_ajaxSetup.header,"script"); 
+                       }
+                    });
+                    _saveStorage("page",documentationPage[6]);
+                     now_page = _getStorage("page");
+                 }
+            },_keyCode.ctrl);
+          
+            
 		});
