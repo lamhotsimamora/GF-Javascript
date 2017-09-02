@@ -5,7 +5,7 @@ Web    : www.lamhotsimamora.com
 All rights reserved.
 For licensing, see LICENSE.md 'https://raw.githubusercontent.com/lamhotsimamora/GF-Javascript/master/license.md'
 */
-const run_console = true;
+const run_console = false;
 let _protocol; let _host; let _inc = 0; const _sWidth = screen.width; const _sHeight = screen.height; const _obj_d = new Date();
 const _error_message = {id: "Id of element is undefined",attr:"Attribute is undefined", 
 name: "Name of element is undefined", url: "Url is undefined", 
