@@ -1,54 +1,70 @@
-
 <div class="container">
-	
-	<hr>
-	
-		For open new tab
-			</br></br>
-			<code>
+    <hr> For open new tab
+    </br>
+    </br>
+    <code>
 				_newTab("https://www.google.com");
 			</code>
-		</br></br>
-
-		<button class="button is-primary" id="btn_new_tab">New Tab</button>
-		<hr>
-
-		For open new form (1)
-		</br></br>
-		<code>
+    </br>
+    </br>
+    <button class="button is-primary" id="btn_new_tab">New Tab</button>
+    <hr> For open new form (1)
+    </br>
+    </br>
+    <code>
 			_newForm("Lorem Ipsum");
-		</code></br></br>
-		or (2)
-		</br></br>
-		<code>
+		</code></br>
+    </br>
+    or (2)
+    </br>
+    </br>
+    <code>
 			_newForm(false,"https://www.google.com");
-		</code></br></br>
-		or with height & width (3)</br></br>
-		<code>
+		</code></br>
+    </br>
+    or with height & width (3)</br>
+    </br>
+    <code>
 			_newForm(false,"https://www.google.com",800,800);
 		</code>
-		</br></br>
-		<button class="button is-success" id="btn_new_form_1">New Form 1</button>
-		<button class="button is-success" id="btn_new_form_2">New Form 2</button>
-		<button class="button is-success" id="btn_new_form_3">New Form 3</button>
-
-		<hr>
-
-		For checking URL is valid
-		</br></br>
-		<code>
+    </br>
+    </br>
+    <button class="button is-success" id="btn_new_form_1">New Form 1</button>
+    <button class="button is-success" id="btn_new_form_2">New Form 2</button>
+    <button class="button is-success" id="btn_new_form_3">New Form 3</button>
+    <hr> For checking URL is valid
+    </br>
+    </br>
+    <code>
 			let url = _isUrl("www.google.com");
 		</code>
-		</br></br>
-		<button class="button is-warning" id="btn_url">Invalid URL</button>
-		<button class="button is-warning" id="btn_url2">Valid URL</button>
-		<hr>
-		For count of URL in body HTML
-		</br></br>
-		<code>
+    </br>
+    </br>
+    <button class="button is-warning" id="btn_url">Invalid URL</button>
+    <button class="button is-warning" id="btn_url2">Valid URL</button>
+    <hr> For count of URL in body HTML
+    </br>
+    </br>
+    <code>
 			let count = _countLink();();
-		</code></br></br>
-		<button class="button is-danger" id="btn_count_url">Count URL</button>
-	<hr>
-
+		</code></br>
+    </br>
+    <button class="button is-danger" id="btn_count_url">Count URL</button>
+    <hr> For get the url </br>
+    </br>
+    <code>
+			var u = _myUrl();
+		</code></br>
+    </br>
+    <button class="button is-warning" id="btn_myurl1">URL 1</button>
+    </br>
+    </br>
+    or </br>
+    </br>
+    <code>
+			var u = _baseUrl();
+		</code>
+    </br>
+    </br>
+    <button class="button is-warning" id="btn_myurl2">URL 2</button>
 </div>

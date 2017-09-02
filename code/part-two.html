@@ -1,30 +1,34 @@
 <div class="container">
-
-	<article class="message is-primary">
-		
-		For load document from another file / page </br> <button class="button is-info is-outlined" id="btn_load_doc">Load Document</button>
-		<hr>
-		<div id='display_document'></div>
-		<hr>
-		<code>
+    <article class="message is-primary">
+        <center>
+            <strong>
+			<font color="red">These Page Need A Local Server (Ex : Apache) For Running The PHP Script !</font></strong>
+        </center>
+        <hr> For load document from another file / page </br>
+        </br>
+        <button class="button is-info is-outlined" id="btn_load_doc">Load Document</button>
+        <hr>
+        <div id='display_document'></div>
+        <hr>
+        <code>
 			_loadDoc("./server/page.php",function(r){
-		</code>	</br>
-		<code>
+		</code> </br>
+        <code>
 			if (r)
 			{
 				_printTo("display_body",r);
 			}
 			});
 		</code>
-		<hr>
-		For load document from another file / page with GET </br> <button class="button is-info is-outlined" id="btn_get">Load GET</button>
-		<hr>
-		<div id='display_get'></div>
-		<hr>
-		<code>
+        <hr> For load document from another file / page with GET </br>
+        <button class="button is-info is-outlined" id="btn_get">Load GET</button>
+        <hr>
+        <div id='display_get'></div>
+        <hr>
+        <code>
 			var my_name = "Lorem";
-			</code>	</br>
-			<code>
+			</code> </br>
+        <code>
 			_requestGET("./server/profile.php?name="+my_name+"",function(r){
 			if (r)
 			{
@@ -32,12 +36,12 @@
 			}
 			});
 		</code>
-		<hr>
-		For load document from another file / page with POST </br> <button class="button is-info is-outlined" id="btn_post">Load POST</button>
-		<hr>
-		<div id='display_post'></div>
-		<hr>
-		<code>
+        <hr> For load document from another file / page with POST </br>
+        <button class="button is-info is-outlined" id="btn_post">Load POST</button>
+        <hr>
+        <div id='display_post'></div>
+        <hr>
+        <code>
 			var my_name = "Lorem";
 			</code> </br><code>
 			_requestPOST("./server/profile.php","name="+my_name+"",function(r){
@@ -47,7 +51,5 @@
 			}
 			});
 		</code>
-
-	</article>
-
+    </article>
 </div>

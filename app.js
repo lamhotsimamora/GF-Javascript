@@ -1,5 +1,6 @@
 $(document).ready(function(){
-             var now_page = _getStorage("page");
+  
+            var now_page = _getStorage("page");
             const documentationPage = [
                'home','part1','part2','part3',
                'part4','part5','part6','part7',
@@ -8,9 +9,7 @@ $(document).ready(function(){
             ]
  
              _saveStorage("page",documentationPage[0]);
-              
-
-         
+            
             _loadDoc("./component/intro.gf","display_intro");
 
             const display ="display_load";
@@ -80,7 +79,7 @@ $(document).ready(function(){
                        if (res)
                        {
                            _printTo(display,res);
-                           _loadDoc("./code/part-four.js",script,_ajaxSetup.header,"script"); 
+                           _loadDoc("./code/part-three.js",script,_ajaxSetup.header,"script"); 
                            _saveStorage("page",documentationPage[3]);
                             now_page = _getStorage("page"); 
                        }

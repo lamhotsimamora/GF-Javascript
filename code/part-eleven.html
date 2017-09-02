@@ -1,33 +1,45 @@
 <div class="container">
-	<hr>
-	For basic query selector  </br></br>
-	<code>
-	    var me = _qSelector("#btn_q");
-    </code></br>
+    <hr> For basic query selector </br>
+    </br>
     <code>
-	     me.innerHTML = "READY";
-	</code></br></br>
-	<button class="button is-danger" id="btn_q">TEST</button>
-	<hr>
-
-	For query selector background colour 	</br>	</br>
-
-	<code>
-		_qSelectorBackgroundCol(".my_class",flat_ui_color.alizarian);
-	</code>
-	</br></br>	
-		
-		<p>
-			<div class="my_class">Hello World 1</div>
-		</p>
-		<hr>
-	or for query selector inner HTML by id of element </br></br>
-	<code>
-		_qSelectorHTML("#my_div",_randomStr(15));
-	</code></br></br>
-	
-		<div id="my_div">Lorem Ipsum</div>
-		</br>
-	<button class="button is-warning" id="btn_query">TEST</button>
-
+        var me = _qSelector("#btn_test");
+    </code></br>
+    </br>
+    </br>
+    <button class="button is-danger" id="btn_test">TEST</button>
+    <hr> For query selector only 1 class for change background colour </br>
+    </br>
+    <code>
+        _qSelectorBackgroundCol(".my_class",flat_ui_color.alizarian);
+    </code>
+    </br>
+    <hr> For query selector all of element with the same class for change background colour </br>
+    </br>
+    <code>
+        _qSelectorBackgroundCol(".my_class",flat_ui_color.alizarian,true);
+    </code>
+    </br>
+    </br>
+    <p>
+        <div class="my_class">Hello World 1</div>
+        </br>
+        <div class="my_class">Hello World 2</div>
+        </br>
+        <div class="my_class">Hello World 3</div>
+        </br>
+        <div class="my_class">Hello World 4</div>
+        </br>
+        <div class="my_class">Hello World 5</div>
+        </br>
+    </p>
+    <hr> or for query selector inner HTML by id of element </br>
+    </br>
+    <code>
+        _qSelectorHTML("#my_div",_randomStr(15));
+    </code></br>
+    </br>
+    <div id="my_div">Lorem Ipsum</div>
+    </br>
+    <button class="button is-warning" id="btn_query">TEST 1</button>
+    <button class="button is-warning" id="btn_query_all">TEST 2</button>
 </div>

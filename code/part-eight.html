@@ -1,11 +1,7 @@
 <div class="container">
-		
-
-	<hr>
-	
-	For set arrow of keyboard event ( Up, Down, Left & Right )
-	</br>
-	<code>
+    <hr> For set arrow of keyboard event ( Up, Down, Left & Right )
+    </br>
+    <code>
 		_keyArrow(function(){
 		    _printTo("display_key","LEFT");
 		},function(){
@@ -16,19 +12,22 @@
 		    _printTo("display_key","DOWN");
 		});
 	</code>
-	<hr><hr>
-	<article class="message is-danger"><div class="message-body"><center><h2 id="display_key"></h2> </center>  </div> </article>
-	<hr>
-	For set custom keyboard event </br>
-	<code>
+    <hr>
+    <hr>
+    <article class="message is-danger">
+        <div class="message-body">
+            <center>
+                <h2 id="display_key"></h2> </center>
+        </div>
+    </article>
+    <hr> For set custom keyboard event </br>
+    <code>
 		_keyCustom(function(){
 		    _printTo("display_key","BACKSPACE");
 		},_keyCode.backspace);
 	</code>
-	<hr>
-	
-	You can set custom with key code in this below :
-	<code>
+    <hr> You can set custom with key code in this below :
+    <code>
 		const _keyCode = {
 		    space_bar: 32,
 		    backspace: 8,

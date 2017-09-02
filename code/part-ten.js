@@ -43,3 +43,13 @@ _onClick("btn_count_url",function(){
 	let count = _countLink();
 	alert("Count URL -> "+count);
 });
+_onClick("btn_myurl1",function(){
+	var u1 = _myUrl();
+
+	alert(u1);
+});
+_onClick("btn_myurl2",function(){
+	var u2 = _baseUrl();
+ 
+	alert(u2);
+});

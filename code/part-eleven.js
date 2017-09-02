@@ -6,6 +6,11 @@ let rndm_clr = [
 var ii = 0;
 
 
+
+_onClick('btn_test',function(){
+	_qSelectorHTML("#btn_test","READY");
+});
+
 _onClick("btn_query",function(){
 	_qSelectorBackgroundCol(".my_class",rndm_clr[ii]);
 	if (ii==2)
@@ -21,10 +26,19 @@ _onClick("btn_query",function(){
 });
 
 
-_onClick('btn_q',function(){
-	 var me = _qSelector("#btn_q");
-	 me.innerHTML = "READY";
-	 alert(me);
+_onClick("btn_query_all",function(){
+	_qSelectorBackgroundCol(".my_class",rndm_clr[ii],true);
+	if (ii==2)
+	{
+		ii=0;
+	}
+	else
+	{
+		ii++;
+	}
+
 });
+
+
 
 
