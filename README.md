@@ -3,7 +3,7 @@
 <div style="text-align:center">
 <center>
 
-<img src="https://lamhotsimamora.github.io/Garuda-Framework-Professional-Edition/merdeka.png" width="400" height="200">
+<img src="https://camo.githubusercontent.com/947830628690b4a89e4aa3e47a33cf61fce8e292/68747470733a2f2f6c616d686f7473696d616d6f72612e6769746875622e696f2f4761727564612d4672616d65776f726b2d50726f66657373696f6e616c2d45646974696f6e2f4761727564612d4672616d65776f726b2d50726f2d45646974696f6e2d4c6f676f2d4f6666696369616c2e706e67" width="400" height="200">
 </img></center>
 </div>
 
