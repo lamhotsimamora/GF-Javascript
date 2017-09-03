@@ -93,3 +93,7 @@ _onClick("btn_print",function(){
 _onClick("btn_scroll",function(){
 	_scroll("display_load");
 });
+
+_onClick("btn_import",function(){
+	  _import(_myUrl()+"code/file.js");
+});
