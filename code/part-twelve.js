@@ -95,5 +95,12 @@ _onClick("btn_scroll",function(){
 });
 
 _onClick("btn_import",function(){
-	  _import(_myUrl()+"code/file.js");
+	 if (_getHost()==='http://localhost/')
+	  {
+	  	 _import(_myUrl()+"code/file.js");
+	  }
+	  else
+	  {
+	  	  _import(_myUrl()+"GF-Javascript/code/file.js");
+	  }
 });
