@@ -13,7 +13,7 @@ Everything has been tested and support much browser like Chrome, Firefox, Opera 
 </p>
 
 <p>
-	You can create a professional front end website with gQuery, and then you might use jQuery for make the perfect front end (I use jQuery for animation).
+	You can create a professional front end website with gQuery, and then you might use jQuery for make the perfect front end ( I use jQuery for animation & document ready function ).
 
 </p>
 
