@@ -41,12 +41,14 @@ gQuery is not kaleng-kaleng library . You can create a professional web with gQu
 
 ## Getting Started
 
-First you have to download / clone this repository and then copy this code to your HTML. 
+First you have to <a href="https://codeload.github.com/lamhotsimamora/GF-Javascript/zip/master">Download</a> / Clone this repository.
+----------------------------------------------
 Copy this code if you want to clone.
 ```
 git clone https://github.com/lamhotsimamora/GF-Javascript.git 
 ```
 ----------------------------------------------
+And copy this code to your HTML
 ```
 <script src="JS/GF-1.js"></script>
 ```
