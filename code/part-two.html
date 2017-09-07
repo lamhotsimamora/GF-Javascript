@@ -11,12 +11,12 @@
         <div id='display_document'></div>
         <hr>
         <code>
-			_loadDoc("./server/page.php",function(r){
+			_loadDoc("./server/page.php",function(a,b,c){
 		</code> </br>
         <code>
-			if (r)
+			if (a)
 			{
-				_printTo("display_body",r);
+				_printTo("display_body",a);
 			}
 			});
 		</code>
@@ -29,11 +29,11 @@
 			var my_name = "Lorem";
 			</code> </br>
         <code>
-			_requestGET("./server/profile.php?name="+my_name+"",function(r){
-			if (r)
-			{
-				_printTo("display_body",r);
-			}
+			_requestGET("./server/profile.php?name="+my_name+"",function(a,b,c){
+				if (a)
+				{
+					_printTo("display_body",a);
+				}
 			});
 		</code>
         <hr> For load document from another file / page with POST </br>
@@ -44,12 +44,25 @@
         <code>
 			var my_name = "Lorem";
 			</code> </br><code>
-			_requestPOST("./server/profile.php","name="+my_name+"",function(r){
-			if (r)
-			{
-				_printTo("display_body",r);
-			}
+			_requestPOST("./server/profile.php","name="+my_name+"",function(a,b,c){
+				if (a)
+				{
+					_printTo("display_body",a);
+				}
 			});
 		</code>
+		<hr>
+		For AJAX PUT 
+		</br></br>
+		<code>
+			_requestPUT("./server/profile.php",function(a,b,c){
+				_writeLog(a);
+				_writeLog(b);
+				_writeLog(c);
+			});
+		</code></br></br>
+		<div id='display_put'></div></br></br>
+		<button class="button is-info is-outlined" id="btn_put">Load PUT</button>
+
     </article>
 </div>
