@@ -104,3 +104,12 @@ _onClick("btn_import",function(){
 	  	  _import(_myUrl()+"GF-Javascript/code/file.js");
 	  }
 });
+_onClick("btn_set_cookie",function(){
+	_setCookie("my_app","gQuery");
+	alert("Success Set Cookie");
+});
+_onClick("btn_get_cookie",function(){
+	let c = _getCookie("my_app","gQuery");
+	alert("Cookie {my_app} -> "+c);
+});
+
