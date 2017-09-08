@@ -204,7 +204,21 @@ $(document).ready(function(){
                   });
 
             }
-	   _onClick("part_one_one",function(){
+
+              function part13()
+            {
+                 _loadDoc("./code/part-thirteen.html",function(res){
+                       if (res)
+                       {
+                           _printTo(display,res);
+                           _loadDoc("./code/part-thirteen.js",script,_ajaxSetup.header,"script"); 
+                             _saveStorage("page",documentationPage[12]);
+                            now_page = _getStorage("page"); 
+                       }
+                  });
+
+            }
+	         _onClick("part_one_one",function(){
                  part1();
             });
             _onClick("part_one",function(){
@@ -252,7 +266,9 @@ $(document).ready(function(){
             _onClick("part_twelve",function(){
                  part12();
             });
-
+            _onClick("part_thirteen",function(){
+                 part13();
+            });
 
 
             function message(a,b)
@@ -325,6 +341,10 @@ $(document).ready(function(){
                      part12();
                  }
                    else if(now_page==='part12')
+                 {
+                     part13();
+                 }
+                   else if(now_page==='part13')
                  {
                      part1();
                  }

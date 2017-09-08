@@ -1,230 +1,44 @@
 <div class="container">
-    <center> <button class="button is-default" id="btn_scroll_down">Go Down</button></center>
-    <hr> For select text 
-    </br>
-    <code>
-	 				_selectText("my_text");	
-	 		</code>
-    </br>
-    </br>
-    <textarea id="my_text" class="input is-success">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </textarea>
-    </br>
-    </br>
-    <button class="button is-primary" id="btn_select">Select</button>
-    <hr> For add value to select option </br>
-    <code>
-				var data_val = [
-					1,2,3,4,5
-				];
-				var data_fruit = [
-					"Avocado","Apple","Banana","Broccoli","Orange"
-				];
-				_addOption("my_select",data_val,data_fruit);
-			</code></br>
-    </br>
-    For get value or text of select option  ( combobox )</br>
-    <code>
-				var value_first = _getOption("my_select");
-				// For get text of value
-				var text_first = _getOption("my_select",true);
-			</code> </br>
-    </br>
-    <div class="select">
-        <select name="my_select" class="form-control" id="my_select">
-            <option value="1">==SELECT ME==</option>
-        </select>
-    </div>
-    </br>
-    </br>
-    <button class="button is-warning" id="btn_add_select">Add</button> &nbsp
-    <button class="button is-warning" id="btn_get_select">Get</button>
-    <hr> For add item to list </br>
-    <code>
-				var data_list_1 = [
-				    "Apple","Banana","Orange"
-				];
-			</code>
-    </br>
-    </br>
-    'list-group-item' is a class of css, so you can type the class inside that. </br>
-    <code>
- 
-				_addList("list_1","list-group-item",data_list_1);
-			</code>
-    </br>
-    </br>
-    <ul class="menu-list" id="list_1">
-        <li>A</li>
-        <li>B</li>
-    </ul>
-    </br>
-    </br>
-    <button class="button is-danger" id="btn_add_list">Add List</button>
-    <hr> For add item to table </br>
-    <code>
-				var data_table = [
-				   1,"A","B","C"
-				];
-				_addItemTable("table_val",data_table);
-
-			</code>
-    </br>
-    </br>
-    <button class="button is-default" id="btn_add_item">Add Item</button>
-    </br>
-    </br>
-    <table class="table">
-        <thead>
-            <tr>
-                <th>No</th>
-                <th>Firstname</th>
-                <th>Lastname</th>
-                <th>Email</th>
-            </tr>
-        </thead>
-        <tbody id="table_val">
-            <tr>
-                <td>0</td>
-                <td>A</td>
-                <td>B</td>
-                <td>C</td>
-            </tr>
-        </tbody>
-    </table>
-    <hr> For get latitude and longitude client
-    </br>
-    </br>
-    <code>
-				_getLocation(function(result){
-					var latitude  = result.coords.latitude; 
-					var longitude = result.coords.longitude;
-				}); 
-		</code>
-    </br>
-    </br>
-    <button class="button is-success" id="btn_loc">TEST</button>
-    <hr> For detection browser </br>
-    </br>
-    <code>
-			let browser = _detectBrowser();
-		</code> </br>
-    </br>
-    <button class="button is-primary" id="btn_browser">TEST</button>
-    <hr> For create random string
-    </br>
-    </br>
-    <code>
-			var random_string = _randomStr(); 
-		</code> </br>
-    </br>
-    or create random integer
-    </br>
-    </br>
-    <code>
-			var random_integer = _randomInt(); 
-		</code>
-    </br>
-    </br>
-    or with length </br>
-    </br>
-    <code>
-			var random_integer2 = _randomInt(25); 
-		</code>
-    </br>
-    </br>
-    <center>
-        <button class="button is-danger" id="btn_random">Refresh</button>
-        </br>
-        </br>
-        <article class="message is-success">
-            <div id="display_random" class="message-body">
-            </div>
-        </article>
-    </center>
-    <hr> For clean or filter value of array
-    </br>
-    </br>
-    <code>
-			var data_array = ['lorem','ipsum',null,'false'];
-			
-		</code></br>
-    <code>
-			var new_array  = _cleanArray(data_array,null,'false');
-		</code></br>
-    <center>
-        <h4 id="result_array"></h4></center>
-    </br>
-    <button class="button is-success" id="btn_clean_array">TEST</button>
-    </br>
-    </br>
-    <hr> For open new frame
-    </br>
-    </br>
-    <code>
-			_newIframe("http://www.google.com",500,500);
-		</code></br>
-    or </br>
-    <code>
-			_newIframe("http://www.google.com",500,500,"my_frame");
-		</code>
-    </br>
-    <button class="button is-primary" id="btn_frame">TEST</button>
+    
     <hr>
-    <div id="print_me">
-        For print full page</br>
-        </br>
-        <code>
-			_print();
-		</code>
-        </br>
-        </br>
-        <button class="button is-danger" id="btn_print_all">PRINT FULL</button>
-        </br>
-        </br>
-        or print with id of element </br>
-        <code>
-			_print("print_me",600,400);
-		</code></br>
-        </br>
-        <button class="button is-danger" id="btn_print">PRINT</button>
-    </div>
-    <hr> For smooth scroll</br>
-    </br>
+    This animation need font awesome css, include these <a id="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" onclick="_newTab(this.id);">CDN</a> to your HTML </br></br>
     <code>
-			 _scroll("display_load");
-		</code>
-    </br>
-    </br>
-    <button class="button is-success" id="btn_scroll">TEST</button>
-<hr>
-    For load javascript file 
-    </br> </br>
-    <code>
-       _import(_myUrl()+"code/file.js",function(){
-                _writeLog(join());
-         });
+       https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css
     </code>
-    </br></br>
-    <button class="button is-warning" id="btn_import">TEST</button>
+
     <hr>
 
-    For set cookie with key
-    </br>
-    <code>
-        _setCookie("my_app","gQuery");
-    </code>
+    For display loading animation
+    
+   
     </br></br>
-    For get cookie value by key
-    </br>
     <code>
-        let c = _getCookie("my_app","gQuery");
-    </code>
-     </br> </br>
-    <button class="button is-primary" id="btn_set_cookie">New Cookie</button> </br> </br>
-    
-     <button class="button is-success" id="btn_get_cookie">Get Cookie</button>
-    
-    <div id="display_down">
+        _animation("display_animation","Please Wait...");
+    </code></br></br>
+    <div id="display_animation">
         
     </div>
+    </br>
+    <hr>
+    or 
+    </br>
+    <code>
+         _animation("display_animation","Please Wait...","circle");
+    </code></br></br>
+     <div id="display_animation2">
+        
+    </div>
+
+    <hr>
+    or 
+    </br></br>
+
+    <code>
+         _animation("display_animation","Please Wait...","refresh");
+    </code></br></br>
+     <div id="display_animation3">
+        
+    </div>
+    </br></br>
+    
 </div>
