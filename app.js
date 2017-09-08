@@ -204,7 +204,9 @@ $(document).ready(function(){
                   });
 
             }
-
+	   _onClick("part_one_one",function(){
+                 part1();
+            });
             _onClick("part_one",function(){
                  part1();
             });
