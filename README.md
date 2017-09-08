@@ -8,24 +8,24 @@
 </div>
 
 ----------------------------------------------
-I was created simple query of javascript code. You can easy write code of Javascript and you can easy to do DOM (Document Object Model). If you familiar with jQuery, gQuery can be used with jQuery.
 
+I was created simple query of javascript code. You can easy write code of Javascript and you can easy to do DOM (document object manipulation).  
 
-Garuda Query has an identical symbol with underscore in front of function name ( No Conflict ), So you can also use this library with another framework javascript like VUE.js, REACT.js, ANGULAR.js, and more. Everything has been tested and support much browser like Chrome, Firefox, Opera , Safari & Internet Explorer.
+If you familiar with jQuery, gQuery can be used with jQuery. You can modify the source code. 
 
-You can create a professional front end website with gQuery, and then you might use jQuery for make the perfect front end ( I use jQuery for animation & document ready function ).
+Garuda Query has an identical symbol with underscore in front of function name, So you can also use this library with another framework javascript.
 
-You can also modify the source code and you can use for distribution or production.
+Everything has been tested and support much browser like Chrome, Firefox, Opera , Safari & Internet Explorer. 
 
-----------------------------------------------
+gQuery is not kaleng-kaleng library . You can create a professional web with gQuery.
 
 ## Join To Our Group
 - https://www.facebook.com/groups/GarudaFrameworkPro/ 
 
-----------------------------------------------
+
 ## See All Of Function
 * [All Of Function](https://lamhotsimamora.github.io/GF-Javascript/index-index.html) - All Of Function
-----------------------------------------------
+
 
 <div style="text-align:center">
 <center>
@@ -39,8 +39,7 @@ You can also modify the source code and you can use for distribution or producti
 * [GarudaFramework](https://garudaframework.lamhotsimamora.com//page/example) - Garuda Framework Javascript Demo
 * [GarudaFrameworkPro](https://garudaframeworkpro.lamhotsimamora.com/javascript-library) - Garuda Framework Pro Demo
 
-----------------------------------------------
-### Getting Started
+## Getting Started
 
 First you have to <a href="https://codeload.github.com/lamhotsimamora/GF-Javascript/zip/master">Download</a> / Clone this repository.
 ----------------------------------------------
@@ -49,7 +48,7 @@ Copy this code if you want to clone.
 git clone https://github.com/lamhotsimamora/GF-Javascript.git 
 ```
 ----------------------------------------------
-or copy this code to your HTML
+And copy this code to your HTML
 ```
 <script src="JS/GF-1.js"></script>
 ```

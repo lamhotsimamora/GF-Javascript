@@ -1,4 +1,5 @@
 <div class="container">
+    <center> <button class="button is-default" id="btn_scroll_down">Go Down</button></center>
     <hr> For select text 
     </br>
     <code>
@@ -199,7 +200,9 @@
     For load javascript file 
     </br> </br>
     <code>
-        _import("file.js");
+       _import(_myUrl()+"code/file.js",function(){
+                _writeLog(join());
+         });
     </code>
     </br></br>
     <button class="button is-warning" id="btn_import">TEST</button>
@@ -220,5 +223,8 @@
     <button class="button is-primary" id="btn_set_cookie">New Cookie</button> </br> </br>
     
      <button class="button is-success" id="btn_get_cookie">Get Cookie</button>
-
+    
+    <div id="display_down">
+        
+    </div>
 </div>

@@ -1,10 +1,8 @@
-let a=1;
-let b=2;
+var aa = 1;
+var bb = 2;
 
 function join()
 {
-	return "_"+a+b+"_";
+	return "_"+aa+bb+"_";
 }
 
-alert(join());
-alert("Garuda Framework Javascript");

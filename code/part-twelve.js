@@ -93,15 +93,29 @@ _onClick("btn_print",function(){
 _onClick("btn_scroll",function(){
 	_scroll("display_load");
 });
+_onClick("btn_scroll_down",function(){
+	_scroll("display_down");
+});
 
 _onClick("btn_import",function(){
+
 	 if (_getHost()==='http://localhost/')
 	  {
-	  	 _import(_myUrl()+"code/file.js");
+	  	 _import(_myUrl()+"code/file.js",function(){
+	  	 		_writeLog(join());
+	  	 });
+	  	 _import(_myUrl()+"import/oke.js",function(){
+	  	 		_writeLog(min());
+	  	 });
 	  }
 	  else
 	  {
-	  	  _import(_myUrl()+"GF-Javascript/code/file.js");
+  	   	_import(_myUrl()+"GF-Javascript/code/file.js",function(){
+	  	 		_writeLog(join());
+	  	 });
+	  	 _import(_myUrl()+"GF-Javascript/import/oke.js",function(){
+	  	 		_writeLog(min());
+	  	 });
 	  }
 });
 _onClick("btn_set_cookie",function(){
