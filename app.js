@@ -5,7 +5,7 @@ $(document).ready(function(){
                'home','part1','part2','part3',
                'part4','part5','part6','part7',
                'part8','part9','part10','part11',
-               'part12',"Get-Start","All-Function"
+               'part12','part13',"Get-Start","All-Function"
             ]
  
              _saveStorage("page",documentationPage[0]);
@@ -39,13 +39,13 @@ $(document).ready(function(){
             function getStart()
             {
                  loadPage("Getting-Started.html");
-                  _saveStorage("page",documentationPage[13]);
+                  _saveStorage("page",documentationPage[14]);
             }
 
             function allFunction()
             {
                   loadPage("index-index.html");
-                   _saveStorage("page",documentationPage[14]);
+                   _saveStorage("page",documentationPage[15]);
             }
 
             function part1()
@@ -212,7 +212,7 @@ $(document).ready(function(){
                        {
                            _printTo(display,res);
                            _loadDoc("./code/part-thirteen.js",script,_ajaxSetup.header,"script"); 
-                             _saveStorage("page",documentationPage[12]);
+                             _saveStorage("page",documentationPage[13]);
                             now_page = _getStorage("page"); 
                        }
                   });
