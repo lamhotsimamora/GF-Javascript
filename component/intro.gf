@@ -23,6 +23,10 @@ Everything has been tested and support much browser like Chrome, Firefox, Opera 
 	 <center><strong>Garuda Query Javascript is -VERY BASIC-</strong> </center>
 		<hr>
 	 <center><strong>" There isn't about the CAR, it's about the DRIVER "</strong></center>
+	 
+	 <hr>
+	 <center> Special Thanks To <a href="http://bulma.io/" target="_blank">BULMA CSS</a> </center>
+	 
 </p>
 
 <small><i>07:00 AM - 20 Agustus 2017</i></small>
