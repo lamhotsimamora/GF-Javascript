@@ -13,7 +13,9 @@ I was created simple query of javascript code. You can easy write code of Javasc
 
 Garuda Query has an identical symbol with underscore in front of function name ( No Conflict ), So you can also use this library with another framework javascript like VUE.js, REACT.js, ANGULAR.js, and more. Everything has been tested and support much browser like Chrome, Firefox, Opera , Safari & Internet Explorer.
 
-You can create a professional front end website with gQuery, and then you might use jQuery for make the perfect front end ( I use jQuery for animation & document ready function ).
+You can create a professional front end website with gQuery, and then you might use jQuery for make the perfect front end ( I use jQuery for open the modal, create animation & document ready function ).
+
+Special Thanks To <a href="http://bulma.io/" target="_blank">BULMA CSS</a>
 
 You can also modify the source code and you can use for distribution or production.
 
