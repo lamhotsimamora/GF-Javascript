@@ -53,3 +53,9 @@ _onClick("btn_myurl2",function(){
  
 	alert(u2);
 });
+
+
+_onClick("btn_query_url",function(){
+	var a = _GET['page'];
+	alert(a);
+});

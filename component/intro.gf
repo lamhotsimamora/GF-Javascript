@@ -13,22 +13,26 @@ Everything has been tested and support much browser like Chrome, Firefox, Opera 
 </p>
 
 <p>
-	You can create a professional front end website with gQuery, and then you might use jQuery for make the perfect front end ( I use jQuery for animation & document ready function ).
+	You can create a professional front end website with gQuery, and then you might use jQuery for make the perfect front end ( I use jQuery for open the modal, create animation & document ready function ).
 
 </p>
 
 <p>
 	 You can also modify the source code and you can use for distribution or production.
 
-	 <center><strong>Garuda Query Javascript is -BASIC-</strong> </center>
+	 <center><strong>Garuda Query Javascript is -VERY BASIC-</strong> </center>
+		<hr>
+	 <center><strong>" There isn't about the CAR, it's about the DRIVER "</strong></center>
 </p>
 
-<small>07:00 AM - 20 Agustus 2017</small>
+<small><i>07:00 AM - 20 Agustus 2017</i></small>
 
 <hr>
-	<strong>Open These Page In Desktop Mode ( Mobile Phone isn't RECOMMENDED )</strong>
+	<div class="hero">
+		<strong>Open These Page In Desktop Mode ( Mobile Phone isn't RECOMMENDED )</strong>
 	</br></br>
-	<i>If javascript doesnt work in documentation, refresh to HOME PAGE, and back to the PART of Documentation that you want to VISIT</i>
+	<i><font color="red">If javascript doesnt work in documentation, refresh to HOME PAGE, and back to the PART of Documentation that you want to VISIT</font></i>
+	</div>
 	</br></br>
 	<div class="notification is-default">
 		<center>Quick ShortCut</center>
