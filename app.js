@@ -1,4 +1,6 @@
 $(document).ready(function(){
+	    // Enabled console log Garuda Javascript
+		run_console = true;	
   
             var now_page = _getStorage("page");
             const documentationPage = [
