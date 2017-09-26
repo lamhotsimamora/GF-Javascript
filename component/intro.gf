@@ -1,7 +1,8 @@
 <p>
 I was created simple query of javascript code. You can easy write code of Javascript and you can easy to do DOM (Document Object Model).  
 
-If you familiar with jQuery, gQuery can be used with jQuery.
+If you familiar with jQuery, gQuery can be used with jQuery. <strong>Garuda Javascript was designed for client side</strong>, and also you can use this library 
+with Node.JS as server side.
 </p>
  </br>
 
