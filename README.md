@@ -851,4 +851,4 @@ _getLocation(function(result){
 
 ## License
 
-The MIT License (MIT) - see [`LICENSE.md`](https://raw.githubusercontent.com/lamhotsimamora/GF-Javascript/master/license.md) for more details
+The MIT License (MIT) - see [`LICENSE.md`](https://raw.githubusercontent.com/lamhotsimamora/GF-Javascript/master/LICENSE) for more details
