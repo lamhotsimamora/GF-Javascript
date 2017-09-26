@@ -8,7 +8,7 @@
 </div>
 
 ----------------------------------------------
-I was created simple query of javascript code. You can easy write code of Javascript and you can easy to do DOM (Document Object Model). If you familiar with jQuery, gQuery can be used with jQuery.
+I was created simple query of javascript code. You can easy write code of Javascript and you can easy to do DOM (Document Object Model). If you familiar with jQuery, gQuery can be used with jQuery. <strong>Garuda Query Javascript was design for CLIENT SIDE </strong>
 
 
 Garuda Query has an identical symbol with underscore in front of function name ( No Conflict ), So you can also use this library with another framework javascript like VUE.js, REACT.js, ANGULAR.js, and more. Everything has been tested and support much browser like Chrome, Firefox, Opera , Safari & Internet Explorer.
