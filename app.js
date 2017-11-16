@@ -350,7 +350,7 @@ run_console = true;
        {
            part1();
        }
-  },_keyCode.ctrl);
+  },_keyCode.insert);
 
     
   _keyCustom(function(){

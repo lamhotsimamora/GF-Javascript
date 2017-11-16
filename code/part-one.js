@@ -14,10 +14,7 @@ _onClick("my_btn",function(){
 			_focus("txt_username");
 			return;	
 		}
-		else
-		{
-			 alert(txt_username);
-		}
+		
 
 	   if (txt_email==='')
 	   {
@@ -27,12 +24,37 @@ _onClick("my_btn",function(){
 	   }
 	   else
 	   {
-	   	 
+	   	  alert("Your username "+txt_username);
 	      alert("Your email "+txt_email);
 	   }
 
 });
 
+_onClick("btn_get_content",function(){
+	alert(_getContent('my_article'));
+});
+
+_onClick("my_btn_2",function(){
+	var value = [
+		_getValById('username'),
+		_getValById('age'),
+		_getValById('address'),
+		_getValById('password')
+	]
+
+	var obj = [
+			'username',
+			'age',
+			'address',
+			'password'
+	]
+
+	if (_required(value,obj)){
+		var result = _getValById(obj);
+		alert(result);
+	}
+	
+});
 
 _onClick("clear_btn",function(){
 	_clear("txt_username");

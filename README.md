@@ -11,9 +11,11 @@
 I was created simple query of javascript code. You can easy write code of Javascript and you can easy to do DOM (Document Object Model). If you familiar with jQuery, gQuery can be used with jQuery. <strong>Garuda Query Javascript was design for CLIENT SIDE </strong>
 
 
-Garuda Query has an identical symbol with underscore in front of function name ( No Conflict ), So you can also use this library with another framework javascript like VUE.js, REACT.js, ANGULAR.js, and more. Everything has been tested and support much browser like Chrome, Firefox, Opera , Safari & Internet Explorer.
+Garuda Query has an identical symbol with underscore in front of function name ( No Conflict ), So you can also use this library with another framework javascript like <strong>VUE.js, REACT.js, ANGULAR.js</strong>, and more. 
+Everything has been tested and support much browser (Chrome, Firefox, Opera , Safari & Internet Explorer).
 
-You can create a professional front end website with gQuery, and then you might use jQuery for make the perfect front end ( I use jQuery for open the modal, create animation & document ready function ).
+You can create a professional front end website with gQuery and then you might use jQuery for make the perfect 
+front end ( I use jQuery for open the modal, create animation & document ready function ).
 
 Special Thanks To <a href="http://bulma.io/" target="_blank">BULMA CSS</a>
 

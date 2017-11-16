@@ -46,7 +46,7 @@ Everything has been tested and support much browser like Chrome, Firefox, Opera 
 	    Press <strong>Home</strong> for open the Home Page</br>
 	   	Press <strong>F2</strong> for open the Getting Started </br>
 	   	Press <strong>F4</strong> for open the All Of Function </br>
-   		Press <strong>CTRL</strong> for open the Documentation (Part 1, Part 2, ... ) </br>
+   		Press <strong>INSERT</strong> for open the Documentation (Part 1, Part 2, ... ) </br>
 	   
 	</div>
 

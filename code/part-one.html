@@ -1,35 +1,93 @@
 <div class="container">
-    <div class="control">
-        <input type="text" class="input is-primary" placeholder="Username" id="txt_username" name="">
-        </br>
-        </br>
-        <input type="text" class="input is-info" placeholder="Email" id="txt_email" name="">
-        </br>
-        </br>
-        <button class="button is-info is-outlined" id="my_btn">Save</button>
-        <button class="button is-primary is-outlined" id="clear_btn">Clear</button>
-        <hr>
-    </div>
+    </br></br>
+    <p>
+        For get value of input text </br>
+    </p>   
+    </br>
+        <code>
+            var txt_username = _getValById("txt_username"); </br>
+            var txt_email    = _getValById("txt_email");</br>
+        </code>
+    </br></br>
+        <div class="control">
+                <input type="text" class="input is-primary" placeholder="Username" id="txt_username" name="">
+                </br>
+                </br>
+                <input type="text" class="input is-info" placeholder="Email" id="txt_email" name="">
+                </br>
+                </br>
+                <button class="button is-info is-outlined" id="my_btn">Save</button>
+                <button class="button is-primary is-outlined" id="clear_btn">Clear</button>
+                <hr>
+        </div>
+     
+    </br>
+        <p>
+            or set all of input text to an array
+        </p></br>
+        <div class="control">
+                <input placeholder="Username" type="text" id="username" class="input is-primary" name=""></br></br>
+                <input placeholder="Age" type="number" id="age" class="input is-primary" name=""></br></br>
+                <input placeholder="Address" type="text" id="address" class="input is-primary" name=""></br></br>
+                <input placeholder="Password" type="password" id="password" class="input is-primary" name=""></br></br>
+                <button class="button is-info is-outlined" id="my_btn_2">Save</button>    
+        </div></br>
+         <code>
+            var obj = [</br>
+                'username',</br>
+                'age',</br>
+                'address',</br>
+                'password'</br>
+            ]</br>
+            var result = _getValById(obj);</br>
+            alert(result);</br>
+         </code>
+    </br></br>
+    <p>
+        For required of input text
+    </p>
+        <code>
+            var value = [</br>
+                _getValById('username'),</br>
+                _getValById('age'),</br>
+                _getValById('address'),</br>
+                _getValById('password')</br>
+            ]</br></br>
+
+            var obj = [</br>
+                    'username',</br>
+                    'age',</br>
+                    'address',</br>
+                    'password'</br>
+            ]</br>
+            if (_required('')){</br>
+                var result = _getValById(obj);</br>
+                alert(result);</br>
+           }
+        </code>
+    </br>
+    <hr>
+
     <article class="message is-primary">
         For set focus to input text </br>
         <code>
-                    _focus("txt_username");
-                </code>
+            _focus("txt_username");
+        </code>
         <hr> For get value of input text
         </br>
         <code>
-                    var txt_username = _getValById("txt_username");
-                </code>
+            var txt_username = _getValById("txt_username");
+        </code>
         <hr> For clear input text
         </br>
         <code>
-                    _clear("txt_username");
-                </code>
+            _clear("txt_username");
+        </code>
         <hr> For set value of input text
         </br>
         <code>
-                    _setValue("txt_username","Lorem Ipsum");
-                </code>
+            _setValue("txt_username","Lorem Ipsum");
+        </code>
         <hr>
     </article>
     <article class="message is-success">
@@ -80,5 +138,22 @@
         <code>
                     _writeBody("Lorem Ipsum");
                 </code>
+        
+        </br></br>
+        
+        For get content of elemnt  </br></br>
+        <p id="my_article">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p></br></br>
+        <code>
+           var res =  _getContent('my_article');
+        </code></br>
+        <button class="button is-success is-outlined" id="btn_get_content">Test</button>
+
     </article>
 </div>
