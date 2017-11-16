@@ -7,9 +7,9 @@ with Node.JS as server side.
  </br>
 
 <p>
-Garuda Query has an identical symbol with underscore in front of function name ( No Conflict ), So you can also use this library with another framework javascript like VUE.js, REACT.js, ANGULAR.js, and more.
+Garuda Query has an identical symbol with underscore in front of function name ( No Conflict ), So you can also use this library with another framework javascript like <strong>VUE.js, REACT.js, ANGULAR.js</strong>, and more.
 
-Everything has been tested and support much browser like Chrome, Firefox, Opera , Safari & Internet Explorer. 
+Everything has been tested and support much browser(Chrome, Firefox, Opera , Safari & Internet Explorer). 
 
 </p>
 
