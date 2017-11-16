@@ -41,16 +41,14 @@
       </span>
     </a>
 
-    <a class="navbar-item has-dropdown is-hoverable" href="#xx" target="">
-       <div class="navbar-dropdown ">
-          <a class="navbar-item " href="#basic" id="part_one_one">
-             <i class="fa fa-hand-o-right"> Part 1 </i>  
-          </a>
-       </div>
-    </a>
+    
 
     <div class="navbar-burger burger" data-target="navMenubd-example">
-     
+       <span class="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
     </div>
   </div>
 
@@ -62,19 +60,33 @@
         </div>
         
       </div>
-      <div class="navbar-item has-dropdown is-hoverable">
+      
+
+    
+     <div class="navbar-item has-dropdown is-hoverable">
         <div class="navbar-link">
-          <a href="#get-start" id="btn_get_start">Getting Started</a> 
+          <a href="#all-function" id="btn_all_function">All Of Function</a> 
         </div>
         
       </div>
-     
-      <div class="navbar-item has-dropdown is-hoverable">
-        
-       <a class="navbar-link" href="#documentation">
-          Documentation
+    
+    </div>
+  
+        <a href="#get-start" id="btn_get_start" class="navbar-link">
+          <i class="fa fa-star" aria-hidden="true"></i>&nbsp Getting Started
         </a>
-        <div class="navbar-dropdown ">
+         <a class="navbar-link" target="_blank" href="https://github.com/lamhotsimamora/GF-Javascript/archive/master.zip">
+          <i class="fa fa-download"></i>&nbsp Download
+         </a>
+
+    <div class="navbar-item has-dropdown is-hoverable"> 
+       
+
+        <a class="navbar-link" href="#documentation">
+          <i class="fa fa-book" aria-hidden="true"></i>&nbsp Documentation
+        </a>
+        <div class="navbar-dropdown is-boxed">
+         
           <a class="navbar-item " href="#basic" id="part_one">
             Part 1  | Basic
           </a>
@@ -130,40 +142,13 @@
             </div>
           </div>
         </div>
-      </div>
-    
-     <div class="navbar-item has-dropdown is-hoverable">
-        <div class="navbar-link">
-          <a href="#all-function" id="btn_all_function">All Of Function</a> 
         </div>
-        
       </div>
-    
-    </div>
-
+   
     <div class="navbar-end">
-      <a class="navbar-item is-hidden-desktop-only" href="https://github.com/lamhotsimamora/GF-Javascript" target="_blank">
-            <span class="icon" style="color: #333;">
-              <i class="fa fa-github"></i>
-            </span>
-      </a>
-      <a class="navbar-item is-hidden-desktop-only" href="#">
-           
-      </a>
       <div class="navbar-item">
         <div class="field is-grouped">
-          <p class="control">
-     
-
-          </p>
-          <p class="control">
-            <a class="button is-primary" href="https://github.com/lamhotsimamora/GF-Javascript/archive/master.zip" target="_blank">
-              <span class="icon">
-                <i class="fa fa-download"></i>
-              </span>
-              <span>Download</span>
-            </a>
-          </p>
+         
         </div>
       </div>
     </div>
@@ -239,5 +224,24 @@
 
 <script type="text/javascript" id="my_script"></script>
 <script src="app.js"></script>
+<script type="text/javascript">
+
+document.addEventListener('DOMContentLoaded', function () {
+  var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+  if ($navbarBurgers.length > 0) {
+
+    $navbarBurgers.forEach(function ($el) {
+      $el.addEventListener('click', function () {
+
+        var target = $el.dataset.target;
+        var $target = _getById(target);
+        $el.classList.toggle('is-active');
+        $target.classList.toggle('is-active');
+      });
+    });
+  }
+
+});
+</script>
 </body>
 </html>
