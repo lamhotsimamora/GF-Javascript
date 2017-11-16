@@ -1,6 +1,6 @@
 
-// Enabled console log Garuda Javascript
-run_console = true;	
+  // Enabled console log Garuda Javascript
+  run_console = true;	
 
   var now_page = _getStorage("page");
   const documentationPage = [
@@ -19,14 +19,12 @@ run_console = true;
 
   function loadPage(u)
   {
-     
        _loadDoc(u,function(r){
              if (r == false)
              {  
                 alert("Upzz Something is Wrong ! Can't connect to server !");
                 return;
              }
-          
              _printTo("display_load",r);
         });
   }
@@ -55,8 +53,8 @@ run_console = true;
     _loadDoc("./code/part-one.html",function(res){
            if (res)
            {
-               _printTo(display,res);
-               _loadDoc("./code/part-one.js",script,_ajaxSetup.header,"script"); 
+                _printTo(display,res);
+                _loadDoc("./code/part-one.js",script,_ajaxSetup.header,"script"); 
                 _saveStorage("page",documentationPage[1]);
                 now_page = _getStorage("page"); 
            }
@@ -277,31 +275,23 @@ run_console = true;
   {
     return '<article class="message is-success"><div class="message-body"> <p>'+a+'</p>  '+b+' </div> </article>';
   }
-
- 
- 
- 
-
   _keyCustom(function(){
        if (now_page==='home')
        {
-          part1();
-         
+          part1(); 
        }
        else if(now_page==='part1')
        {
             part2();
-           
+  
        }
          else if(now_page==='part2')
        {
            part3();
-       
        }
         else if(now_page==='part3')
        {
           part4();
-        
        }
         else if(now_page==='part4')
        {
@@ -311,32 +301,26 @@ run_console = true;
         else if(now_page==='part5')
        {
            part6();
-       
        }
         else if(now_page==='part6')
        {
            part7();
-       
        }
         else if(now_page==='part7')
        {
            part8();
-       
        }
         else if(now_page==='part8')
        {
            part9();
-       
        }
         else if(now_page==='part9')
        {
            part10();
-       
        }
         else if(now_page==='part10')
        {
            part11();
-       
        }
         else if(now_page==='part11')
        {
@@ -353,15 +337,15 @@ run_console = true;
   },_keyCode.insert);
 
     
-  _keyCustom(function(){
-      _refresh("./");
-  },_keyCode.home);
+_keyCustom(function(){
+    _refresh("./");
+},_keyCode.home);
 
-  _keyCustom(function(){
-      getStart();
-  },_keyCode.f2);
+_keyCustom(function(){
+    getStart();
+},_keyCode.f2);
 
-  _keyCustom(function(){
-      allFunction();
-  },_keyCode.f4);
+_keyCustom(function(){
+    allFunction();
+},_keyCode.f4);
 
