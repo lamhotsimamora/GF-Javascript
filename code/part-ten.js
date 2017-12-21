@@ -63,5 +63,5 @@ _onClick("btn_query_url",function(){
 
 _onClick("btn_put_url",function(){
 	  var token = _randomStr(15);
-	 _putUrl("New URL","New URL",_myUrl()+"?token="+token+"");
+	 _putUrl("New URL","New URL",_myUrl()+"GF-Javascript/?token="+token+"");
 });
