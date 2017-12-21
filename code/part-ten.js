@@ -56,12 +56,12 @@ _onClick("btn_myurl2",function(){
 
 
 _onClick("btn_query_url",function(){
-	var title = _getTitle();
-	_putUrl("",title,_myUrl()+"GF-Javascript/?page=testing");
-	var a = _GET['page'];
-	alert("The Parameter Is "+ a);
+	var url_new =  _myUrl()+"GF-Javascript/?page=testing";
+	_refresh(url_new);
+	
 });
-
+var a = _GET['page'];
+alert("The Parameter Is "+ a);
 
 _onClick("btn_put_url",function(){
 	  var token = _randomStr(15);
