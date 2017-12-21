@@ -59,3 +59,9 @@ _onClick("btn_query_url",function(){
 	var a = _GET['page'];
 	alert(a);
 });
+
+
+_onClick("btn_put_url",function(){
+	  var token = _randomStr(15);
+	 _putUrl("New URL","New URL",_myUrl()+"?token="+token+"");
+});
