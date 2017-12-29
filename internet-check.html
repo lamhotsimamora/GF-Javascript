@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Internet Check Real Time</title>
+	<script type="text/javascript" src="./JS/GF-1.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+	<div>
+		<hr>
+			<gf id="disp_result">
+				
+			</gf>
+		<hr>
+
+	</div>
+	
+</body>
+
+
+<script type="text/javascript">
+	function realTimeInternet()
+    {
+        _checkInternet({
+          connect:function(){
+            _printTo("disp_result","<strong style='color:green'>Connected</strong>",false);
+          }
+          ,
+          disconnected:function(){
+            _printTo("disp_result","<strong style='color:red'>Disconnected</strong>");
+          }
+        });
+    }
+        
+    setInterval(function(){
+      realTimeInternet();
+    },2000);
+    
+</script>
+	
+	
+</html>

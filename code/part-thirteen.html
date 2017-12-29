@@ -1,10 +1,37 @@
 <div class="container">
+    <hr>
+
+    For checking internet real time</br></br>
+    <code>
+
+        function realTimeInternet()</br>
+        {</br>
+            _checkInternet({</br>
+              connect:function(){</br>
+                alert("Connected",false);</br>
+              }</br>
+              ,</br>
+              disconnected:function(){</br>
+                alert("Disconnected");</br>
+              }</br>
+            });</br>
+        }</br>
+        </br>
+        setInterval(function(){</br>
+          realTimeInternet();</br>
+        },2000);
+
+    </code>
+</br></br>
+<button class="button is-success" onclick="_refresh('./internet-check.html')">TEST</button>
+    </br>
+</br>
     <center> <button class="button is-default" id="btn_scroll_down">Go Down</button></center>
     <hr> For select text 
     </br>
     <code>
-	 				_selectText("my_text");	
-	 		</code>
+			_selectText("my_text");	
+	</code>
     </br>
     </br>
     <textarea id="my_text" class="input is-success">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </textarea>
