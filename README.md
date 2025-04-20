@@ -1,8 +1,9 @@
 # Garuda Javascript New Version
-=====================================
+----------------------------------------------
+###
 https://github.com/lamhotsimamora/Garuda-Javascript 
 https://github.com/lamhotsimamora/Garuda-Javascript-Syntax/
-
+----------------------------------------------
 
 
 # Garuda Query Javascript | Pretty Code | Easy Use
