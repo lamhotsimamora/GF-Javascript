@@ -2,6 +2,7 @@
 ----------------------------------------------
 ###
 https://github.com/lamhotsimamora/Garuda-Javascript 
+----------------------------------------------
 https://github.com/lamhotsimamora/Garuda-Javascript-Syntax/
 ----------------------------------------------
 
